@@ -4,183 +4,96 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>K-AI Daily Intelligence</title>
-  <meta name="description" content="K-AI Daily Intelligence — AI, business, e-commerce and startup trend briefings." />
+  <meta name="description" content="K-AI Daily Intelligence — readable AI, business, e-commerce and startup trend briefings." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --paper: #fffdf8;
-      --surface: #ffffff;
-      --warm: #f6f3ed;
-      --ink: rgba(24, 24, 22, .96);
-      --muted: #6f6a61;
-      --hairline: rgba(28, 25, 23, .12);
-      --blue: #0b67d8;
-      --blue-soft: #eef6ff;
-      --green: #178b57;
-      --orange: #b35c00;
-      --shadow: 0 18px 60px rgba(30, 24, 16, .08), 0 3px 12px rgba(30, 24, 16, .05);
+    :root{
+      --paper:#fffdf8; --surface:#fff; --warm:#f7f3ec; --ink:#191816; --muted:#6f6a61;
+      --hairline:rgba(30,27,24,.12); --blue:#0b67d8; --blue-soft:#eef6ff; --green:#178b57; --orange:#a65300;
+      --shadow:0 16px 48px rgba(30,24,16,.07),0 2px 8px rgba(30,24,16,.04);
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at 18% -10%, rgba(244, 223, 176, .42), transparent 34%),
-        linear-gradient(180deg, #fffaf0 0%, var(--paper) 38%, #ffffff 100%);
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Noto Sans HK", Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: var(--blue); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
-    header {
-      border-bottom: 1px solid var(--hairline);
-      background: rgba(255, 253, 248, .82);
-      backdrop-filter: blur(16px);
-      position: sticky;
-      top: 0;
-      z-index: 20;
-    }
-    .nav { display: flex; justify-content: space-between; align-items: center; min-height: 68px; gap: 18px; }
-    .brand { display: flex; align-items: baseline; gap: 10px; color: var(--ink); font-weight: 800; letter-spacing: -.04em; font-size: 20px; }
-    .brand span { color: var(--muted); font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
-    .navlinks { display: flex; gap: 18px; align-items: center; font-size: 14px; font-weight: 600; color: var(--muted); }
-    .navlinks a { color: var(--muted); }
-    .hero { padding: 72px 0 34px; }
-    .kicker { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border: 1px solid rgba(11, 103, 216, .16); border-radius: 999px; background: var(--blue-soft); color: #0756b6; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
-    h1 { max-width: 880px; margin: 20px 0 16px; font-size: clamp(44px, 7vw, 86px); line-height: .94; letter-spacing: -.075em; }
-    .lead { max-width: 760px; color: var(--muted); font-size: 19px; line-height: 1.7; margin: 0; }
-    .meta-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
-    .pill { border: 1px solid var(--hairline); background: rgba(255,255,255,.76); border-radius: 999px; padding: 8px 12px; color: var(--muted); font-size: 13px; font-weight: 600; }
-    .briefing-panel { margin: 34px 0 42px; display: grid; grid-template-columns: 1.15fr .85fr; gap: 18px; }
-    .card { background: rgba(255,255,255,.88); border: 1px solid var(--hairline); border-radius: 22px; box-shadow: var(--shadow); }
-    .headline-card { padding: 28px; min-height: 300px; display: flex; flex-direction: column; justify-content: space-between; }
-    .eyebrow { color: var(--orange); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
-    h2 { margin: 10px 0 10px; font-size: clamp(28px, 4vw, 46px); line-height: 1.04; letter-spacing: -.055em; }
-    .headline-card p, .side-card p { color: var(--muted); line-height: 1.65; margin: 0; }
-    .side-stack { display: grid; gap: 18px; }
-    .side-card { padding: 22px; }
-    .side-card h3 { margin: 8px 0 8px; font-size: 22px; letter-spacing: -.035em; }
-    .tag { display: inline-flex; color: var(--green); background: #effaf4; border: 1px solid rgba(23,139,87,.16); border-radius: 999px; padding: 5px 9px; font-size: 12px; font-weight: 700; }
-    .section { padding: 26px 0; }
-    .section-title { display: flex; justify-content: space-between; gap: 16px; align-items: end; border-bottom: 1px solid var(--hairline); padding-bottom: 14px; margin-bottom: 10px; }
-    .section-title h2 { font-size: 30px; margin: 0; }
-    .section-title p { margin: 0; color: var(--muted); font-size: 14px; }
-    .reports { list-style: none; margin: 0; padding: 0; }
-    .reports li { display: grid; grid-template-columns: 120px 1fr auto; gap: 18px; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--hairline); }
-    .date { color: var(--muted); font-size: 13px; font-weight: 700; }
-    .report-title { font-size: 18px; font-weight: 800; letter-spacing: -.02em; color: var(--ink); }
-    .summary { display: block; color: var(--muted); margin-top: 5px; line-height: 1.45; font-size: 14px; }
-    .open { color: var(--blue); font-size: 14px; font-weight: 700; }
-    .empty { margin: 18px 0 0; background: var(--warm); border: 1px dashed var(--hairline); border-radius: 18px; padding: 18px; color: var(--muted); line-height: 1.6; }
-    .categories { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 20px; }
-    .category { padding: 18px; background: var(--surface); border: 1px solid var(--hairline); border-radius: 18px; }
-    .category strong { display: block; font-size: 16px; letter-spacing: -.02em; margin-bottom: 6px; }
-    .category span { color: var(--muted); font-size: 13px; line-height: 1.45; }
-    footer { margin-top: 50px; padding: 28px 0 48px; border-top: 1px solid var(--hairline); color: var(--muted); font-size: 13px; }
-    footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-    @media (max-width: 820px) {
-      .nav { align-items: flex-start; flex-direction: column; padding: 16px 0; }
-      .briefing-panel { grid-template-columns: 1fr; }
-      .reports li { grid-template-columns: 1fr; gap: 6px; }
-      .categories { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 520px) {
-      .wrap { width: min(100% - 26px, 1120px); }
-      .hero { padding-top: 44px; }
-      .categories { grid-template-columns: 1fr; }
-      .navlinks { flex-wrap: wrap; }
-    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:linear-gradient(180deg,#fff8ea 0,var(--paper) 320px,#fff 100%);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Noto Sans HK",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{width:min(1080px,calc(100% - 40px));margin:0 auto}
+    header{border-bottom:1px solid var(--hairline);background:rgba(255,253,248,.88);backdrop-filter:blur(16px);position:sticky;top:0;z-index:20}
+    .nav{min-height:64px;display:flex;justify-content:space-between;align-items:center;gap:18px}
+    .brand{color:var(--ink);font-weight:800;letter-spacing:-.045em;font-size:19px}.brand span{color:var(--muted);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-left:8px}
+    .navlinks{display:flex;gap:16px;align-items:center;font-size:14px;font-weight:650}.navlinks a{color:var(--muted)}
+    .hero{padding:46px 0 22px;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:end}.kicker{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
+    h1{font-size:clamp(42px,6.2vw,78px);line-height:.94;letter-spacing:-.075em;margin:10px 0 14px}.lead{color:var(--muted);font-size:18px;line-height:1.7;max-width:680px;margin:0}.hero-note{background:rgba(255,255,255,.72);border:1px solid var(--hairline);border-radius:18px;padding:18px;color:var(--muted);line-height:1.65;box-shadow:var(--shadow)}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0 8px}.stat{background:#fff;border:1px solid var(--hairline);border-radius:16px;padding:14px}.stat strong{display:block;font-size:24px;letter-spacing:-.045em}.stat span{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+    .layout{display:grid;grid-template-columns:1.45fr .55fr;gap:22px;margin:26px 0 34px}.panel{background:#fff;border:1px solid var(--hairline);border-radius:24px;box-shadow:var(--shadow)}
+    .panel-head{padding:20px 22px;border-bottom:1px solid var(--hairline);display:flex;justify-content:space-between;gap:14px;align-items:end}.panel-head h2{font-size:25px;line-height:1.1;letter-spacing:-.045em;margin:0}.panel-head p{margin:6px 0 0;color:var(--muted);font-size:14px;line-height:1.5}.panel-body{padding:10px 22px 20px}
+    .featured{padding:22px}.featured-date{font-size:12px;font-weight:800;color:var(--orange);letter-spacing:.08em;text-transform:uppercase}.featured h2{font-size:clamp(30px,4vw,46px);line-height:1.03;letter-spacing:-.06em;margin:10px 0}.featured p{color:var(--muted);font-size:17px;line-height:1.65}.button{display:inline-flex;align-items:center;justify-content:center;background:var(--blue);color:#fff;border-radius:999px;padding:10px 15px;font-size:14px;font-weight:800;margin-top:8px}.button:hover{text-decoration:none;background:#0757b8}
+    .reports{list-style:none;margin:0;padding:0}.reports li{display:grid;grid-template-columns:105px 1fr auto;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--hairline)}.reports li:last-child{border-bottom:0}.date{color:var(--muted);font-size:13px;font-weight:800}.report-title{font-size:17px;font-weight:800;letter-spacing:-.02em;color:var(--ink)}.summary{display:block;color:var(--muted);margin-top:5px;line-height:1.45;font-size:14px}.open{font-size:14px;font-weight:800;white-space:nowrap}.empty{margin:12px 0;background:var(--warm);border:1px dashed var(--hairline);border-radius:16px;padding:16px;color:var(--muted);line-height:1.6}
+    .side{display:grid;gap:14px}.side-card{background:#fff;border:1px solid var(--hairline);border-radius:20px;padding:18px}.tag{display:inline-flex;color:var(--green);background:#effaf4;border:1px solid rgba(23,139,87,.16);border-radius:999px;padding:5px 9px;font-size:12px;font-weight:800}.side-card h3{font-size:19px;letter-spacing:-.035em;margin:10px 0 8px}.side-card p{color:var(--muted);line-height:1.58;margin:0;font-size:14px}
+    .coverage{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}.coverage div{background:#fff;border:1px solid var(--hairline);border-radius:18px;padding:16px}.coverage strong{display:block;font-size:15px;margin-bottom:6px}.coverage span{display:block;color:var(--muted);font-size:13px;line-height:1.45}
+    footer{margin-top:34px;padding:26px 0 46px;border-top:1px solid var(--hairline);color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:860px){.hero,.layout{grid-template-columns:1fr}.coverage,.stats{grid-template-columns:1fr 1fr}.reports li{grid-template-columns:1fr;gap:5px}.nav{align-items:flex-start;flex-direction:column;padding:14px 0}.navlinks{flex-wrap:wrap}.hero{padding-top:34px}}
+    @media(max-width:520px){.wrap{width:min(100% - 26px,1080px)}.coverage,.stats{grid-template-columns:1fr}h1{font-size:42px}.featured h2{font-size:30px}}
   </style>
 </head>
 <body>
   <header>
     <nav class="wrap nav" aria-label="Main navigation">
       <a class="brand" href="./">K-AI Daily <span>Intelligence</span></a>
-      <div class="navlinks">
-        <a href="#latest">Latest Briefings</a>
-        <a href="#coverage">Coverage</a>
-        <a href="https://kaihk.com">K-AI Solutions</a>
-      </div>
+      <div class="navlinks"><a href="#latest">Latest</a><a href="#coverage">Coverage</a><a href="https://kaihk.com">K-AI Solutions</a></div>
     </nav>
   </header>
 
   <main class="wrap">
     <section class="hero">
-      <div class="kicker">Daily AI & Business Briefing</div>
-      <h1>每天一份可以行動的趨勢日報。</h1>
-      <p class="lead">追蹤 AI、Agent Workflow、電商、社群內容、投資與創業機會；把熱門消息整理成 insight、風險判斷與對 K-AI Solutions 可落地的商業動作。</p>
-      <div class="meta-row">
-        <span class="pill">09:00 HKT daily</span>
-        <span class="pill">AI industry first</span>
-        <span class="pill">Short Telegram summary</span>
-        <span class="pill">Full report archive</span>
+      <div>
+        <div class="kicker">Daily AI & Business Briefing</div>
+        <h1>趨勢不只要知道，還要知道怎樣用。</h1>
+        <p class="lead">面向創業者、企業管理者與 AI 讀者的日報：整理熱門 AI / business trend，提煉 insight、風險與可執行機會。</p>
       </div>
+      <aside class="hero-note">每份日報會追蹤公開來源，拆解流行原因，並把 trend 轉成產品、內容、銷售或 workflow 建議。Telegram 看摘要，網站讀全文。</aside>
     </section>
 
-    <section class="briefing-panel" aria-label="Editorial highlights">
-      <article class="card headline-card">
-        <div>
-          <div class="eyebrow">Editorial focus</div>
-          <h2>從新聞熱點，到香港企業能用的 AI 方案。</h2>
-          <p>每條 trend 都會記錄來源、流行原因、核心 insight、目標人群、代表案例，以及對 K-AI Solutions 的產品化與銷售機會。</p>
-        </div>
-        <div class="meta-row">
-          <span class="tag">Insight-first</span>
-          <span class="tag">Source-linked</span>
-          <span class="tag">Actionable</span>
-        </div>
-      </article>
-      <div class="side-stack">
-        <article class="card side-card">
-          <span class="tag">Telegram friendly</span>
-          <h3>聊天只看摘要</h3>
-          <p>Telegram 不再塞長文，只推送 Top trends、關鍵判斷與三個可即刻執行的 action。</p>
-        </article>
-        <article class="card side-card">
-          <span class="tag">Archive ready</span>
-          <h3>完整記錄在網站</h3>
-          <p>每日完整 Markdown / HTML report 會歸檔，方便回看、分享與沉澱成內容素材。</p>
-        </article>
-      </div>
+    <section class="stats" aria-label="Publishing rhythm">
+      <div class="stat"><strong>09:00</strong><span>HKT daily</span></div>
+      <div class="stat"><strong>AI</strong><span>industry first</span></div>
+      <div class="stat"><strong>3</strong><span>actions each issue</span></div>
     </section>
 
-    <section class="section" id="latest">
-      <div class="section-title">
-        <div>
-          <h2>Latest Briefings</h2>
-          <p>最新日報會按日期排序顯示。</p>
+    <section class="layout" id="latest">
+      <div class="panel">
+        <div id="featured" class="featured">
+          <div class="featured-date">Latest briefing</div>
+          <h2>最新日報準備中</h2>
+          <p>第一份日報發布後，這裡會顯示今日重點與全文連結。</p>
+        </div>
+        <div class="panel-head">
+          <div><h2>Archive</h2><p>按日期保存完整日報，方便回看與分享。</p></div>
+        </div>
+        <div class="panel-body">
+          <ul id="reports" class="reports"></ul>
+          <div id="empty" class="empty">暫時未有已發布日報。</div>
         </div>
       </div>
-      <ul id="reports" class="reports"></ul>
-      <div id="empty" class="empty">暫時未有已發布日報。第一次 trend report 推送並發布後，這裡會自動出現 archive link。</div>
+      <aside class="side">
+        <div class="side-card"><span class="tag">Reader-first</span><h3>不放內部對話</h3><p>網站只放整理後的讀者版日報，不包含 Telegram 對話或內部指令。</p></div>
+        <div class="side-card"><span class="tag">Actionable</span><h3>每條 trend 都要落地</h3><p>不只摘要新聞，還會分析商業機會、風險和下一步行動。</p></div>
+        <div class="side-card"><span class="tag">Source-linked</span><h3>來源可追溯</h3><p>每篇報告保留關鍵來源連結，方便讀者自行深入閱讀。</p></div>
+      </aside>
     </section>
 
-    <section class="section" id="coverage">
-      <div class="section-title">
-        <div>
-          <h2>Coverage</h2>
-          <p>日報會優先分析 AI，再掃描相關商業機會。</p>
-        </div>
-      </div>
-      <div class="categories">
-        <div class="category"><strong>AI Agents</strong><span>Agent workflow、coding agent、enterprise automation、MCP、生產力工具。</span></div>
-        <div class="category"><strong>E-commerce</strong><span>Shopify、Amazon、AI 導購、客服自動化、內容生成。</span></div>
-        <div class="category"><strong>Marketing</strong><span>社群 trend、短片內容、AI marketing stack、品牌案例。</span></div>
-        <div class="category"><strong>Startup Signals</strong><span>融資、產品發布、商業模式、香港市場可落地機會。</span></div>
+    <section class="panel" id="coverage">
+      <div class="panel-head"><div><h2>Coverage</h2><p>優先 AI，再掃描與商業化相關的相鄰領域。</p></div></div>
+      <div class="panel-body coverage">
+        <div><strong>AI Agents</strong><span>Agent workflow、coding agent、MCP、企業自動化。</span></div>
+        <div><strong>E-commerce</strong><span>Shopify、Amazon、AI 導購、客服與內容生成。</span></div>
+        <div><strong>Marketing</strong><span>社群 trend、短片內容、品牌案例與 AI marketing stack。</span></div>
+        <div><strong>Startup Signals</strong><span>融資、產品發布、商業模式與香港市場機會。</span></div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <span>© K-AI Solutions · Daily Intelligence</span>
-      <span><a href="https://kaihk.com">kaihk.com</a></span>
-    </div>
-  </footer>
+  <footer><div class="wrap foot"><span>© K-AI Solutions · Daily Intelligence</span><span><a href="https://kaihk.com">kaihk.com</a></span></div></footer>
 
   <script>
     async function loadReports(){
@@ -190,31 +103,15 @@
         const reports = await res.json();
         const list = document.getElementById('reports');
         const empty = document.getElementById('empty');
+        const featured = document.getElementById('featured');
         list.innerHTML = '';
         if(!Array.isArray(reports) || reports.length === 0) return;
+        const first = reports[0];
+        featured.innerHTML = `<div class="featured-date">${first.date || 'Latest briefing'}</div><h2>${first.title || 'Daily Briefing'}</h2><p>${first.summary || ''}</p><a class="button" href="${first.html}">Read full briefing →</a>`;
         empty.style.display = 'none';
         for(const r of reports){
           const li = document.createElement('li');
-          const date = document.createElement('span');
-          date.className = 'date';
-          date.textContent = r.date || '';
-          const main = document.createElement('span');
-          const link = document.createElement('a');
-          link.className = 'report-title';
-          link.href = r.html || '#';
-          link.textContent = r.title || 'Daily Briefing';
-          const summary = document.createElement('span');
-          summary.className = 'summary';
-          summary.textContent = r.summary || '';
-          main.appendChild(link);
-          main.appendChild(summary);
-          const open = document.createElement('a');
-          open.className = 'open';
-          open.href = r.html || '#';
-          open.textContent = 'Read →';
-          li.appendChild(date);
-          li.appendChild(main);
-          li.appendChild(open);
+          li.innerHTML = `<span class="date">${r.date || ''}</span><span><a class="report-title" href="${r.html}">${r.title || 'Daily Briefing'}</a><span class="summary">${r.summary || ''}</span></span><a class="open" href="${r.html}">Read →</a>`;
           list.appendChild(li);
         }
       }catch(e){ }
