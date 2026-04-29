@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>K-AI Trend Intelligence</title>
+  <meta name="description" content="K-AI Solutions daily AI and business trend intelligence dashboard." />
+  <style>
+    :root { color-scheme: dark; --bg:#080b12; --card:#111827; --muted:#94a3b8; --text:#e5e7eb; --accent:#60a5fa; --line:#233044; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans TC","Noto Sans HK",Arial,sans-serif; background:radial-gradient(circle at top left,#10264d 0,#080b12 42%); color:var(--text); }
+    header { max-width:1080px; margin:0 auto; padding:56px 20px 28px; }
+    .badge { display:inline-flex; gap:8px; align-items:center; border:1px solid var(--line); color:#bfdbfe; padding:7px 11px; border-radius:999px; background:rgba(96,165,250,.08); font-size:14px; }
+    h1 { font-size:clamp(36px,6vw,72px); line-height:.98; margin:18px 0 14px; letter-spacing:-.06em; }
+    .lead { max-width:760px; color:var(--muted); font-size:18px; line-height:1.7; }
+    main { max-width:1080px; margin:0 auto; padding:20px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin:24px 0; }
+    .card { border:1px solid var(--line); background:rgba(17,24,39,.78); border-radius:22px; padding:20px; box-shadow:0 20px 80px rgba(0,0,0,.22); }
+    .card h2, .card h3 { margin-top:0; letter-spacing:-.03em; }
+    a { color:#93c5fd; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .muted { color:var(--muted); }
+    .reports { list-style:none; padding:0; margin:0; }
+    .reports li { display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid var(--line); }
+    .empty { color:var(--muted); padding:18px; border:1px dashed var(--line); border-radius:16px; }
+    footer { max-width:1080px; margin:40px auto 0; padding:24px 20px 48px; color:var(--muted); border-top:1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="badge">🐎 小馬 Daily Briefing · K-AI Solutions</div>
+    <h1>Trend Intelligence Dashboard</h1>
+    <p class="lead">每日追蹤 AI、agent workflow、電商、社群內容、投資與創業機會。Telegram 只發摘要，完整 trend record 會存放在這裡。</p>
+  </header>
+  <main>
+    <section class="grid">
+      <article class="card"><h3>AI First</h3><p class="muted">優先分析 AI Agent、workflow automation、enterprise AI adoption。</p></article>
+      <article class="card"><h3>For K-AI</h3><p class="muted">每條 trend 都會轉成對 K-AI Solutions 可用的產品、內容或銷售建議。</p></article>
+      <article class="card"><h3>Readable</h3><p class="muted">長報告不塞 Telegram；每篇報告都有獨立 HTML / Markdown 檔。</p></article>
+    </section>
+
+    <section class="card">
+      <h2>Latest Reports</h2>
+      <ul id="reports" class="reports"></ul>
+      <div id="empty" class="empty">暫時未有已發布報告。第一次 cron 成功生成並 push 後，這裡會自動出現每日報告。</div>
+    </section>
+  </main>
+  <footer>
+    Generated for <a href="https://kaihk.com">K-AI Solutions</a>. Hosted by GitHub Pages.
+  </footer>
+  <script>
+    async function loadReports(){
+      try{
+        const res = await fetch('./reports/index.json', {cache:'no-store'});
+        if(!res.ok) throw new Error('no index');
+        const reports = await res.json();
+        const list = document.getElementById('reports');
+        const empty = document.getElementById('empty');
+        list.innerHTML = '';
+        if(!reports.length){ return; }
+        empty.style.display='none';
+        for(const r of reports){
+          const li = document.createElement('li');
+          li.innerHTML = `<span><a href="${r.html}">${r.title}</a><br><small class="muted">${r.summary || ''}</small></span><small class="muted">${r.date}</small>`;
+          list.appendChild(li);
+        }
+      }catch(e){ /* keep empty state */ }
+    }
+    loadReports();
+  </script>
+</body>
+</html>
