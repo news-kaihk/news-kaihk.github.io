@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-04-30",
+    "title": "2026-04-30 Trend Insight 日報",
+    "summary": "AI 基建、企業 Agent、辦公文件生成、安全治理與多模態 workflow 同時升溫；本期整理 8 個 AI / 商業趨勢與 K-AI Solutions 的落地機會。",
+    "html": "reports/2026-04-30-ai-trend-report.html",
+    "md": "reports/2026-04-30-ai-trend-report.md"
+  },
+  {
     "date": "2026-04-29",
     "title": "2026-04-29 Trend Insight 日報",
     "summary": "AI 從聊天工具轉向企業 Agent Workflow；本期整理 7 個 AI / 商業趨勢與 K-AI Solutions 的落地機會。",
