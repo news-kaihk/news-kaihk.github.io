@@ -12,6 +12,15 @@
 - **AI 需求開始反映到硬件與雲用量**：TechCrunch 報導 Apple 指 AI-driven demand 推高 Mac 需求；CoinDesk 報導 Riot 擴大 AMD data center deal 並被市場解讀為 AI pivot。
 - **估值與 monetization 分歧擴大**：Anthropic potential US$900B+ valuation round 仍屬媒體報導與未完成交易；Hugging Face 指 eval 成本正變成新 compute bottleneck，提醒企業 agent 不只花在 inference，也花在測試、監控與可靠性。
 
+
+## Full Analysis Pages
+
+- [AI 基建與主權採購](deep-dives/2026-05-02-infrastructure-sovereign-ai.md)
+- [Enterprise agents、雲分發與安全治理](deep-dives/2026-05-02-enterprise-agents-security.md)
+- [Multimodal、AI coding 與 eval 成本](deep-dives/2026-05-02-multimodal-coding-eval.md)
+- [硬件需求與 frontier AI 估值](deep-dives/2026-05-02-hardware-valuation.md)
+- [Source Ledger](deep-dives/2026-05-02-source-ledger.md)
+
 ## Evidence Matrix
 
 | Candidate trend | Source quality | Recency | Usage / adoption signal | Financial / capex / valuation signal | Risk indicator |
