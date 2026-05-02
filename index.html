@@ -7,27 +7,28 @@
   <meta name="description" content="K-AI Daily Intelligence — objective AI, business, e-commerce and startup trend briefings with evidence-backed insight." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#fffdf8; --surface:#ffffff; --surface-2:#faf8f2; --ink:#10100f; --muted:#6f6a61; --soft:#8e877b;
-      --line:rgba(25,24,22,.10); --line-strong:rgba(25,24,22,.16); --accent:#18b875; --accent-2:#0b67d8; --amber:#b86b12;
-      --green-soft:#e9fbf3; --blue-soft:#eef6ff; --amber-soft:#fff3df; --shadow:0 22px 70px rgba(33,27,18,.08),0 2px 8px rgba(33,27,18,.04);
+      --bg:#fffdf8; --surface:#ffffff; --surface-2:#faf8f2; --ink:#10100f; --muted:#69645c; --soft:#8e877b;
+      --line:rgba(25,24,22,.10); --line-strong:rgba(25,24,22,.17); --accent:#18b875; --accent-dark:#087347; --accent-2:#0b67d8; --amber:#b86b12; --risk:#b42318;
+      --green-soft:#e9fbf3; --blue-soft:#eef6ff; --amber-soft:#fff3df; --red-soft:#fff0ed; --shadow:0 24px 80px rgba(33,27,18,.09),0 2px 8px rgba(33,27,18,.04);
     }
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--ink);background:radial-gradient(circle at 12% -8%,rgba(24,184,117,.16),transparent 34%),linear-gradient(180deg,#fff8e8 0,var(--bg) 350px,#fff 100%);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Noto Sans HK",Arial,sans-serif;-webkit-font-smoothing:antialiased}
-    a{color:inherit;text-decoration:none} a:hover{text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:0 auto}.mono{font-family:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:radial-gradient(circle at 10% -10%,rgba(24,184,117,.16),transparent 34%),radial-gradient(circle at 82% 0%,rgba(11,103,216,.11),transparent 30%),linear-gradient(180deg,#fff8e8 0,var(--bg) 360px,#fff 100%);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Noto Sans HK",Arial,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:0 auto}.mono{font-family:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
     header{position:sticky;top:0;z-index:30;background:rgba(255,253,248,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-    .nav{min-height:68px;display:flex;align-items:center;gap:18px;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.055em;font-size:20px}.brand span{display:inline-block;margin-left:8px;color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.10em;text-transform:uppercase}.intent-nav{display:flex;gap:6px;padding:6px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.72)}.intent-nav a{font-size:13px;font-weight:750;color:var(--muted);padding:8px 12px;border-radius:999px}.intent-nav a:hover,.intent-nav a.active{background:#111;color:#fff}.about-link{font-size:13px;font-weight:750;color:var(--muted);border:1px solid var(--line);padding:10px 13px;border-radius:999px;background:#fff}.about-link:hover{border-color:var(--line-strong);color:var(--ink)}
-    .hero{padding:54px 0 24px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:end}.kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:850;letter-spacing:.10em;text-transform:uppercase;color:var(--amber)}.pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 8px rgba(24,184,117,.12)}h1{font-size:clamp(40px,6vw,74px);line-height:.98;letter-spacing:-.078em;margin:14px 0 18px;max-width:850px}.lead{font-size:18px;line-height:1.72;color:var(--muted);max-width:720px;margin:0}.reader-panel{background:rgba(255,255,255,.82);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:18px}.reader-panel h2{font-size:20px;letter-spacing:-.035em;margin:0 0 12px}.paths{display:grid;gap:10px}.path{display:flex;gap:12px;align-items:flex-start;padding:14px;border:1px solid var(--line);border-radius:18px;background:#fff;transition:.18s ease}.path:hover{transform:translateY(-1px);border-color:rgba(24,184,117,.32);box-shadow:0 10px 28px rgba(24,184,117,.08)}.path b{display:block;font-size:14px;margin-bottom:4px}.path span{display:block;color:var(--muted);font-size:13px;line-height:1.45}.path-num{flex:0 0 30px;height:30px;border-radius:999px;display:grid;place-items:center;background:var(--green-soft);color:#087347;font-weight:850;font-size:12px}
-    .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0 10px}.metric{border:1px solid var(--line);background:#fff;border-radius:20px;padding:16px}.metric strong{display:block;font-size:25px;letter-spacing:-.05em}.metric span{display:block;margin-top:3px;color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
-    .section{margin:26px 0;scroll-margin-top:92px}.latest-grid{display:grid;grid-template-columns:1fr;gap:18px;align-items:stretch}.panel{background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);overflow:hidden}.panel-pad{padding:24px}.label{font-family:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;font-weight:700;letter-spacing:.10em;text-transform:uppercase;color:var(--amber)}.featured h2{font-size:clamp(30px,4vw,48px);line-height:1.04;letter-spacing:-.06em;margin:10px 0 12px}.featured p{font-size:17px;line-height:1.68;color:var(--muted);margin:0}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.button{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:11px 16px;font-size:14px;font-weight:800;border:1px solid #111;background:#111;color:#fff}.button.secondary{background:#fff;color:#111;border-color:var(--line-strong)}.button:hover{transform:translateY(-1px)}
-    .signal-map{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.signal-card{border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,#fff,#fffdf8);padding:18px;min-height:132px}.signal-card .tag{display:inline-flex;border-radius:999px;background:var(--blue-soft);color:#0757b8;padding:5px 9px;font-size:11px;font-weight:850;letter-spacing:.06em;text-transform:uppercase}.signal-card h3{font-size:18px;letter-spacing:-.035em;margin:12px 0 6px}.signal-card p{color:var(--muted);font-size:14px;line-height:1.52;margin:0}.signal-card:nth-child(2) .tag{background:var(--green-soft);color:#087347}.signal-card:nth-child(3) .tag{background:var(--amber-soft);color:#8f510a}
-    .panel-head{padding:22px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;align-items:flex-end}.panel-head h2{font-size:27px;line-height:1.08;letter-spacing:-.05em;margin:0}.panel-head p{margin:7px 0 0;color:var(--muted);font-size:14px;line-height:1.55}.searchbox{border:1px solid var(--line);border-radius:999px;padding:10px 14px;font:inherit;font-size:14px;min-width:220px;background:#fff}.searchbox:focus{outline:2px solid rgba(24,184,117,.22);border-color:rgba(24,184,117,.45)}.reports{list-style:none;margin:0;padding:4px 24px 18px}.reports li{display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}.reports li:last-child{border-bottom:0}.date{color:var(--muted);font-size:13px;font-weight:850}.report-title{font-size:18px;font-weight:850;letter-spacing:-.025em}.summary{display:block;color:var(--muted);margin-top:6px;line-height:1.5;font-size:14px}.open{font-size:14px;font-weight:850;white-space:nowrap;color:var(--accent-2)}.empty{margin:16px 24px 24px;background:var(--surface-2);border:1px dashed var(--line);border-radius:18px;padding:16px;color:var(--muted);line-height:1.6}
-    .mood-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.mood-card{position:relative;min-height:156px;border:1px solid var(--line);border-radius:26px;overflow:hidden;background:#fff;box-shadow:0 18px 44px rgba(33,27,18,.05)}.mood-card:before,.mood-card:after{content:"";position:absolute;inset:auto;border-radius:999px;filter:blur(2px);opacity:.78}.mood-card:before{width:132px;height:132px;left:-36px;top:-34px}.mood-card:after{width:190px;height:190px;right:-78px;bottom:-96px}.mood-card span{position:absolute;left:18px;bottom:16px;font-size:11px;font-weight:850;letter-spacing:.12em;text-transform:uppercase;color:rgba(16,16,15,.56)}.mood-card--morning{background:linear-gradient(135deg,#fff5d8 0%,#fff 56%,#edf6ff 100%)}.mood-card--morning:before{background:rgba(255,199,95,.86)}.mood-card--morning:after{background:rgba(11,103,216,.14)}.mood-card--signal{background:linear-gradient(135deg,#ffffff 0%,#f2fff8 58%,#eef6ff 100%)}.mood-card--signal:before{background:rgba(24,184,117,.36)}.mood-card--signal:after{background:rgba(11,103,216,.18)}.mood-card--quiet{background:linear-gradient(135deg,#fffdf8 0%,#faf4e8 58%,#ffffff 100%)}.mood-card--quiet:before{background:rgba(184,107,18,.20)}.mood-card--quiet:after{background:rgba(24,184,117,.12)}.coverage{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.coverage div{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px}.coverage strong{display:block;font-size:15px;margin-bottom:7px}.coverage span{display:block;color:var(--muted);font-size:13px;line-height:1.48}
-    .floating-toc{position:fixed;right:18px;bottom:18px;z-index:25;display:flex;gap:6px;padding:7px;background:rgba(255,255,255,.82);border:1px solid var(--line);box-shadow:var(--shadow);backdrop-filter:blur(16px);border-radius:999px}.floating-toc a{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:16px;border:1px solid transparent}.floating-toc a:hover{background:#111;color:#fff}
+    .nav{min-height:68px;display:flex;align-items:center;gap:18px;justify-content:space-between}.brand{font-weight:900;letter-spacing:-.058em;font-size:20px}.brand span{display:inline-block;margin-left:8px;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.10em;text-transform:uppercase}.intent-nav{display:flex;gap:6px;padding:6px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.72)}.intent-nav a{font-size:13px;font-weight:800;color:var(--muted);padding:8px 12px;border-radius:999px;white-space:nowrap}.intent-nav a:hover,.intent-nav a.active{background:#111;color:#fff}.about-link{font-size:13px;font-weight:800;color:var(--muted);border:1px solid var(--line);padding:10px 13px;border-radius:999px;background:#fff}.about-link:hover{border-color:var(--line-strong);color:var(--ink)}
+    .hero{padding:56px 0 22px}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:34px;align-items:center}.kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:var(--amber)}.pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 8px rgba(24,184,117,.12)}h1{font-size:clamp(42px,6.15vw,76px);line-height:.97;letter-spacing:-.08em;margin:14px 0 18px;max-width:860px;text-wrap:balance}.lead{font-size:18px;line-height:1.74;color:var(--muted);max-width:730px;margin:0;text-wrap:pretty}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.button{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 17px;font-size:14px;font-weight:850;border:1px solid #111;background:#111;color:#fff;transition:.18s ease}.button.secondary{background:#fff;color:#111;border-color:var(--line-strong)}.button:hover{transform:translateY(-1px)}
+    .command-panel{position:relative;background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow);padding:18px;overflow:hidden}.command-panel:before{content:"";position:absolute;right:-120px;top:-110px;width:260px;height:260px;border-radius:999px;background:radial-gradient(circle,rgba(24,184,117,.22),transparent 66%)}.command-inner{position:relative}.command-label{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:12px;color:var(--muted);font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.09em}.kbd{border:1px solid var(--line);background:#fff;border-radius:8px;padding:4px 7px;color:var(--soft);font-size:11px}.command-box{display:flex;gap:10px;align-items:center;border:1px solid var(--line-strong);background:#fff;border-radius:22px;padding:11px 12px}.command-icon{width:34px;height:34px;border-radius:999px;display:grid;place-items:center;background:#111;color:#fff;font-weight:900}.command-box input{border:0;outline:0;font:inherit;font-size:16px;flex:1;min-width:0;color:var(--ink);background:transparent}.command-box button{border:0;border-radius:999px;background:var(--accent);color:#fff;font-weight:900;padding:10px 13px;cursor:pointer}.suggestions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.suggestions button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 10px;color:var(--muted);font:inherit;font-size:13px;font-weight:750;cursor:pointer}.suggestions button:hover{border-color:rgba(24,184,117,.38);color:var(--ink);background:var(--green-soft)}.intent-result{margin-top:14px;border:1px solid var(--line);background:linear-gradient(180deg,#fff,#fffdf8);border-radius:20px;padding:15px;min-height:98px}.intent-result b{display:block;font-size:15px;margin-bottom:5px}.intent-result p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}.mini-feed{display:grid;gap:9px;margin-top:14px}.mini-feed a{display:flex;justify-content:space-between;gap:12px;align-items:center;border:1px solid var(--line);background:#fff;border-radius:16px;padding:11px 12px;font-size:13px}.mini-feed span{color:var(--muted)}.mini-feed strong{font-size:13px}.mini-feed i{font-style:normal;color:var(--accent-2);font-weight:900;white-space:nowrap}
+    .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0 10px}.metric{border:1px solid var(--line);background:rgba(255,255,255,.78);border-radius:20px;padding:16px}.metric strong{display:block;font-size:25px;letter-spacing:-.05em}.metric span{display:block;margin-top:3px;color:var(--muted);font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.08em}
+    .section{margin:28px 0;scroll-margin-top:92px}.panel{background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);overflow:hidden}.panel-pad{padding:24px}.label{font-family:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;font-weight:800;letter-spacing:.10em;text-transform:uppercase;color:var(--amber)}.featured h2{font-size:clamp(30px,4vw,48px);line-height:1.04;letter-spacing:-.06em;margin:10px 0 12px;text-wrap:balance}.featured p{font-size:17px;line-height:1.68;color:var(--muted);margin:0}.panel-head{padding:22px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;align-items:flex-end}.panel-head h2{font-size:27px;line-height:1.08;letter-spacing:-.052em;margin:0}.panel-head p{margin:7px 0 0;color:var(--muted);font-size:14px;line-height:1.55;max-width:720px}.signal-map{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.signal-card{border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,#fff,#fffdf8);padding:18px;min-height:132px}.signal-card .tag{display:inline-flex;border-radius:999px;background:var(--blue-soft);color:#0757b8;padding:5px 9px;font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.signal-card h3{font-size:18px;letter-spacing:-.035em;margin:12px 0 6px}.signal-card p{color:var(--muted);font-size:14px;line-height:1.52;margin:0}.signal-card:nth-child(2) .tag{background:var(--green-soft);color:#087347}.signal-card:nth-child(3) .tag{background:var(--red-soft);color:var(--risk)}
+    .risk-lens{display:grid;grid-template-columns:1fr 1fr;gap:12px}.risk-card{border:1px solid var(--line);border-radius:22px;background:#fff;padding:18px}.risk-card b{display:block;font-size:16px;margin-bottom:7px}.risk-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}.risk-card.hot{background:linear-gradient(135deg,#fff7ed,#fff)}.risk-card.safe{background:linear-gradient(135deg,#eef6ff,#fff)}
+    .searchbox{border:1px solid var(--line);border-radius:999px;padding:10px 14px;font:inherit;font-size:14px;min-width:240px;background:#fff}.searchbox:focus{outline:2px solid rgba(24,184,117,.22);border-color:rgba(24,184,117,.45)}.reports{list-style:none;margin:0;padding:4px 24px 18px}.reports li{display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}.reports li:last-child{border-bottom:0}.date{color:var(--muted);font-size:13px;font-weight:850}.report-title{font-size:18px;font-weight:850;letter-spacing:-.025em}.summary{display:block;color:var(--muted);margin-top:6px;line-height:1.5;font-size:14px}.open{font-size:14px;font-weight:850;white-space:nowrap;color:var(--accent-2)}.empty{margin:16px 24px 24px;background:var(--surface-2);border:1px dashed var(--line);border-radius:18px;padding:16px;color:var(--muted);line-height:1.6}.coverage{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.coverage div{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px}.coverage strong{display:block;font-size:15px;margin-bottom:7px}.coverage span{display:block;color:var(--muted);font-size:13px;line-height:1.48}
     footer{margin-top:38px;padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    @media(max-width:900px){.hero-grid,.latest-grid{grid-template-columns:1fr}.mood-strip,.coverage,.metrics,.signal-map{grid-template-columns:1fr 1fr}.nav{align-items:flex-start;flex-direction:column;padding:14px 0}.intent-nav{width:100%;overflow:auto;justify-content:flex-start}.about-link{display:none}.panel-head{align-items:flex-start;flex-direction:column}.searchbox{width:100%}.reports li{grid-template-columns:1fr;gap:5px}.floating-toc{display:none}}
-    @media(max-width:560px){.wrap{width:min(100% - 26px,1160px)}h1{font-size:42px}.mood-strip,.coverage,.metrics,.signal-map{grid-template-columns:1fr}.reader-panel{padding:14px}.panel-pad,.panel-head{padding:20px}.reports{padding:0 20px 16px}}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.signal-map,.coverage,.metrics,.risk-lens{grid-template-columns:1fr 1fr}.nav{align-items:flex-start;flex-direction:column;padding:14px 0}.intent-nav{width:100%;overflow:auto;justify-content:flex-start}.about-link{display:none}.panel-head{align-items:flex-start;flex-direction:column}.searchbox{width:100%}.reports li{grid-template-columns:1fr;gap:5px}}
+    @media(max-width:560px){.wrap{width:min(100% - 26px,1160px)}h1{font-size:42px}.signal-map,.coverage,.metrics,.risk-lens{grid-template-columns:1fr}.panel-pad,.panel-head{padding:20px}.reports{padding:0 20px 16px}.command-box{align-items:stretch;flex-wrap:wrap}.command-box input{flex-basis:calc(100% - 48px)}.command-box button{width:100%}}
   </style>
 </head>
 <body>
@@ -35,41 +36,59 @@
     <nav class="wrap nav" aria-label="Main navigation">
       <a class="brand" href="./">K-AI Daily <span>Intelligence</span></a>
       <div class="intent-nav" aria-label="Reader intent navigation">
-        <a href="#today">今日重點</a>
-        <a href="#signal-map">訊號地圖</a>
-        <a href="#archive">歷史日報</a>
-        <a href="#atmosphere">氛圍</a>
+        <a href="#today">Today</a>
+        <a href="#ask">Search Signals</a>
+        <a href="#risk">Risk Lens</a>
+        <a href="#archive">Archive</a>
       </div>
       <a class="about-link" href="https://kaihk.com">About</a>
     </nav>
   </header>
 
   <main class="wrap">
-    <section class="hero" id="top">
+    <section class="hero" id="ask">
       <div class="hero-grid">
         <div>
           <div class="kicker"><span class="pulse"></span>Daily AI & Business Briefing</div>
-          <h1>用人的意圖，重組市場資訊。</h1>
-          <p class="lead">K-AI Daily Intelligence 把 AI 與商業訊號整理成三種閱讀路徑：快速掌握、深入研判、回看趨勢。讀者可以按時間、理解深度或追蹤需求進入內容。</p>
-        </div>
-        <aside class="reader-panel" aria-label="Reading modes">
-          <h2>選擇你的閱讀狀態</h2>
-          <div class="paths">
-            <a class="path" href="#today"><span class="path-num">01</span><span><b>我只有 3 分鐘</b><span>先看今日 briefing、重點結論與全文入口。</span></span></a>
-            <a class="path" href="#signal-map"><span class="path-num">02</span><span><b>我想理解趨勢結構</b><span>用訊號地圖把技術、商業化與風險分層。</span></span></a>
-            <a class="path" href="#archive"><span class="path-num">03</span><span><b>我要追蹤變化</b><span>從歷史日報回看市場敘事如何演變。</span></span></a>
+          <h1>看見市場正在轉向哪裡。</h1>
+          <p class="lead">每日整理 AI、企業採用、資本、供應鏈與風險訊號。直接搜尋公司、技術或風險，也可以從今日 briefing 進入完整分析。</p>
+          <div class="hero-actions">
+            <a class="button" href="#today">Read today’s briefing →</a>
+            <a class="button secondary" href="#archive">Browse archive</a>
           </div>
-        </aside>
+        </div>
+
+        <section class="command-panel" aria-label="Search signals">
+          <div class="command-inner">
+            <div class="command-label"><span>Ask market signals</span><span class="kbd">Search archive</span></div>
+            <div class="command-box">
+              <div class="command-icon">⌘</div>
+              <input id="signalCommand" type="search" placeholder="試試：AI agent 風險、AWS、Shopify、香港、capex" aria-label="Search market signals">
+              <button id="commandGo" type="button">Go</button>
+            </div>
+            <div class="suggestions" aria-label="Suggested searches">
+              <button type="button" data-query="agent risk">Agent 風險</button>
+              <button type="button" data-query="AWS OpenAI">AWS / OpenAI</button>
+              <button type="button" data-query="Shopify commerce">Shopify commerce</button>
+              <button type="button" data-query="香港 Asia">香港 / Asia</button>
+            </div>
+            <div id="intentResult" class="intent-result">
+              <b>今日可以這樣讀</b>
+              <p>輸入公司、技術或風險關鍵字，即時收窄 Archive；也可以直接閱讀今日 briefing。</p>
+            </div>
+            <div id="miniFeed" class="mini-feed" aria-label="Latest briefings"></div>
+          </div>
+        </section>
       </div>
 
       <section class="metrics" aria-label="Publishing rhythm">
         <div class="metric"><strong>09:00</strong><span>HKT daily</span></div>
         <div class="metric"><strong>AI+</strong><span>business signals</span></div>
-        <div class="metric"><strong>3</strong><span>reading modes</span></div>
+        <div class="metric"><strong>Risks</strong><span>clearly marked</span></div>
       </section>
     </section>
 
-    <section class="section latest-grid" id="today">
+    <section class="section" id="today">
       <article class="panel featured">
         <div id="featured" class="panel-pad">
           <div class="label">Latest briefing</div>
@@ -80,7 +99,7 @@
     </section>
 
     <section class="panel section" id="signal-map">
-      <div class="panel-head"><div><h2>Signal Map</h2><p>將每日訊號分成技術能力、商業採用與風險三層，幫助讀者判斷趨勢的強度與不確定性。</p></div></div>
+      <div class="panel-head"><div><h2>Signal Map</h2><p>把每日訊號分成技術能力、商業採用與風險三層，幫助讀者判斷趨勢的強度與不確定性。</p></div></div>
       <div class="panel-pad signal-map" aria-label="Signal map">
         <div class="signal-card"><span class="tag">Technology</span><h3>基建與模型能力</h3><p>追蹤雲平台、模型、agent tooling、硬件供應與成本曲線。</p></div>
         <div class="signal-card"><span class="tag">Market</span><h3>商業化與採用</h3><p>觀察產品發布、企業採購、垂直場景、融資與 revenue signal。</p></div>
@@ -88,21 +107,21 @@
       </div>
     </section>
 
+    <section class="panel section" id="risk">
+      <div class="panel-head"><div><h2>Risk Lens</h2><p>同一條趨勢不只看增長，也看採購阻力、成本、政策與安全邊界。</p></div></div>
+      <div class="panel-pad risk-lens">
+        <div class="risk-card hot"><b>值得追，不代表已確定</b><p>資本開支、模型能力和企業採用可能同時升溫；報告會把 fact、inference 和 watch points 分開呈現。</p></div>
+        <div class="risk-card safe"><b>先找風險，再看機會</b><p>安全、合規、平台依賴、成本 surprise 和估值傳聞會被獨立標記，避免把市場敘事直接當成結論。</p></div>
+      </div>
+    </section>
+
     <section class="panel section" id="archive">
       <div class="panel-head">
-        <div><h2>Archive</h2><p>按日期保存完整日報，也可以用關鍵字搜尋主題、公司或技術。</p></div>
+        <div><h2>Archive</h2><p>搜尋公司、產品、地區或技術關鍵字，回看同一條市場敘事如何演變。</p></div>
         <input id="reportSearch" class="searchbox" type="search" placeholder="搜尋：agent / Shopify / capex..." aria-label="Search briefings">
       </div>
       <ul id="reports" class="reports"></ul>
-      <div id="empty" class="empty">暫時未有已發布日報。</div>
-    </section>
-
-    <section class="section" id="atmosphere" aria-label="Daily atmosphere">
-      <div class="mood-strip">
-        <div class="mood-card mood-card--morning"><span>Morning brief</span></div>
-        <div class="mood-card mood-card--signal"><span>Market signal</span></div>
-        <div class="mood-card mood-card--quiet"><span>Quiet context</span></div>
-      </div>
+      <div id="empty" class="empty">暫時未有符合條件的日報。</div>
     </section>
 
     <section class="panel section" id="coverage">
@@ -122,6 +141,10 @@
     let allReports = [];
     const byId = (id) => document.getElementById(id);
 
+    function reportHaystack(r){
+      return `${r.date || ''} ${r.title || ''} ${r.summary || ''}`.toLowerCase();
+    }
+
     function renderReports(reports){
       const list = byId('reports');
       const empty = byId('empty');
@@ -138,6 +161,33 @@
       }
     }
 
+    function renderMiniFeed(reports){
+      const mini = byId('miniFeed');
+      mini.innerHTML = '';
+      reports.slice(0,2).forEach((r) => {
+        const a = document.createElement('a');
+        a.href = r.html;
+        const compactTitle = (r.title || 'Daily Briefing').replace(/^\d{4}-\d{2}-\d{2}\s+/, '');
+        a.innerHTML = `<span><strong>${r.date || ''}</strong> ${compactTitle}</span><i>Open</i>`;
+        mini.appendChild(a);
+      });
+    }
+
+    function applySearch(raw, shouldScroll = false){
+      const q = raw.trim().toLowerCase();
+      byId('reportSearch').value = raw.trim();
+      if(!q){
+        renderReports(allReports);
+        byId('intentResult').innerHTML = `<b>今日可以這樣讀</b><p>輸入公司、技術或風險關鍵字，即時收窄 Archive；也可以直接閱讀今日 briefing。</p>`;
+        return;
+      }
+      const terms = q.split(/\s+|\/|,|，/).filter(Boolean);
+      const filtered = allReports.filter((r) => terms.some((term) => reportHaystack(r).includes(term)));
+      renderReports(filtered);
+      byId('intentResult').innerHTML = `<b>${filtered.length ? `找到 ${filtered.length} 份相關日報` : '暫時未找到完全匹配'}</b><p>${filtered.length ? '可以從 Archive 直接打開全文；搜尋會同時比對日期、標題和摘要。' : '可以換一個公司、技術或更上層的主題，例如 agent、security、capex、commerce。'}</p>`;
+      if(shouldScroll) byId('archive').scrollIntoView({behavior:'smooth', block:'start'});
+    }
+
     async function loadReports(){
       try{
         const res = await fetch('./reports/index.json', {cache:'no-store'});
@@ -145,15 +195,23 @@
         allReports = await res.json();
         if(!Array.isArray(allReports) || allReports.length === 0) return;
         const first = allReports[0];
-        byId('featured').innerHTML = `<div class="label">${first.date || 'Latest briefing'}</div><h2>${first.title || 'Daily Briefing'}</h2><p>${first.summary || ''}</p><div class="actions"><a class="button" href="${first.html}">閱讀完整日報 →</a><a class="button secondary" href="#archive">瀏覽歷史日報</a></div>`;
+        byId('featured').innerHTML = `<div class="label">${first.date || 'Latest briefing'}</div><h2>${first.title || 'Daily Briefing'}</h2><p>${first.summary || ''}</p><div class="hero-actions"><a class="button" href="${first.html}">閱讀完整日報 →</a><a class="button secondary" href="#archive">瀏覽歷史日報</a></div>`;
         renderReports(allReports);
+        renderMiniFeed(allReports);
       }catch(e){ }
     }
 
-    byId('reportSearch').addEventListener('input', (event) => {
-      const q = event.target.value.trim().toLowerCase();
-      if(!q) return renderReports(allReports);
-      renderReports(allReports.filter((r) => `${r.date} ${r.title} ${r.summary}`.toLowerCase().includes(q)));
+    byId('reportSearch').addEventListener('input', (event) => applySearch(event.target.value));
+    byId('signalCommand').addEventListener('input', (event) => applySearch(event.target.value));
+    byId('commandGo').addEventListener('click', () => applySearch(byId('signalCommand').value, true));
+    byId('signalCommand').addEventListener('keydown', (event) => {
+      if(event.key === 'Enter') applySearch(event.currentTarget.value, true);
+    });
+    document.querySelectorAll('.suggestions button').forEach((button) => {
+      button.addEventListener('click', () => {
+        byId('signalCommand').value = button.dataset.query || '';
+        applySearch(byId('signalCommand').value, true);
+      });
     });
 
     const navLinks = [...document.querySelectorAll('.intent-nav a')];

@@ -5,192 +5,80 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>2026-05-02 Trend Insight 早報｜K-AI Daily Intelligence</title>
 <style>
-:root { --bg:#f7f3ea; --paper:#fffdf8; --ink:#172026; --muted:#5f6b73; --line:#e2d8c8; --accent:#295f98; }
-body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC",Arial,sans-serif; line-height:1.72; }
-.container { max-width:980px; margin:0 auto; padding:40px 20px 72px; }
-article { background:var(--paper); border:1px solid var(--line); border-radius:18px; padding:34px; box-shadow:0 10px 30px rgba(35,31,25,.06); }
-h1 { font-size:2.15rem; line-height:1.2; margin:0 0 14px; }
-h2 { margin-top:38px; padding-top:20px; border-top:1px solid var(--line); font-size:1.45rem; }
-h3 { margin-top:30px; font-size:1.18rem; color:#1d3f63; }
-p, li { font-size:1rem; }
-a { color:var(--accent); word-break:break-word; }
-table { width:100%; border-collapse:collapse; font-size:.92rem; background:white; }
-th, td { border:1px solid var(--line); padding:10px; vertical-align:top; }
-th { background:#efe7d8; text-align:left; }
-.table-wrap { overflow-x:auto; margin:18px 0; }
-.footer { color:var(--muted); font-size:.9rem; margin-top:28px; }
-@media (max-width:640px) { article { padding:22px; } h1 { font-size:1.65rem; } }
+:root{
+  --bg:#f6f1e8;--paper:#fffdf8;--ink:#111827;--muted:#53606a;--soft:#756b5f;--line:rgba(17,24,39,.12);
+  --track:#16834f;--watch:#b7791f;--verify:#b45309;--risk:#b42318;--context:#64748b;
+  --blue:#2864d8;--purple:#7c3aed;--cyan:#0891b2;--teal:#0f766e;--amber:#d97706;--red:#dc2626;--slate:#475569;
+  --shadow:0 24px 70px rgba(38,30,18,.10),0 2px 8px rgba(38,30,18,.05);
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:radial-gradient(circle at 18% -8%,rgba(40,100,216,.18),transparent 30%),radial-gradient(circle at 88% 6%,rgba(22,131,79,.16),transparent 30%),linear-gradient(180deg,#fff7df 0,var(--bg) 420px,#fff 100%);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC",Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}.wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}.topbar{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:900;letter-spacing:-.055em;text-decoration:none}.navlinks{display:flex;gap:6px;overflow:auto;padding:6px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.65)}.navlinks a{white-space:nowrap;text-decoration:none;font-size:12px;font-weight:850;color:var(--muted);padding:8px 10px;border-radius:999px}.navlinks a:hover{background:#111;color:#fff}.hero{padding:52px 0 26px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:stretch}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#9a5a10;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.pulse{width:8px;height:8px;border-radius:50%;background:var(--track);box-shadow:0 0 0 8px rgba(22,131,79,.12)}h1{font-size:clamp(42px,6.4vw,78px);line-height:.96;letter-spacing:-.078em;margin:14px 0 16px}.dek{font-size:19px;line-height:1.72;color:var(--muted);max-width:760px;margin:0}.meta-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.pill,.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:rgba(255,255,255,.72);border-radius:999px;padding:7px 10px;font-size:12px;font-weight:850;color:var(--muted)}.hero-visual{position:relative;min-height:450px;border:1px solid var(--line);border-radius:34px;overflow:hidden;background:#111827;box-shadow:var(--shadow)}.map-bg{position:absolute;inset:0;background:radial-gradient(circle at 24% 28%,rgba(96,165,250,.45),transparent 22%),radial-gradient(circle at 70% 20%,rgba(52,211,153,.34),transparent 24%),radial-gradient(circle at 62% 76%,rgba(251,191,36,.28),transparent 26%),linear-gradient(135deg,#111827,#182034 55%,#0f172a)}.map-line{position:absolute;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.44),transparent);transform-origin:left}.l1{width:58%;left:18%;top:34%;transform:rotate(10deg)}.l2{width:45%;left:30%;top:54%;transform:rotate(-20deg)}.l3{width:48%;left:14%;top:66%;transform:rotate(-6deg)}.node{position:absolute;padding:9px 11px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.10);backdrop-filter:blur(10px);border-radius:16px;color:#fff;font-size:12px;font-weight:900;box-shadow:0 14px 36px rgba(0,0,0,.18)}.node small{display:block;color:rgba(255,255,255,.70);font-weight:700;margin-top:2px}.us{left:13%;top:22%}.eu{left:55%;top:16%}.me{left:63%;top:45%}.asia{left:32%;top:58%}.hk{left:68%;top:64%}.legend-float{position:absolute;left:18px;bottom:18px;right:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.heat{padding:13px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.08);border-radius:18px;color:#fff}.heat b{display:block;font-size:22px;letter-spacing:-.04em}.heat span{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.70)}.section{margin:28px 0;scroll-margin-top:86px}.section-head{display:flex;justify-content:space-between;gap:16px;align-items:end;margin-bottom:14px}.section-head h2{font-size:32px;line-height:1.05;letter-spacing:-.055em;margin:5px 0 0}.section-head p{color:var(--muted);margin:5px 0 0;max-width:720px}.board{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.board-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:18px;box-shadow:0 14px 36px rgba(38,30,18,.05)}.board-card b{display:block;font-size:17px;letter-spacing:-.025em}.board-card p{color:var(--muted);font-size:14px;margin:8px 0 0}.metric{font-size:34px;font-weight:950;letter-spacing:-.06em;line-height:1}.judgment-legend{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.legend-dot{width:9px;height:9px;border-radius:50%;display:inline-block}.dot-track{background:var(--track)}.dot-watch{background:var(--watch)}.dot-risk{background:var(--risk)}.map-panel{border-radius:32px;background:#101827;color:#fff;padding:22px;overflow:hidden;box-shadow:var(--shadow)}.timeline{display:grid;grid-template-columns:repeat(4,minmax(190px,1fr));gap:14px;overflow:auto}.time-col{min-width:190px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:14px}.date{font-size:13px;font-weight:950;color:rgba(255,255,255,.72);margin-bottom:10px}.event{display:block;text-decoration:none;margin:8px 0;padding:10px;border-left:4px solid var(--event,#60a5fa);border-radius:14px;background:rgba(255,255,255,.08);font-size:13px;font-weight:850;color:#fff}.infra{--event:#60a5fa}.agent{--event:#a78bfa}.security{--event:#fb7185}.hardware{--event:#fbbf24}.eval{--event:#c084fc}.coding{--event:#2dd4bf}.valuation{--event:#94a3b8}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.trend-card{--theme:var(--blue);position:relative;background:#fff;border:1px solid var(--line);border-radius:28px;padding:22px;box-shadow:0 18px 46px rgba(38,30,18,.07);overflow:hidden}.trend-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:var(--theme)}.trend-top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}.rank{font-weight:950;color:var(--soft);font-size:13px}.verdict{display:inline-flex;align-items:center;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:950;border:1px solid}.verdict.track{color:var(--track);background:rgba(22,131,79,.09);border-color:rgba(22,131,79,.22)}.verdict.watch{color:var(--watch);background:rgba(183,121,31,.10);border-color:rgba(183,121,31,.24)}.verdict.verify{color:var(--verify);background:rgba(180,83,9,.10);border-color:rgba(180,83,9,.24)}.trend-card h3{font-size:clamp(22px,2.4vw,30px);line-height:1.12;letter-spacing:-.05em;margin:0 0 10px}.one-line{font-size:16px;color:var(--muted);margin:0 0 14px}.chip-row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.lens-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.lens{background:#faf7ef;border:1px solid var(--line);border-radius:17px;padding:12px}.lens b{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--soft)}.lens p{font-size:14px;color:var(--muted);margin:5px 0 0}.open-detail{display:inline-flex;margin-top:14px;text-decoration:none;border-radius:999px;padding:9px 12px;background:#111827;color:#fff;font-size:13px;font-weight:900}.theme-infra{--theme:#2864d8}.theme-agent{--theme:#7c3aed}.theme-security{--theme:#dc2626}.theme-multimodal{--theme:#0891b2}.theme-coding{--theme:#0f766e}.theme-eval{--theme:#9333ea}.theme-hardware{--theme:#d97706}.theme-valuation{--theme:#64748b}.chain{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.chain-col{background:#fff;border:1px solid var(--line);border-radius:24px;padding:18px}.chain-col h3{margin:0 0 12px;font-size:20px}.chain-col ul{margin:0;padding-left:20px;color:var(--muted)}.regions{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.region{background:linear-gradient(180deg,#fff,#fffaf1);border:1px solid var(--line);border-radius:24px;padding:18px}.region b{font-size:18px}.region p{color:var(--muted);font-size:14px;margin:8px 0 0}.details{display:grid;gap:18px}.detail{background:#fff;border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:0 16px 40px rgba(38,30,18,.05)}.detail h3{font-size:28px;line-height:1.15;letter-spacing:-.045em;margin:0 0 10px}.detail-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.detail-box{background:#faf7ef;border:1px solid var(--line);border-radius:18px;padding:13px}.detail-box b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--soft);margin-bottom:6px}.detail-box p{margin:0;color:var(--muted);font-size:14px}.sources{columns:2;column-gap:28px}.sources li{break-inside:avoid;margin:0 0 8px;color:var(--muted)}.sources a{color:#295f98}.footer{color:var(--muted);font-size:13px;margin:34px 0 60px}.note{padding:14px 16px;border:1px solid var(--line);border-radius:18px;background:#fffaf1;color:var(--muted);font-size:14px}.back{display:inline-flex;margin-bottom:16px;color:var(--muted);font-size:13px;font-weight:850;text-decoration:none}@media(max-width:900px){.hero-grid,.board,.cards,.chain,.regions,.detail-grid{grid-template-columns:1fr}.legend-float{grid-template-columns:1fr}.hero-visual{min-height:430px}.nav{align-items:flex-start;flex-direction:column;padding:12px 0}.navlinks{width:100%}.sources{columns:1}}@media(max-width:560px){.wrap{width:min(100% - 26px,1180px)}h1{font-size:42px}.section-head{display:block}.timeline{grid-template-columns:1fr}.lens-grid{grid-template-columns:1fr}.trend-card,.detail{padding:19px}.hero{padding-top:34px}}
 </style>
 </head>
-<body><main class="container"><article>
-<h1>2026-05-02 Trend Insight 早報</h1>
-<p><strong>Publication:</strong> K-AI Daily Intelligence  </p>
-<p><strong>Coverage window:</strong> 2026-04-29 至 2026-05-02 09:00 HKT  </p>
-<p><strong>Focus:</strong> AI infrastructure, enterprise agents, security, model economics, AI hardware demand, crypto/AI crossover</p>
-<h2>Executive Summary</h2>
-<ul>
-<li>過去 72 小時最強主線是 <strong>AI 基建資本開支與主權/政府採購</strong>：OpenAI 討論「Intelligence Age」算力基建，The Decoder 匯總大型科技公司 2026 年 AI spending 可能達 <strong>US$725B</strong>，同時 Pentagon 與多家科技公司簽署 classified-network AI 部署協議。</li>
-<li><strong>企業 Agent 正由 demo 走向受管部署</strong>：OpenAI models、Codex 與 Managed Agents 登上 AWS；NVIDIA 推出 Nemotron 3 Nano Omni 與 OpenClaw agent 方向；Microsoft legal AI agent 相關報導亦顯示 agent distribution 正嵌入現有工作流。</li>
-<li><strong>安全與治理成為 AI 採購必要條件</strong>：OpenAI 發布 Advanced Account Security / cybersecurity 相關內容；Anthropic 推 Claude Security；GitHub 回應 git push pipeline RCE，反映企業買 AI 產品時會同時要求身份、供應鏈、安全審計。</li>
-<li><strong>AI 需求開始反映到硬件與雲用量</strong>：TechCrunch 報導 Apple 指 AI-driven demand 推高 Mac 需求；CoinDesk 報導 Riot 擴大 AMD data center deal 並被市場解讀為 AI pivot。</li>
-<li><strong>估值與 monetization 分歧擴大</strong>：Anthropic potential US$900B+ valuation round 仍屬媒體報導與未完成交易；Hugging Face 指 eval 成本正變成新 compute bottleneck，提醒企業 agent 不只花在 inference，也花在測試、監控與可靠性。</li>
-</ul>
-<h2>Evidence Matrix</h2>
-<div class="table-wrap"><table><thead><tr><th>Candidate trend</th><th>Source quality</th><th>Recency</th><th>Usage / adoption signal</th><th>Financial / capex / valuation signal</th><th>Risk indicator</th></tr></thead><tbody>
-<tr><td>AI 基建與超大 capex 週期</td><td>Primary + media</td><td>Apr 29-May 1</td><td>OpenAI、big tech、government deployment</td><td>The Decoder 報導 big tech AI spending balloons to US$725B this year；OpenAI 發布 compute infrastructure 論述</td><td>Capex 回報週期長；供電、晶片、監管瓶頸</td></tr>
-<tr><td>AI on AWS / managed agents</td><td>Primary</td><td>Apr 28</td><td>OpenAI models、Codex、Managed Agents 登上 AWS</td><td>AWS marketplace / cloud consumption 可能受惠，但官方未披露收入</td><td>平台 lock-in、企業治理與成本控制</td></tr>
-<tr><td>Classified-network AI</td><td>Media + government-related reporting</td><td>May 1</td><td>Pentagon 與 Nvidia、Microsoft、AWS 等簽署部署 AI 協議</td><td>合約細節未完全公開；顯示公共部門採購升溫</td><td>國防 AI 倫理、出口管制、採購週期</td></tr>
-<tr><td>AI security products</td><td>Primary + media</td><td>Apr 29-May 1</td><td>OpenAI security features、Anthropic Claude Security、GitHub pipeline RCE response</td><td>Security attach-rate 可能提升；未披露單獨收入</td><td>攻防軍備競賽；誤報與責任界線</td></tr>
-<tr><td>Multimodal / document-audio-video agents</td><td>Primary</td><td>Apr 28-Apr 30</td><td>NVIDIA Nemotron 3 Nano Omni、OpenClaw Agents</td><td>9x efficiency claim 屬 vendor benchmark；可能影響 cost-to-serve</td><td>Benchmark 與真實 workflow 差異</td></tr>
-<tr><td>AI coding / developer agents</td><td>Primary + media</td><td>Apr 30-May 1</td><td>GitHub Copilot CLI education；Replit/Cursor 競爭升溫</td><td>Copilot usage-based billing 轉向消費量 monetization</td><td>成本不可預測；IDE workflow 競爭激烈</td></tr>
-<tr><td>AI hardware demand spillover</td><td>Earnings-related media + market report</td><td>Apr 30-May 1</td><td>Mac 需求被 Apple 指受 AI 帶動；Riot 擴大 AMD data center deal</td><td>Riot shares +8% reported；Apple 未在報導標題披露完整分項收入</td><td>需求可能受換機週期或投機敘事影響</td></tr>
-<tr><td>AI eval 成本瓶頸</td><td>Technical community source</td><td>Apr 29</td><td>Hugging Face 指 evals becoming compute bottleneck</td><td>評測、監控、red-team 會增加 agent total cost</td><td>評測標準碎片化；難以直接量化 ROI</td></tr>
-</tbody></table></div>
-<h2>Trend Records</h2>
-<h3>1. AI 基建進入「超大資本開支 + 主權採購」階段</h3>
-<ul>
-<li><strong>來源與證據：</strong></li>
-</ul>
-<p>  - OpenAI, “Building the compute infrastructure for the Intelligence Age” (2026-04-29): <a href="https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age" rel="noopener noreferrer">https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age</a></p>
-<p>  - The Decoder, “Big tech&#x27;s AI spending balloons to $725 billion this year” (2026-05-01): <a href="https://the-decoder.com/big-techs-ai-spending-balloons-to-725-billion-this-year/" rel="noopener noreferrer">https://the-decoder.com/big-techs-ai-spending-balloons-to-725-billion-this-year/</a></p>
-<p>  - TechCrunch, “Pentagon inks deals with Nvidia, Microsoft, and AWS to deploy AI on classified networks” (2026-05-01): <a href="https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/" rel="noopener noreferrer">https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/</a></p>
-<ul>
-<li><strong>正在流行的原因：</strong> frontier model、enterprise agent、政府/國防部署同時消耗大量 GPU、networking、power 與 secure cloud capacity。</li>
-<li><strong>核心 insight：</strong> AI 競爭正由單一模型能力，轉向「供電、晶片、雲平台、合規部署、長期 financing」的全棧競賽。</li>
-<li><strong>數據 / 金融 evidence：</strong> The Decoder 報導大型科技公司今年 AI spending 可能達 US$725B；Pentagon classified-network AI deals 反映政府採購正在由實驗轉向部署。OpenAI 官方文章則把 compute infrastructure 定位為 Intelligence Age 的核心資產。</li>
-<li><strong>客觀商業含義 / 可觀察場景：</strong> 企業採用 AI 時需要預算化長期算力成本，而不只是訂閱工具；供應商會用安全雲、私有部署、模型選擇權作為差異化。</li>
-<li><strong>風險與不確定性：</strong> capex 回收期、電力限制、晶片供應與監管壓力仍是主要不確定性；US$725B 屬媒體匯總估算，應與公司財報逐季核對。</li>
-<li><strong>編輯判斷：</strong> 值得追。</li>
-</ul>
-<h3>2. OpenAI models、Codex 與 Managed Agents 登上 AWS：多雲分發成為企業 AI 入口戰</h3>
-<ul>
-<li><strong>來源與證據：</strong></li>
-</ul>
-<p>  - OpenAI, “OpenAI models, Codex, and Managed Agents come to AWS” (2026-04-28): <a href="https://openai.com/index/openai-on-aws" rel="noopener noreferrer">https://openai.com/index/openai-on-aws</a></p>
-<p>  - OpenAI, “The next phase of the Microsoft OpenAI partnership” (2026-04-27): <a href="https://openai.com/index/next-phase-of-microsoft-partnership" rel="noopener noreferrer">https://openai.com/index/next-phase-of-microsoft-partnership</a></p>
-<ul>
-<li><strong>正在流行的原因：</strong> 大企業希望在既有雲帳戶、身份、採購、合規框架中使用模型與 agent，不想把敏感工作流搬到單一消費級入口。</li>
-<li><strong>核心 insight：</strong> 模型供應商的戰場正在從 chatbot 介面延伸到 cloud marketplace、developer tools、managed agent runtime。</li>
-<li><strong>數據 / 金融 evidence：</strong> 官方未披露 AWS channel 的 revenue impact；但雲上架通常意味著用量可進入企業 committed spend、procurement 與安全審批流程。</li>
-<li><strong>客觀商業含義 / 可觀察場景：</strong> 採購 AI 的決策點會更接近 cloud architecture team；agent 成本治理、IAM、logging、data residency 將成為成交條件。</li>
-<li><strong>風險與不確定性：</strong> 多雲分發未必等於更低成本；企業可能面臨模型版本、雲平台 lock-in、audit trail 複雜化。</li>
-<li><strong>編輯判斷：</strong> 值得追。</li>
-</ul>
-<h3>3. AI security 從附加功能變成採購門檻</h3>
-<ul>
-<li><strong>來源與證據：</strong></li>
-</ul>
-<p>  - OpenAI, “Introducing Advanced Account Security” (2026-04-30): <a href="https://openai.com/index/advanced-account-security" rel="noopener noreferrer">https://openai.com/index/advanced-account-security</a></p>
-<p>  - OpenAI, “Cybersecurity in the Intelligence Age” (2026-04-29): <a href="https://openai.com/index/cybersecurity-in-the-intelligence-age" rel="noopener noreferrer">https://openai.com/index/cybersecurity-in-the-intelligence-age</a></p>
-<p>  - The Decoder, “Anthropic launches Claude Security to give defenders the same AI edge attackers already have” (2026-05-01): <a href="https://the-decoder.com/anthropic-launches-claude-security-to-give-defenders-the-same-ai-edge-attackers-already-have/" rel="noopener noreferrer">https://the-decoder.com/anthropic-launches-claude-security-to-give-defenders-the-same-ai-edge-attackers-already-have/</a></p>
-<p>  - GitHub Blog, “Securing the git push pipeline: Responding to a critical remote code execution vulnerability” (2026-04-28): <a href="https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/" rel="noopener noreferrer">https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/</a></p>
-<ul>
-<li><strong>正在流行的原因：</strong> AI coding、agent、自動化 workflow 一旦接觸 repo、資料庫、雲權限，安全邊界會由「使用者登入」擴大到「模型可以執行甚麼」。</li>
-<li><strong>核心 insight：</strong> Security posture 正成為 AI platform 的核心產品屬性，而非 IT 後補措施。</li>
-<li><strong>數據 / 金融 evidence：</strong> Anthropic 與 OpenAI 均推出或強調 security product / account protection；GitHub 的 RCE response 顯示 developer supply chain 仍是高風險區域。各公司未披露 security SKU 的獨立收入。</li>
-<li><strong>客觀商業含義 / 可觀察場景：</strong> 企業評估 agent 應檢查 least privilege、approval gates、logging、prompt/data retention、secret handling、incident response。</li>
-<li><strong>風險與不確定性：</strong> 防禦工具可能同時降低門檻讓攻擊者更快測試；模型安全 benchmark 不等同真實環境安全。</li>
-<li><strong>編輯判斷：</strong> 值得追。</li>
-</ul>
-<h3>4. Multimodal agent 正在由「看圖聊天」轉向文件、音訊、影片工作流</h3>
-<ul>
-<li><strong>來源與證據：</strong></li>
-</ul>
-<p>  - NVIDIA Blog, “NVIDIA Launches Nemotron 3 Nano Omni Model, Unifying Vision, Audio and Language for up to 9x More Efficient AI Agents” (2026-04-28): <a href="https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/" rel="noopener noreferrer">https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/</a></p>
-<p>  - Hugging Face Blog, “Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents” (2026-04-28): <a href="https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence" rel="noopener noreferrer">https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence</a></p>
-<p>  - NVIDIA Blog, “Nemotron Labs: What OpenClaw Agents Mean for Every Organization” (2026-04-30): <a href="https://blogs.nvidia.com/blog/what-openclaw-agents-mean-for-every-organization/" rel="noopener noreferrer">https://blogs.nvidia.com/blog/what-openclaw-agents-mean-for-every-organization/</a></p>
-<ul>
-<li><strong>正在流行的原因：</strong> 企業資料大量存在於 PDF、call recording、training video、inspection photo、screen recording，而非純文字 chat。</li>
-<li><strong>核心 insight：</strong> 下一波 agent adoption 會集中於「把非結構化媒體轉成可追蹤任務」：審文件、聽會議、看影片、抽取 action、生成報告。</li>
-<li><strong>數據 / 金融 evidence：</strong> NVIDIA 宣稱 Nemotron 3 Nano Omni 對 agent 有 up to 9x efficiency；這屬 vendor benchmark，需以實際延遲、準確率、硬件成本驗證。</li>
-<li><strong>客觀商業含義 / 可觀察場景：</strong> 高頻、低風險、媒體密集的流程會率先試點，例如客服 QA、合規抽查、保險理賠初審、培訓內容索引。</li>
-<li><strong>風險與不確定性：</strong> 多模態 hallucination、長 context 漏讀、影音隱私與版權會限制落地速度。</li>
-<li><strong>編輯判斷：</strong> 值得追，但要以小範圍 workflow 驗證。</li>
-</ul>
-<h3>5. AI coding 工具進入商業模式分叉：usage-based、IDE 入口與雲端 agent 並行</h3>
-<ul>
-<li><strong>來源與證據：</strong></li>
-</ul>
-<p>  - TechCrunch, “Replit’s Amjad Masad on the Cursor deal, fighting Apple, and why he’d rather not sell” (2026-05-01): <a href="https://techcrunch.com/2026/05/01/replits-amjad-masad-on-the-cursor-deal-fighting-apple-and-why-hed-rather-not-sell/" rel="noopener noreferrer">https://techcrunch.com/2026/05/01/replits-amjad-masad-on-the-cursor-deal-fighting-apple-and-why-hed-rather-not-sell/</a></p>
-<p>  - GitHub Blog, “GitHub Copilot CLI for Beginners: Interactive v. non-interactive mode” (2026-04-30): <a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/" rel="noopener noreferrer">https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/</a></p>
-<p>  - GitHub Blog, “GitHub Copilot is moving to usage-based billing” (2026-04-27): <a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/" rel="noopener noreferrer">https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/</a></p>
-<ul>
-<li><strong>正在流行的原因：</strong> developer agents 由 autocomplete 走向 terminal、repo-level refactor、雲端執行，供應商需要把高 inference 成本轉嫁到用量或高階方案。</li>
-<li><strong>核心 insight：</strong> AI coding 的競爭不只是模型能力，而是「開發者日常入口 + 成本可預測性 + 代碼安全治理」。</li>
-<li><strong>數據 / 金融 evidence：</strong> GitHub usage-based billing 是 monetization 轉向用量的明確訊號；TechCrunch 對 Replit/Cursor 競爭的訪談反映 AI coding 公司估值與併購敘事升溫。</li>
-<li><strong>客觀商業含義 / 可觀察場景：</strong> 團隊導入 coding agent 時應按任務分類：autocomplete、CLI automation、repo agent、test generation，並設 usage budget 與 code review gate。</li>
-<li><strong>風險與不確定性：</strong> 若 usage pricing 不透明，企業可能出現成本 surprise；code ownership、license contamination、security review 仍需制度化。</li>
-<li><strong>編輯判斷：</strong> 值得追。</li>
-</ul>
-<h3>6. AI eval 成為新 compute bottleneck：可靠性成本可能被低估</h3>
-<ul>
-<li><strong>來源與證據：</strong></li>
-</ul>
-<p>  - Hugging Face Blog, “AI evals are becoming the new compute bottleneck” (2026-04-29): <a href="https://huggingface.co/blog/evaleval/eval-costs-bottleneck" rel="noopener noreferrer">https://huggingface.co/blog/evaleval/eval-costs-bottleneck</a></p>
-<ul>
-<li><strong>正在流行的原因：</strong> 當 agent 進入生產環境，企業要不斷跑 regression test、scenario eval、red-team、monitoring，成本不只在 user-facing inference。</li>
-<li><strong>核心 insight：</strong> AI total cost of ownership 應加入 eval compute、human review、observability 與 failed-task remediation。</li>
-<li><strong>數據 / 金融 evidence：</strong> Hugging Face 文章把 eval cost 定位為 compute bottleneck；未提供單一行業通用比例，因此應按任務錯誤成本與測試頻率建模。</li>
-<li><strong>客觀商業含義 / 可觀察場景：</strong> 高風險 agent 上線前應先建立 golden tasks、acceptance threshold、版本比較與 rollback 流程。</li>
-<li><strong>風險與不確定性：</strong> eval 指標可能被過度優化；公開 benchmark 與私有工作流的相關性有限。</li>
-<li><strong>編輯判斷：</strong> 值得追。</li>
-</ul>
-<h3>7. AI 需求外溢到硬件與 data center：Mac、AMD data center、礦企轉型同時出現</h3>
-<ul>
-<li><strong>來源與證據：</strong></li>
-</ul>
-<p>  - TechCrunch, “Apple was surprised by AI-driven demand for Macs” (2026-04-30): <a href="https://techcrunch.com/2026/04/30/apple-was-surprised-by-ai-driven-demand-for-macs/" rel="noopener noreferrer">https://techcrunch.com/2026/04/30/apple-was-surprised-by-ai-driven-demand-for-macs/</a></p>
-<p>  - CoinDesk, “Bitcoin miner Riot&#x27;s shares jump 8% after expanding AMD data center deal, signaling AI pivot” (2026-05-01): <a href="https://www.coindesk.com/markets/2026/05/01/bitcoin-miner-riot-s-shares-jump-8-after-expanding-amd-data-center-deal-signaling-ai-pivot" rel="noopener noreferrer">https://www.coindesk.com/markets/2026/05/01/bitcoin-miner-riot-s-shares-jump-8-after-expanding-amd-data-center-deal-signaling-ai-pivot</a></p>
-<ul>
-<li><strong>正在流行的原因：</strong> AI workload 令本地開發機、雲端 GPU、data center power/space 都被重新定價；crypto mining infrastructure 亦嘗試轉向 AI/HPC。</li>
-<li><strong>核心 insight：</strong> AI 的商業影響正由 software subscription 擴散到 hardware refresh、data center leasing、power contracts。</li>
-<li><strong>數據 / 金融 evidence：</strong> CoinDesk 報導 Riot shares 在擴大 AMD data center deal 後升 8%；TechCrunch 報導 Apple 指 AI-driven demand 帶動 Mac。兩者均需結合正式財報與公司公告進一步核實分項貢獻。</li>
-<li><strong>客觀商業含義 / 可觀察場景：</strong> AI adoption 指標可從「誰買模型」擴展到「誰在升級端側硬件、租 data center、簽 power capacity」。</li>
-<li><strong>風險與不確定性：</strong> 礦企 AI pivot 可能被市場過度敘事化；硬件需求亦可能受換機週期、教育/企業採購季節性影響。</li>
-<li><strong>編輯判斷：</strong> 觀察。</li>
-</ul>
-<h3>8. Frontier AI 估值繼續上行，但私募報導需要折扣閱讀</h3>
-<ul>
-<li><strong>來源與證據：</strong></li>
-</ul>
-<p>  - TechCrunch, “Sources: Anthropic potential $900B+ valuation round could happen within 2 weeks” (2026-04-30): <a href="https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/" rel="noopener noreferrer">https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/</a></p>
-<ul>
-<li><strong>正在流行的原因：</strong> frontier model 公司仍被視為 AI 基建入口，投資者押注 enterprise adoption、API usage 與安全/agent product。</li>
-<li><strong>核心 insight：</strong> 估值上行反映資本追逐稀缺模型能力，但不等於短期收入、毛利或現金流已匹配。</li>
-<li><strong>數據 / 金融 evidence：</strong> US$900B+ valuation 屬 TechCrunch sources 報導的 potential round，未標示為已完成交易；需等待公司或投資方確認。</li>
-<li><strong>客觀商業含義 / 可觀察場景：</strong> 私募估值可作為市場情緒指標，但企業採購仍應看產品穩定性、資料治理、SLA、成本與退出方案。</li>
-<li><strong>風險與不確定性：</strong> 未完成融資可能改價、延遲或取消；高估值可能提高供應商 monetization 壓力。</li>
-<li><strong>編輯判斷：</strong> 觀察。</li>
-</ul>
-<h2>Watchlist / Key Takeaways</h2>
-<ol>
-<li><strong>把 AI 預算拆成四層觀察：</strong> model/API、agent runtime、eval/monitoring、安全與合規；未來成本 surprise 多數來自後三層。</li>
-<li><strong>跟進 AI infrastructure 財報訊號：</strong> big tech capex、cloud AI revenue、data center power constraint、hardware refresh 都比單一產品發布更能反映真實 adoption。</li>
-<li><strong>企業 agent 試點要先定安全邊界：</strong> 權限、審批、log、回滾、資料保留與 human review 應與功能測試同步設計。</li>
-<li><strong>私募估值與媒體爆料要分級閱讀：</strong> reported / potential / completed round 必須分開，不應直接當成已實現市場價值。</li>
-<li><strong>多模態 agent 值得試，但先挑低風險高頻任務：</strong> 文件抽取、會議整理、客服 QA、培訓索引會比完全自動決策更容易落地。</li>
-</ol>
-<h2>Source Links</h2>
-<ul>
-<li>OpenAI — Building the compute infrastructure for the Intelligence Age: <a href="https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age" rel="noopener noreferrer">https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age</a></li>
-<li>OpenAI — OpenAI models, Codex, and Managed Agents come to AWS: <a href="https://openai.com/index/openai-on-aws" rel="noopener noreferrer">https://openai.com/index/openai-on-aws</a></li>
-<li>OpenAI — Introducing Advanced Account Security: <a href="https://openai.com/index/advanced-account-security" rel="noopener noreferrer">https://openai.com/index/advanced-account-security</a></li>
-<li>OpenAI — Cybersecurity in the Intelligence Age: <a href="https://openai.com/index/cybersecurity-in-the-intelligence-age" rel="noopener noreferrer">https://openai.com/index/cybersecurity-in-the-intelligence-age</a></li>
-<li>TechCrunch — Pentagon inks deals with Nvidia, Microsoft, and AWS to deploy AI on classified networks: <a href="https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/" rel="noopener noreferrer">https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/</a></li>
-<li>TechCrunch — Replit’s Amjad Masad on the Cursor deal: <a href="https://techcrunch.com/2026/05/01/replits-amjad-masad-on-the-cursor-deal-fighting-apple-and-why-hed-rather-not-sell/" rel="noopener noreferrer">https://techcrunch.com/2026/05/01/replits-amjad-masad-on-the-cursor-deal-fighting-apple-and-why-hed-rather-not-sell/</a></li>
-<li>TechCrunch — Apple was surprised by AI-driven demand for Macs: <a href="https://techcrunch.com/2026/04/30/apple-was-surprised-by-ai-driven-demand-for-macs/" rel="noopener noreferrer">https://techcrunch.com/2026/04/30/apple-was-surprised-by-ai-driven-demand-for-macs/</a></li>
-<li>TechCrunch — Anthropic potential $900B+ valuation round could happen within 2 weeks: <a href="https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/" rel="noopener noreferrer">https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/</a></li>
-<li>The Decoder — Big tech&#x27;s AI spending balloons to $725 billion this year: <a href="https://the-decoder.com/big-techs-ai-spending-balloons-to-725-billion-this-year/" rel="noopener noreferrer">https://the-decoder.com/big-techs-ai-spending-balloons-to-725-billion-this-year/</a></li>
-<li>The Decoder — Anthropic launches Claude Security: <a href="https://the-decoder.com/anthropic-launches-claude-security-to-give-defenders-the-same-ai-edge-attackers-already-have/" rel="noopener noreferrer">https://the-decoder.com/anthropic-launches-claude-security-to-give-defenders-the-same-ai-edge-attackers-already-have/</a></li>
-<li>The Decoder — Microsoft puts an AI legal agent inside Word for contract review: <a href="https://the-decoder.com/microsoft-puts-an-ai-legal-agent-inside-word-for-contract-review/" rel="noopener noreferrer">https://the-decoder.com/microsoft-puts-an-ai-legal-agent-inside-word-for-contract-review/</a></li>
-<li>NVIDIA Blog — Nemotron 3 Nano Omni: <a href="https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/" rel="noopener noreferrer">https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/</a></li>
-<li>NVIDIA Blog — OpenClaw Agents: <a href="https://blogs.nvidia.com/blog/what-openclaw-agents-mean-for-every-organization/" rel="noopener noreferrer">https://blogs.nvidia.com/blog/what-openclaw-agents-mean-for-every-organization/</a></li>
-<li>Hugging Face Blog — AI evals are becoming the new compute bottleneck: <a href="https://huggingface.co/blog/evaleval/eval-costs-bottleneck" rel="noopener noreferrer">https://huggingface.co/blog/evaleval/eval-costs-bottleneck</a></li>
-<li>Hugging Face Blog — NVIDIA Nemotron 3 Nano Omni: <a href="https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence" rel="noopener noreferrer">https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence</a></li>
-<li>GitHub Blog — Copilot CLI for Beginners: <a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/" rel="noopener noreferrer">https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/</a></li>
-<li>GitHub Blog — Copilot is moving to usage-based billing: <a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/" rel="noopener noreferrer">https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/</a></li>
-<li>GitHub Blog — Securing the git push pipeline: <a href="https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/" rel="noopener noreferrer">https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/</a></li>
-<li>CoinDesk — Riot expands AMD data center deal, signaling AI pivot: <a href="https://www.coindesk.com/markets/2026/05/01/bitcoin-miner-riot-s-shares-jump-8-after-expanding-amd-data-center-deal-signaling-ai-pivot" rel="noopener noreferrer">https://www.coindesk.com/markets/2026/05/01/bitcoin-miner-riot-s-shares-jump-8-after-expanding-amd-data-center-deal-signaling-ai-pivot</a></li>
-</ul>
-<p class="footer">This briefing separates reported facts from editorial judgment and links to source material for verification.</p>
-</article></main></body></html>
+<body>
+<header class="topbar"><nav class="wrap nav"><a class="brand" href="../">K-AI Daily Intelligence</a><div class="navlinks" aria-label="Report navigation"><a href="#brief">3-min Brief</a><a href="#map">Signal Map</a><a href="#cards">Signals</a><a href="#regions">Regions</a><a href="#chain">Value Chain</a><a href="#details">Details</a><a href="#sources">Sources</a></div></nav></header>
+<main class="wrap">
+  <section class="hero" id="top">
+    <a class="back" href="../">← Archive</a>
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow"><span class="pulse"></span>Daily Intelligence / AI × Business × Capital</div>
+        <h1>AI 基建、政府採購與企業 Agent 進入同一條主線。</h1>
+        <p class="dek">今日訊號顯示，AI 競爭正在由單一模型能力，轉向算力、雲平台、供應鏈、安全治理與政府採購的綜合競賽。</p>
+        <div class="meta-row"><span class="pill">2026-04-29 → 2026-05-02 09:00 HKT</span><span class="pill">8 market signals</span><span class="pill">Global / HK / Mainland / Asia / Europe / Middle East</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Visual intelligence map">
+        <div class="map-bg"></div><div class="map-line l1"></div><div class="map-line l2"></div><div class="map-line l3"></div>
+        <div class="node us">US <small>cloud / defense / frontier AI</small></div><div class="node eu">Europe <small>governance / privacy</small></div><div class="node me">Middle East <small>capital / energy</small></div><div class="node asia">Asia <small>hardware / supply chain</small></div><div class="node hk">Hong Kong <small>finance / compliance gateway</small></div>
+        <div class="legend-float"><div class="heat"><b>High</b><span>Capital intensity</span></div><div class="heat"><b>Rising</b><span>Enterprise adoption</span></div><div class="heat"><b>Elevated</b><span>Security & policy risk</span></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="brief"><div class="section-head"><div><div class="eyebrow">3-minute Brief</div><h2>今日訊號總覽。</h2></div><p>顏色代表編輯判斷：綠色是值得追，琥珀是觀察或需驗證，紅色代表風險需要額外留意。</p></div><div class="judgment-legend" aria-label="Judgment color legend"><span class="chip"><i class="legend-dot dot-track"></i>值得追</span><span class="chip"><i class="legend-dot dot-watch"></i>觀察 / 需驗證</span><span class="chip"><i class="legend-dot dot-risk"></i>高風險</span></div><div class="board"><div class="board-card"><div class="metric">5</div><b>值得追訊號</b><p>基建 capex、managed agents、安全、coding agent、eval 成本。</p></div><div class="board-card"><div class="metric">2</div><b>觀察訊號</b><p>硬件需求外溢、frontier AI 私募估值仍需折扣閱讀。</p></div><div class="board-card"><div class="metric">6</div><b>地域視角</b><p>Global、香港、內地、亞洲、歐洲、中東放在同一張地圖理解。</p></div><div class="board-card"><div class="metric">4</div><b>價值鏈層次</b><p>上游算力與能源、中游平台、安全與 eval、下游企業落地。</p></div></div></section>
+  <section class="section map-panel" id="map"><div class="section-head"><div><div class="eyebrow">Event Map</div><h2>72-hour AI signal map</h2></div><p style="color:rgba(255,255,255,.68)">這不是確定性預測，而是把公開訊號按時間、領域與市場層次連起來。</p></div><div class="timeline"><div class="time-col"><div class="date">Apr 28</div><a class="event agent" href="#trend-2">OpenAI on AWS</a><a class="event hardware" href="#trend-4">Nemotron 3 Nano Omni</a></div><div class="time-col"><div class="date">Apr 29</div><a class="event infra" href="#trend-1">Compute infrastructure thesis</a><a class="event security" href="#trend-3">Cybersecurity in the Intelligence Age</a><a class="event eval" href="#trend-6">Eval cost bottleneck</a></div><div class="time-col"><div class="date">Apr 30</div><a class="event coding" href="#trend-5">Copilot CLI / usage billing</a><a class="event hardware" href="#trend-7">AI-driven Mac demand</a><a class="event valuation" href="#trend-8">Anthropic reported valuation</a></div><div class="time-col"><div class="date">May 1</div><a class="event infra" href="#trend-1">Big tech AI spending estimate</a><a class="event security" href="#trend-3">Claude Security</a><a class="event hardware" href="#trend-7">Riot AMD data center deal</a></div></div></section>
+  <section class="section" id="cards"><div class="section-head"><div><div class="eyebrow">Market Signals</div><h2>八條值得關注的市場訊號。</h2></div></div><div class="cards">
+    <article class="trend-card theme-infra" id="trend-1"><div class="trend-top"><span class="rank">01 / Infrastructure</span><span class="verdict track">值得追</span></div><h3>AI 基建進入「超大資本開支 + 主權採購」階段</h3><p class="one-line">算力、電力、晶片、雲與政府部署變成同一條戰線。</p><div class="chip-row"><span class="chip">Capex</span><span class="chip">Government procurement</span><span class="chip">Power / GPU</span></div><div class="lens-grid"><div class="lens"><b>Value</b><p>AI adoption 要看基建與長期預算，不只看產品發布。</p></div><div class="lens"><b>Risk</b><p>回收期、能源限制、晶片供應與政策壓力。</p></div></div><a class="open-detail" href="#detail-1">Full analysis →</a></article>
+    <article class="trend-card theme-agent" id="trend-2"><div class="trend-top"><span class="rank">02 / Enterprise agents</span><span class="verdict track">值得追</span></div><h3>OpenAI models、Codex 與 Managed Agents 登上 AWS</h3><p class="one-line">企業 AI 分發由 chatbot 移向雲採購、身份治理與 agent runtime。</p><div class="chip-row"><span class="chip">Cloud distribution</span><span class="chip">IAM</span><span class="chip">Enterprise workflow</span></div><div class="lens-grid"><div class="lens"><b>Demand</b><p>企業希望在既有雲帳戶與合規框架內使用模型。</p></div><div class="lens"><b>Risk</b><p>平台 lock-in、版本治理與成本 audit 變複雜。</p></div></div><a class="open-detail" href="#detail-2">Full analysis →</a></article>
+    <article class="trend-card theme-security" id="trend-3"><div class="trend-top"><span class="rank">03 / Security</span><span class="verdict track">值得追</span></div><h3>AI security 從附加功能變成採購門檻</h3><p class="one-line">當 agent 能接觸 repo、雲權限與資料，安全就是產品核心。</p><div class="chip-row"><span class="chip">Identity</span><span class="chip">Supply chain</span><span class="chip">Audit log</span></div><div class="lens-grid"><div class="lens"><b>Value</b><p>安全 attach-rate 可能成為 enterprise AI 商業化關鍵。</p></div><div class="lens"><b>Risk</b><p>攻防軍備競賽、責任界線與誤報成本。</p></div></div><a class="open-detail" href="#detail-3">Full analysis →</a></article>
+    <article class="trend-card theme-multimodal" id="trend-4"><div class="trend-top"><span class="rank">04 / Multimodal</span><span class="verdict track">值得追，需小範圍驗證</span></div><h3>Multimodal agent 由「看圖聊天」轉向文件、音訊、影片工作流</h3><p class="one-line">企業資料多在 PDF、會議錄音、training video 與 screen recording。</p><div class="chip-row"><span class="chip">Vendor claim</span><span class="chip">Workflow automation</span><span class="chip">Privacy</span></div><div class="lens-grid"><div class="lens"><b>Supply / Demand</b><p>高頻、低風險、媒體密集流程會先試點。</p></div><div class="lens"><b>Risk</b><p>多模態 hallucination、長 context 漏讀與版權/隱私。</p></div></div><a class="open-detail" href="#detail-4">Full analysis →</a></article>
+    <article class="trend-card theme-coding" id="trend-5"><div class="trend-top"><span class="rank">05 / Developer tools</span><span class="verdict track">值得追</span></div><h3>AI coding 工具進入商業模式分叉</h3><p class="one-line">usage-based、IDE 工作流與雲端 agent 並行，成本治理變重要。</p><div class="chip-row"><span class="chip">Usage billing</span><span class="chip">IDE battle</span><span class="chip">Code review gate</span></div><div class="lens-grid"><div class="lens"><b>Economics</b><p>高 inference 成本推動供應商轉向用量或高階方案。</p></div><div class="lens"><b>Risk</b><p>成本 surprise、代碼安全與 license contamination。</p></div></div><a class="open-detail" href="#detail-5">Full analysis →</a></article>
+    <article class="trend-card theme-eval" id="trend-6"><div class="trend-top"><span class="rank">06 / Reliability</span><span class="verdict track">值得追</span></div><h3>AI eval 成為新 compute bottleneck</h3><p class="one-line">Agent 真正上線後，評測、監控與回滾成本會被重新定價。</p><div class="chip-row"><span class="chip">TCO</span><span class="chip">Monitoring</span><span class="chip">Regression tests</span></div><div class="lens-grid"><div class="lens"><b>Value</b><p>可靠性基建會成為 enterprise agent 的隱形成本中心。</p></div><div class="lens"><b>Risk</b><p>公開 benchmark 與私有工作流相關性有限。</p></div></div><a class="open-detail" href="#detail-6">Full analysis →</a></article>
+    <article class="trend-card theme-hardware" id="trend-7"><div class="trend-top"><span class="rank">07 / Hardware</span><span class="verdict watch">觀察</span></div><h3>AI 需求外溢到硬件與 data center</h3><p class="one-line">Mac、AMD data center、礦企轉型同時反映 AI demand 敘事外溢。</p><div class="chip-row"><span class="chip">Hardware refresh</span><span class="chip">Data center</span><span class="chip">Market reaction</span></div><div class="lens-grid"><div class="lens"><b>Supply Chain</b><p>AI 影響從 software subscription 擴散到設備、機房與能源。</p></div><div class="lens"><b>Risk</b><p>可能受換機週期或市場敘事放大。</p></div></div><a class="open-detail" href="#detail-7">Full analysis →</a></article>
+    <article class="trend-card theme-valuation" id="trend-8"><div class="trend-top"><span class="rank">08 / Valuation</span><span class="verdict verify">需核實</span></div><h3>Frontier AI 估值上行，但私募報導要折扣閱讀</h3><p class="one-line">reported potential round 是市場情緒訊號，不等於已完成交易或現金流。</p><div class="chip-row"><span class="chip">Reported / potential</span><span class="chip">Private market</span><span class="chip">Monetization pressure</span></div><div class="lens-grid"><div class="lens"><b>Economics</b><p>高估值會提高供應商 monetization 壓力。</p></div><div class="lens"><b>Uncertainty</b><p>未完成融資可能改價、延遲或取消。</p></div></div><a class="open-detail" href="#detail-8">Full analysis →</a></article>
+  </div></section>
+  <section class="section" id="regions"><div class="section-head"><div><div class="eyebrow">Regional Lens</div><h2>同一組事件，放進不同地區會看到不同價值。</h2></div></div><div class="regions"><div class="region"><b>Global</b><p>AI 基建、雲平台與安全治理變成全球企業共同約束。</p></div><div class="region"><b>Hong Kong</b><p>金融、合規、跨境資料與企業採購會令安全與審計需求更突出。</p></div><div class="region"><b>Mainland China</b><p>模型生態、硬件限制、雲採用與出口管制仍是核心變量。</p></div><div class="region"><b>Asia</b><p>電子供應鏈、製造、雲擴張與端側硬件需求值得連動觀察。</p></div><div class="region"><b>Europe</b><p>治理、隱私、AI Act 與 regulated enterprise adoption 影響落地速度。</p></div><div class="region"><b>Middle East</b><p>主權 AI、能源、資料中心與資本部署把地緣經濟帶進 AI 基建。</p></div></div></section>
+  <section class="section" id="chain"><div class="section-head"><div><div class="eyebrow">Value Chain</div><h2>從上游瓶頸到下游落地，看價值在哪裡累積。</h2></div></div><div class="chain"><div class="chain-col"><h3>Upstream</h3><ul><li>GPU / memory / networking</li><li>power contracts</li><li>data center capacity</li><li>hardware refresh</li></ul></div><div class="chain-col"><h3>Midstream</h3><ul><li>cloud marketplaces</li><li>model providers</li><li>agent runtimes</li><li>eval / monitoring / security</li></ul></div><div class="chain-col"><h3>Downstream</h3><ul><li>enterprise agents</li><li>developer tools</li><li>public-sector deployment</li><li>document / audio / video workflows</li></ul></div></div></section>
+  <section class="section" id="details"><div class="section-head"><div><div class="eyebrow">Deep Analysis</div><h2>事實、推論、風險與下一步觀察。</h2></div></div><div class="details">
+    <article class="detail" id="detail-1"><h3>01. AI 基建進入「超大資本開支 + 主權採購」階段</h3><div class="detail-grid"><div class="detail-box"><b>Fact</b><p>OpenAI 發布 compute infrastructure 論述；媒體匯總 big tech AI spending 估算；Pentagon AI deployment deals 被報導。</p></div><div class="detail-box"><b>Inference</b><p>AI 競爭正在從模型轉向供電、晶片、雲平台、合規部署與長期 financing。</p></div><div class="detail-box"><b>Risk</b><p>Capex 回收期、供電、晶片供應與監管壓力。</p></div><div class="detail-box"><b>Watch</b><p>Big tech capex guidance、cloud AI revenue、power constraint updates。</p></div></div></article>
+    <article class="detail" id="detail-2"><h3>02. OpenAI models、Codex 與 Managed Agents 登上 AWS</h3><div class="detail-grid"><div class="detail-box"><b>Fact</b><p>OpenAI 官方發布 AWS channel；Microsoft/OpenAI partnership 進入下一階段。</p></div><div class="detail-box"><b>Inference</b><p>企業採購 AI 會更靠近 cloud architecture、IAM、logging 與 data residency。</p></div><div class="detail-box"><b>Risk</b><p>多雲分發不等於低成本，audit trail 與版本治理更複雜。</p></div><div class="detail-box"><b>Watch</b><p>AWS marketplace adoption、managed agent pricing、enterprise governance features。</p></div></div></article>
+    <article class="detail" id="detail-3"><h3>03. AI security 從附加功能變成採購門檻</h3><div class="detail-grid"><div class="detail-box"><b>Fact</b><p>OpenAI、Anthropic、GitHub 均在安全方向發布產品或事件回應。</p></div><div class="detail-box"><b>Inference</b><p>企業 agent 採購會把 least privilege、approval gates、logging 與 incident response 列為必要條件。</p></div><div class="detail-box"><b>Risk</b><p>模型安全 benchmark 不等同真實環境安全。</p></div><div class="detail-box"><b>Watch</b><p>Security SKU pricing、SOC/SIEM integration、agent permission model。</p></div></div></article>
+    <article class="detail" id="detail-4"><h3>04. Multimodal agent 轉向文件、音訊、影片工作流</h3><div class="detail-grid"><div class="detail-box"><b>Fact</b><p>NVIDIA/Hugging Face 發布 Nemotron 3 Nano Omni 相關內容，NVIDIA 提及 OpenClaw Agents。</p></div><div class="detail-box"><b>Inference</b><p>非結構化媒體會成為 agent 落地的重要工作流。</p></div><div class="detail-box"><b>Risk</b><p>Vendor benchmark 需用真實 workflow 驗證。</p></div><div class="detail-box"><b>Watch</b><p>文件抽取、會議整理、客服 QA、培訓索引等低風險場景。</p></div></div></article>
+    <article class="detail" id="detail-5"><h3>05. AI coding 工具商業模式分叉</h3><div class="detail-grid"><div class="detail-box"><b>Fact</b><p>GitHub Copilot moving to usage-based billing；TechCrunch 訪談 Replit/Cursor 競爭。</p></div><div class="detail-box"><b>Inference</b><p>developer agents 的競爭在日常工作流、成本可預測性與代碼安全治理。</p></div><div class="detail-box"><b>Risk</b><p>用量定價可能帶來成本 surprise。</p></div><div class="detail-box"><b>Watch</b><p>Team budget controls、repo-level agent adoption、review gates。</p></div></div></article>
+    <article class="detail" id="detail-6"><h3>06. AI eval 成為新 compute bottleneck</h3><div class="detail-grid"><div class="detail-box"><b>Fact</b><p>Hugging Face 文章指出 eval cost 正成為 compute bottleneck。</p></div><div class="detail-box"><b>Inference</b><p>AI TCO 應加入 eval compute、human review、observability 與 failed-task remediation。</p></div><div class="detail-box"><b>Risk</b><p>評測指標可能被過度優化。</p></div><div class="detail-box"><b>Watch</b><p>Golden tasks、acceptance threshold、version comparison、rollback workflow。</p></div></div></article>
+    <article class="detail" id="detail-7"><h3>07. AI 需求外溢到硬件與 data center</h3><div class="detail-grid"><div class="detail-box"><b>Fact</b><p>TechCrunch 報導 Apple AI-driven Mac demand；CoinDesk 報導 Riot 擴大 AMD data center deal。</p></div><div class="detail-box"><b>Inference</b><p>AI adoption 指標可擴展到端側硬件、data center 與 power capacity。</p></div><div class="detail-box"><b>Risk</b><p>硬件需求可能被換機週期或投機敘事影響。</p></div><div class="detail-box"><b>Watch</b><p>正式財報、data center utilization、power contracts。</p></div></div></article>
+    <article class="detail" id="detail-8"><h3>08. Frontier AI 估值上行，但私募報導需要折扣閱讀</h3><div class="detail-grid"><div class="detail-box"><b>Fact</b><p>TechCrunch 報導 Anthropic potential US$900B+ valuation round，屬 sources / potential round。</p></div><div class="detail-box"><b>Inference</b><p>估值上行反映資本追逐稀缺模型能力，但不等同短期收入或現金流匹配。</p></div><div class="detail-box"><b>Risk</b><p>未完成融資可能改價、延遲或取消。</p></div><div class="detail-box"><b>Watch</b><p>Confirmed round terms、revenue disclosure、gross margin pressure。</p></div></div></article>
+  </div></section>
+  <section class="section" id="sources"><div class="section-head"><div><div class="eyebrow">Sources</div><h2>來源保留，讓視覺判斷可以回到證據。</h2></div></div><p class="note">Map positioning reflects the public evidence reviewed during the coverage window and may change as new information appears. Vendor claims and reported potential financing are labelled as such.</p><ul class="sources">
+    <li>OpenAI — <a href="https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age">Building the compute infrastructure for the Intelligence Age</a></li>
+    <li>OpenAI — <a href="https://openai.com/index/openai-on-aws">OpenAI models, Codex, and Managed Agents come to AWS</a></li>
+    <li>OpenAI — <a href="https://openai.com/index/advanced-account-security">Introducing Advanced Account Security</a></li>
+    <li>OpenAI — <a href="https://openai.com/index/cybersecurity-in-the-intelligence-age">Cybersecurity in the Intelligence Age</a></li>
+    <li>TechCrunch — <a href="https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/">Pentagon inks deals with Nvidia, Microsoft, and AWS</a></li>
+    <li>TechCrunch — <a href="https://techcrunch.com/2026/05/01/replits-amjad-masad-on-the-cursor-deal-fighting-apple-and-why-hed-rather-not-sell/">Replit’s Amjad Masad on Cursor and Apple</a></li>
+    <li>TechCrunch — <a href="https://techcrunch.com/2026/04/30/apple-was-surprised-by-ai-driven-demand-for-macs/">Apple was surprised by AI-driven demand for Macs</a></li>
+    <li>TechCrunch — <a href="https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/">Anthropic potential valuation round report</a></li>
+    <li>The Decoder — <a href="https://the-decoder.com/big-techs-ai-spending-balloons-to-725-billion-this-year/">Big tech's AI spending estimate</a></li>
+    <li>The Decoder — <a href="https://the-decoder.com/anthropic-launches-claude-security-to-give-defenders-the-same-ai-edge-attackers-already-have/">Anthropic launches Claude Security</a></li>
+    <li>NVIDIA Blog — <a href="https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/">Nemotron 3 Nano Omni</a></li>
+    <li>NVIDIA Blog — <a href="https://blogs.nvidia.com/blog/what-openclaw-agents-mean-for-every-organization/">OpenClaw Agents</a></li>
+    <li>Hugging Face — <a href="https://huggingface.co/blog/evaleval/eval-costs-bottleneck">AI evals are becoming the new compute bottleneck</a></li>
+    <li>Hugging Face — <a href="https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence">NVIDIA Nemotron 3 Nano Omni</a></li>
+    <li>GitHub Blog — <a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/">GitHub Copilot CLI for Beginners</a></li>
+    <li>GitHub Blog — <a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Copilot usage-based billing</a></li>
+    <li>GitHub Blog — <a href="https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/">Securing the git push pipeline</a></li>
+    <li>CoinDesk — <a href="https://www.coindesk.com/markets/2026/05/01/bitcoin-miner-riot-s-shares-jump-8-after-expanding-amd-data-center-deal-signaling-ai-pivot">Riot expands AMD data center deal</a></li>
+  </ul></section>
+  <p class="footer">K-AI Daily Intelligence separates public facts, inference, risk and editorial judgment. This report is an editorial briefing, not investment, legal, procurement or security advice.</p>
+</main>
+</body>
+</html>
