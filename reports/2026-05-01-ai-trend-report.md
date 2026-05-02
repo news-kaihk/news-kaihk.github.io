@@ -23,9 +23,9 @@
 - **核心 insight：** Agent 產品由 UI competition 走向 workflow competition；最重要不是 agent 會講幾叻，而是 trigger、permission、approval、audit log、rollback 能否配合公司流程。
 - **目標人群：** 企業營運、客服、銷售、財務、HR、SaaS founder、需要跨系統自動化的 SME。
 - **代表案例：** Writer 推 event-based triggers；市場同時把 Amazon、Microsoft、Salesforce 放在同一個企業 agent 戰場比較，說明 agent 已進入企業軟件主線。
-- **對 K-AI Solutions 的機會：** 將「AI Agent 部署」包裝成「事件觸發式 AI Workflow」方案：先做 1-2 個高頻流程 audit，再接 Shopify / CRM / Gmail / Telegram / Google Sheets / internal KB，提供 trigger map、審批節點、失敗通知和月度優化。銷售話術：不是請 AI 聊天，而是讓 AI 在事件發生時自動開工。
+- **客觀商業含義 / 可觀察場景：** 事件觸發式 AI workflow 正由概念走向企業流程層：高頻流程 audit、trigger map、審批節點、失敗通知與月度優化，會成為採用 agent 前的基本治理要求。
 - **風險 / 是否曇花一現：** 非曇花一現，但 agent sprawl 會成為風險；無治理地亂接 agent 會造成資料洩漏、重複通知、錯誤操作。
-- **小馬判斷：** 值得追
+- **編輯判斷：** 值得追
 
 ### 2. AgentCore / MCP / 私有資源接入成為落地核心
 
@@ -38,9 +38,9 @@
 - **核心 insight：** 2026 年企業 AI 的差異化不只在模型，而在「AI 能否安全地接近公司資料，但又不越權」。這亦是服務商比單一 SaaS 工具更有位置的地方。
 - **目標人群：** IT manager、DevOps、資料團隊、金融/法律/醫療等資料敏感行業、已有 cloud workload 的企業。
 - **代表案例：** AWS 在 4 月 29-30 日密集發布 AgentCore Gateway、Memory、MCP proxy、Agentic Analytics 等內容，顯示 hyperscaler 正在補齊 production-grade agent 基建。
-- **對 K-AI Solutions 的機會：** 推出「AI Agent 安全接入檢查清單」及 implementation package：資料分類、最小權限、MCP proxy、log retention、backup、red-team prompt test、fallback routing。對香港企業可主打 cloud/devops + AI workflow 一站式落地。
+- **客觀商業含義 / 可觀察場景：** 企業採用 AI agent 前，需要把資料分類、最小權限、MCP/API proxy、log retention、backup、red-team prompt test 與 fallback routing 納入部署基線。
 - **風險 / 是否曇花一現：** 長期趨勢；但 AWS/雲平台 terminology 會快速變，方案要保持 cloud-agnostic，避免綁死單一服務。
-- **小馬判斷：** 值得追
+- **編輯判斷：** 值得追
 
 ### 3. Shopify Conversational Commerce：客服、結帳、工單合成同一條流
 
@@ -53,9 +53,9 @@
 - **核心 insight：** 電商 AI 不再是「客服成本中心」，而是「銷售 + support + retention」同一條 funnel；資料來源包括商品資料、庫存、物流、退換政策、CRM、過往 ticket。
 - **目標人群：** Shopify 店主、DTC brand、跨境電商、客服外包團隊、marketing agency。
 - **代表案例：** 市場出現 Shopify in-chat checkout + AI ticketing integration；Bloomreach 亦推出面向 Shopify 的 personalization app。
-- **對 K-AI Solutions 的機會：** 直接打包「Shopify AI Concierge」：商品問答、尺寸/規格推薦、訂單查詢、退換貨流程、ticket tagging、Telegram/WhatsApp alert、每週 hot question report。內容可寫「Shopify 店點樣由 AI 客服升級做 AI sales assistant」。
+- **客觀商業含義 / 可觀察場景：** 電商 AI concierge 的可觀察落地場景包括商品問答、尺寸/規格推薦、訂單查詢、退換貨流程、ticket tagging、messaging alerts 與每週 hot question reporting。
 - **風險 / 是否曇花一現：** 值得追，但要避免 AI 亂答價格、庫存和退款承諾；必須接實時資料、加上不可回答範圍和人工轉接。
-- **小馬判斷：** 值得追
+- **編輯判斷：** 值得追
 
 ### 4. AI Search 令 publisher / SEO 規則重寫
 
@@ -68,9 +68,9 @@
 - **核心 insight：** SEO 由排名遊戲變成「被 AI 系統信任、引用、推薦」的 source strategy；清晰結構、權威來源、FAQ、schema、品牌一致性會更重要。
 - **目標人群：** 內容網站、B2B 公司、顧問服務、旅遊/本地服務、電商品牌、marketing team。
 - **代表案例：** 意大利 AGCOM 要求 EU 調查 Google AI Search；PPC Land 報道 Google preferred sources guide 對 publisher click-through 有影響；旅遊廣告亦開始為 AI Overview / AI Mode 佈局。
-- **對 K-AI Solutions 的機會：** 為 kaihk.com 和客戶做「AI-readable website」服務：FAQ knowledge base、service schema、case study 結構化、LLM citation-friendly 內容、搜尋 Console + AI answer monitoring。銷售話術：未來不是只問 Google 排第幾，而是問 AI 會否推薦你。
+- **客觀商業含義 / 可觀察場景：** AI-readable website 會成為新的內容基礎設施：FAQ knowledge base、service schema、case study 結構化、LLM citation-friendly 內容，以及 AI answer monitoring 都值得觀察。
 - **風險 / 是否曇花一現：** 不是曇花一現，但各平台規則未定；不要承諾保證被 AI 引用，只能做基礎優化與監測。
-- **小馬判斷：** 值得追
+- **編輯判斷：** 值得追
 
 ### 5. AI Coding / Vibe Coding 效率高，但 production 風險開始浮面
 
@@ -83,9 +83,9 @@
 - **核心 insight：** AI coding 的最大商業機會不是「人人都做工程師」，而是「更快交付，但必須有 DevOps guardrails」。
 - **目標人群：** 初創 founder、內部工具團隊、非技術創業者、agency、SaaS 開發團隊。
 - **代表案例：** 多間媒體報道有 founder 指 AI agent 刪除 production database；同一時間 Google/Kaggle 推 AI agents vibe coding course，顯示需求與風險同步上升。
-- **對 K-AI Solutions 的機會：** 推「AI-assisted development guardrails」：staging/production 分離、DB backup、migration review、CI test、權限最小化、AI code review checklist、Git workflow。內容題目可用「用 Cursor / AI Agent 寫 code 前，先做呢 10 個安全設定」。
+- **客觀商業含義 / 可觀察場景：** AI-assisted development guardrails 會變得更重要：staging/production 分離、DB backup、migration review、CI test、權限最小化、AI code review checklist 與 Git workflow 應成為基礎。
 - **風險 / 是否曇花一現：** AI coding 本身會長期存在；但 hype 會令新手低估 production 風險。服務定位應避免恐嚇，主打安全加速。
-- **小馬判斷：** 值得追
+- **編輯判斷：** 值得追
 
 ### 6. AI Cybersecurity：低成本攻擊推高防守需求
 
@@ -98,9 +98,9 @@
 - **核心 insight：** 中小企未必買得起大型安全平台，但可以先做最有 ROI 的基礎防線：MFA、backup、email security、access review、AI tool policy、employee drill、incident playbook。
 - **目標人群：** SME、金融/專業服務、電商、持有客戶資料的公司、IT service provider。
 - **代表案例：** White House 要求 tech companies 支援應對 AI-driven cyberattacks；保險界亦預期 agentic AI 會推高 attack frequency。
-- **對 K-AI Solutions 的機會：** 新增「AI-ready security hygiene」入門服務：AI 工具使用政策、員工資料不可貼入規則、Telegram/Slack bot 權限檢查、cloud access audit、backup drill。可同 AI workflow 部署一齊賣，避免客戶只追 automation 不理風險。
+- **客觀商業含義 / 可觀察場景：** AI-ready security hygiene 將成為企業 adoption 前置條件：AI 工具使用政策、資料不可貼入規則、bot 權限檢查、cloud access audit 與 backup drill 都是必要控制點。
 - **風險 / 是否曇花一現：** 長期趨勢；但安全新聞易誇張，內容要保持 practical，不做恐慌式銷售。
-- **小馬判斷：** 值得追
+- **編輯判斷：** 值得追
 
 ### 7. 香港企業 AI adoption：熱度與合規焦慮同步上升
 
@@ -113,15 +113,15 @@
 - **核心 insight：** 香港企業不缺 AI 興趣，缺的是可審計、可控、可落地的導入方案；本地服務商有語言、流程、合規溝通優勢。
 - **目標人群：** 香港 SME、金融/保險/專業服務、上市公司 support team、企業 IT/operations。
 - **代表案例：** Reuters 報道 Goldman 在香港限制 Claude access；Microsoft / Alibaba 相關報道同時指向香港企業級 AI adoption。
-- **對 K-AI Solutions 的機會：** 將網站服務頁加強「香港企業 AI Agent 部署」定位：繁中/粵語支援、內部知識庫、客服、文件處理、Cloud/DevOps、權限治理。銷售話術：唔係叫員工自己亂用 AI，而係幫公司建立受控 AI 工作流。
+- **客觀商業含義 / 可觀察場景：** 香港企業 AI adoption 的可觀察需求包括繁中/粵語支援、內部知識庫、客服、文件處理、Cloud/DevOps 與權限治理；重點不是員工自行試用，而是建立受控工作流。
 - **風險 / 是否曇花一現：** 需求長期，但銷售周期可能較長；需要 demo + policy template + pilot package 降低採購阻力。
-- **小馬判斷：** 值得追
+- **編輯判斷：** 值得追
 
-## 今日可以即刻做的 3 件事
+## Watchlist / Key takeaways
 
-1. **出一篇 K-AI 內容：**《AI Agent 唔應該只係聊天：香港公司點樣用事件觸發 workflow 節省營運時間》，內文放 5 個例子：客服 ticket、Shopify order、invoice、CRM lead、內部知識庫查詢。
-2. **做一頁 Lead Magnet：**「AI Agent 安全接入 Checklist」— 包括權限、資料分類、log、backup、人工審批、MCP/API 接入、安全測試；用來收集企業查詢。
-3. **準備 Shopify AI Concierge demo：** 用一間 mock store 展示商品問答、訂單查詢、退貨流程、AI ticket tagging、Telegram 通知，作為電商客戶銷售 demo。
+1. **觀察事件觸發 workflow：** 客服 ticket、order update、invoice、CRM lead 與 knowledge-base query 是判斷 agent 能否落地的高頻場景。
+2. **觀察安全治理需求：** AI Agent 權限、資料分類、log、backup、人工審批、MCP/API 接入與安全測試，會成為企業採用前的基本問題。
+3. **追蹤 conversational commerce：** 商品問答、訂單查詢、退貨流程、AI ticket tagging 與 messaging alerts，是判斷電商 AI 是否真正落地的關鍵場景。
 
 ## Source Links
 

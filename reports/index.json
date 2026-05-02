@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-05-02",
+    "title": "2026-05-02 Trend Insight 日報",
+    "summary": "AI 基建 capex、政府 classified-network AI、AWS managed agents、AI security、多模態 agent、AI coding monetization、硬件需求與 frontier AI 估值同時升溫。",
+    "html": "reports/2026-05-02-ai-trend-report.html",
+    "md": "reports/2026-05-02-ai-trend-report.md"
+  },
+  {
     "date": "2026-05-01",
     "title": "2026-05-01 Trend Insight 日報",
     "summary": "企業 AI Agent、AWS AgentCore、Shopify conversational commerce、AI Search、AI coding governance、AI cybersecurity 與香港企業 adoption 同時升溫。",

@@ -1,6 +1,6 @@
 # K-AI Daily Intelligence
 
-Public GitHub Pages site for K-AI Solutions daily trend briefings.
+Public GitHub Pages site for source-linked AI and business daily intelligence briefings.
 
 - `index.html` — light editorial daily briefing homepage
 - `reports/index.json` — report archive index
