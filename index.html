@@ -4,272 +4,38 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>K-AI Daily Intelligence | AI & Business Briefing</title>
-  <meta name="description" content="K-AI Daily Intelligence — objective AI, business, e-commerce and startup trend briefings with evidence-backed insight." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta name="description" content="K-AI Daily Intelligence — objective AI, business, finance and technology briefings with evidence-backed insight." />
   <style>
-    :root{
-      --bg:#fffdf8; --surface:#ffffff; --surface-2:#faf8f2; --ink:#10100f; --muted:#69645c; --soft:#8e877b;
-      --line:rgba(25,24,22,.10); --line-strong:rgba(25,24,22,.17); --accent:#18b875; --accent-dark:#087347; --accent-2:#0b67d8; --amber:#b86b12; --risk:#b42318;
-      --green-soft:#e9fbf3; --blue-soft:#eef6ff; --amber-soft:#fff3df; --red-soft:#fff0ed; --shadow:0 24px 80px rgba(33,27,18,.09),0 2px 8px rgba(33,27,18,.04);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;color:var(--ink);background:radial-gradient(circle at 10% -10%,rgba(24,184,117,.16),transparent 34%),radial-gradient(circle at 82% 0%,rgba(11,103,216,.11),transparent 30%),linear-gradient(180deg,#fff8e8 0,var(--bg) 360px,#fff 100%);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Noto Sans HK",Arial,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:0 auto}.mono{font-family:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
-    header{position:sticky;top:0;z-index:30;background:rgba(255,253,248,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-    .nav{min-height:68px;display:flex;align-items:center;gap:18px;justify-content:space-between}.brand{font-weight:900;letter-spacing:-.058em;font-size:20px}.brand span{display:inline-block;margin-left:8px;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.10em;text-transform:uppercase}.intent-nav{display:flex;gap:6px;padding:6px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.72)}.intent-nav a{font-size:13px;font-weight:800;color:var(--muted);padding:8px 12px;border-radius:999px;white-space:nowrap}.intent-nav a:hover,.intent-nav a.active{background:#111;color:#fff}.about-link{font-size:13px;font-weight:800;color:var(--muted);border:1px solid var(--line);padding:10px 13px;border-radius:999px;background:#fff}.about-link:hover{border-color:var(--line-strong);color:var(--ink)}
-    .hero{padding:56px 0 22px}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:34px;align-items:center}.kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:var(--amber)}.pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 8px rgba(24,184,117,.12)}h1{font-size:clamp(42px,6.15vw,76px);line-height:.97;letter-spacing:-.08em;margin:14px 0 18px;max-width:860px;text-wrap:balance}.lead{font-size:18px;line-height:1.74;color:var(--muted);max-width:730px;margin:0;text-wrap:pretty}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.button{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 17px;font-size:14px;font-weight:850;border:1px solid #111;background:#111;color:#fff;transition:.18s ease}.button.secondary{background:#fff;color:#111;border-color:var(--line-strong)}.button:hover{transform:translateY(-1px)}
-    .command-panel{position:relative;background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow);padding:18px;overflow:hidden}.command-panel:before{content:"";position:absolute;right:-120px;top:-110px;width:260px;height:260px;border-radius:999px;background:radial-gradient(circle,rgba(24,184,117,.22),transparent 66%)}.command-inner{position:relative}.command-label{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:12px;color:var(--muted);font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.09em}.kbd{border:1px solid var(--line);background:#fff;border-radius:8px;padding:4px 7px;color:var(--soft);font-size:11px}.command-box{display:flex;gap:10px;align-items:center;border:1px solid var(--line-strong);background:#fff;border-radius:22px;padding:11px 12px}.command-icon{width:34px;height:34px;border-radius:999px;display:grid;place-items:center;background:#111;color:#fff;font-weight:900}.command-box input{border:0;outline:0;font:inherit;font-size:16px;flex:1;min-width:0;color:var(--ink);background:transparent}.command-box button{border:0;border-radius:999px;background:var(--accent);color:#fff;font-weight:900;padding:10px 13px;cursor:pointer}.suggestions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.suggestions button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 10px;color:var(--muted);font:inherit;font-size:13px;font-weight:750;cursor:pointer}.suggestions button:hover{border-color:rgba(24,184,117,.38);color:var(--ink);background:var(--green-soft)}.intent-result{margin-top:14px;border:1px solid var(--line);background:linear-gradient(180deg,#fff,#fffdf8);border-radius:20px;padding:15px;min-height:98px}.intent-result b{display:block;font-size:15px;margin-bottom:5px}.intent-result p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}.mini-feed{display:grid;gap:9px;margin-top:14px}.mini-feed a{display:flex;justify-content:space-between;gap:12px;align-items:center;border:1px solid var(--line);background:#fff;border-radius:16px;padding:11px 12px;font-size:13px}.mini-feed span{color:var(--muted)}.mini-feed strong{font-size:13px}.mini-feed i{font-style:normal;color:var(--accent-2);font-weight:900;white-space:nowrap}
-    .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0 10px}.metric{border:1px solid var(--line);background:rgba(255,255,255,.78);border-radius:20px;padding:16px}.metric strong{display:block;font-size:25px;letter-spacing:-.05em}.metric span{display:block;margin-top:3px;color:var(--muted);font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.08em}
-    .section{margin:28px 0;scroll-margin-top:92px}.panel{background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);overflow:hidden}.panel-pad{padding:24px}.label{font-family:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;font-weight:800;letter-spacing:.10em;text-transform:uppercase;color:var(--amber)}.featured h2{font-size:clamp(30px,4vw,48px);line-height:1.04;letter-spacing:-.06em;margin:10px 0 12px;text-wrap:balance}.featured p{font-size:17px;line-height:1.68;color:var(--muted);margin:0}.panel-head{padding:22px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;align-items:flex-end}.panel-head h2{font-size:27px;line-height:1.08;letter-spacing:-.052em;margin:0}.panel-head p{margin:7px 0 0;color:var(--muted);font-size:14px;line-height:1.55;max-width:720px}
-    .atlas{position:relative;padding:24px;overflow:hidden;background:radial-gradient(circle at 18% 18%,rgba(11,103,216,.10),transparent 28%),radial-gradient(circle at 56% 72%,rgba(24,184,117,.12),transparent 30%),radial-gradient(circle at 88% 22%,rgba(180,35,24,.08),transparent 26%),linear-gradient(180deg,#fff,#fffdf8)}.atlas:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(25,24,22,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(25,24,22,.045) 1px,transparent 1px);background-size:34px 34px;mask-image:radial-gradient(circle at 50% 45%,#000 0,rgba(0,0,0,.72) 46%,transparent 82%);pointer-events:none}.atlas:after{content:"";position:absolute;left:12%;right:12%;top:46%;height:1px;background:linear-gradient(90deg,transparent,rgba(11,103,216,.24),rgba(24,184,117,.32),rgba(180,35,24,.22),transparent);pointer-events:none}.signal-map{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.signal-card{appearance:none;text-align:left;width:100%;position:relative;border:1px solid var(--line);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(255,253,248,.92));padding:18px;min-height:178px;cursor:pointer;box-shadow:0 12px 38px rgba(33,27,18,.045);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease}.signal-card:hover{transform:translateY(-3px);border-color:var(--line-strong);box-shadow:0 22px 58px rgba(33,27,18,.09)}.signal-card:focus-visible{outline:3px solid rgba(24,184,117,.26);outline-offset:3px}.signal-card.active{border-color:rgba(24,184,117,.55);box-shadow:0 24px 64px rgba(24,184,117,.13);background:linear-gradient(180deg,#fff,var(--green-soft))}.signal-card .tag{display:inline-flex;border-radius:999px;background:var(--blue-soft);color:#0757b8;padding:5px 9px;font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.signal-card h3{font-size:18px;letter-spacing:-.035em;margin:12px 0 6px}.signal-card p{color:var(--muted);font-size:14px;line-height:1.52;margin:0}.signal-card:nth-child(2) .tag{background:var(--green-soft);color:#087347}.signal-card:nth-child(3) .tag{background:var(--red-soft);color:var(--risk)}.signal-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}.signal-meta span{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 8px;color:var(--soft);font-size:11px;font-weight:850}.signal-arrow{position:absolute;right:17px;bottom:15px;color:var(--soft);font-weight:900}.signal-preview{position:relative;margin-top:14px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.86);padding:16px;display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center}.signal-preview b{display:block;font-size:15px;margin-bottom:5px}.signal-preview p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}.signal-clear{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 12px;color:var(--muted);font:inherit;font-size:12px;font-weight:850;cursor:pointer}.signal-clear:hover{color:#111;border-color:var(--line-strong)}
-    .risk-lens{display:grid;grid-template-columns:1fr 1fr;gap:12px}.risk-card{border:1px solid var(--line);border-radius:22px;background:#fff;padding:18px}.risk-card b{display:block;font-size:16px;margin-bottom:7px}.risk-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}.risk-card.hot{background:linear-gradient(135deg,#fff7ed,#fff)}.risk-card.safe{background:linear-gradient(135deg,#eef6ff,#fff)}
-    .searchbox{border:1px solid var(--line);border-radius:999px;padding:10px 14px;font:inherit;font-size:14px;min-width:240px;background:#fff}.searchbox:focus{outline:2px solid rgba(24,184,117,.22);border-color:rgba(24,184,117,.45)}.reports{list-style:none;margin:0;padding:4px 24px 18px}.reports li{display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}.reports li:last-child{border-bottom:0}.date{color:var(--muted);font-size:13px;font-weight:850}.report-title{font-size:18px;font-weight:850;letter-spacing:-.025em}.summary{display:block;color:var(--muted);margin-top:6px;line-height:1.5;font-size:14px}.open{font-size:14px;font-weight:850;white-space:nowrap;color:var(--accent-2)}.empty{margin:16px 24px 24px;background:var(--surface-2);border:1px dashed var(--line);border-radius:18px;padding:16px;color:var(--muted);line-height:1.6}.coverage{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.coverage div{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px}.coverage strong{display:block;font-size:15px;margin-bottom:7px}.coverage span{display:block;color:var(--muted);font-size:13px;line-height:1.48}
-    footer{margin-top:38px;padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.signal-map,.coverage,.metrics,.risk-lens{grid-template-columns:1fr 1fr}.nav{align-items:flex-start;flex-direction:column;padding:14px 0}.intent-nav{width:100%;overflow:auto;justify-content:flex-start}.about-link{display:none}.panel-head{align-items:flex-start;flex-direction:column}.searchbox{width:100%}.reports li{grid-template-columns:1fr;gap:5px}}
-    @media(max-width:560px){.wrap{width:min(100% - 26px,1160px)}h1{font-size:42px}.signal-map,.coverage,.metrics,.risk-lens{grid-template-columns:1fr}.atlas{padding:20px}.signal-card{min-height:auto}.signal-preview{grid-template-columns:1fr}.panel-pad,.panel-head{padding:20px}.reports{padding:0 20px 16px}.command-box{align-items:stretch;flex-wrap:wrap}.command-box input{flex-basis:calc(100% - 48px)}.command-box button{width:100%}}
+    :root{--bg:#f7f8fb;--paper:#fff;--ink:#101828;--muted:#667085;--soft:#98a2b3;--line:#e6eaf0;--blue:#2563eb;--green:#12805c;--amber:#b76b00;--red:#b42318;--shadow:0 18px 48px rgba(16,24,40,.07);--radius:20px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 8% -8%,rgba(37,99,235,.10),transparent 34%),radial-gradient(circle at 88% 0%,rgba(18,128,92,.10),transparent 30%),var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC",Arial,sans-serif;line-height:1.68;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+    .topbar{position:sticky;top:0;z-index:50;height:64px;background:rgba(255,255,255,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.top-inner{height:64px;display:flex;align-items:center;gap:18px;max-width:1440px;margin:0 auto;padding:0 24px}.brand{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:-.045em}.brand .mark{background:#111;color:#fff;border-radius:10px;padding:5px 8px;font-size:12px;letter-spacing:.02em}.nav{display:flex;gap:16px;margin-left:auto;font-size:14px;font-weight:800;color:#475467}.search-pill{width:220px;background:#f3f5f8;border:1px solid var(--line);border-radius:999px;padding:9px 12px;color:var(--muted);font-size:13px}
+    .layout{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:260px minmax(0,820px) 250px;gap:34px;padding:24px 24px 56px}.sidebar,.toc{position:sticky;top:88px;align-self:start;max-height:calc(100vh - 110px);overflow:auto;padding-right:4px}.side-title,.toc-title{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#7d8aa0;font-weight:950;margin:0 0 12px}.month{margin-bottom:10px}.month summary{cursor:pointer;font-weight:850;color:#263244;padding:8px 6px;border-radius:10px}.dates{display:grid;gap:4px;margin:4px 0 8px 8px}.date-link{display:block;color:#5b6678;border-radius:10px;padding:9px 11px;font-size:14.5px;font-weight:760}.date-link.active{background:#eaf2ff;color:var(--blue)}.side-block{margin-top:22px;border-top:1px solid var(--line);padding-top:16px}.side-chip{display:inline-flex;margin:0 6px 7px 0;border:1px solid var(--line);border-radius:999px;padding:6px 9px;color:#667085;background:#fff;font-size:12px;font-weight:800}.toc nav{display:grid;gap:4px;border-left:1px solid var(--line);padding-left:14px}.toc a{color:#5b6678;font-size:13.5px;line-height:1.35;padding:6px 0}.toc a:hover,.toc a.active{color:var(--blue);font-weight:850}.toc a.active{position:relative}.toc a.active:before{content:"";position:absolute;left:-15px;top:10px;width:3px;height:14px;border-radius:999px;background:var(--blue)}
+    .article{min-width:0}.hero{text-align:center;padding:22px 0 18px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.16em;color:var(--blue);font-weight:950}h1{font-size:clamp(36px,4.8vw,58px);line-height:1.02;letter-spacing:-.065em;margin:12px auto 16px;max-width:780px}.nowrap{white-space:nowrap}.dek{color:var(--muted);font-size:17px;max-width:760px;margin:0 auto;text-wrap:pretty}.hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:20px}.button{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:11px 16px;font-size:14px;font-weight:900;border:1px solid #111;background:#111;color:#fff}.button.secondary{background:#fff;color:#111;border-color:var(--line)}.notice{margin:22px auto 0;max-width:760px;background:linear-gradient(135deg,#eef5ff,#fff);border:1px solid #dbeafe;border-radius:22px;padding:18px 20px;text-align:left;box-shadow:0 10px 28px rgba(16,24,40,.045)}.notice b{display:block;margin-bottom:4px}.notice p{margin:0;color:#5b6678;font-size:14.5px}
+    .section{scroll-margin-top:92px;margin:24px 0}.section h2{font-size:30px;line-height:1.15;letter-spacing:-.045em;margin:0 0 16px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 8px 24px rgba(16,24,40,.04)}.card .icon{width:34px;height:34px;border-radius:12px;display:grid;place-items:center;background:#eef5ff;margin-bottom:12px}.card h3{font-size:18px;letter-spacing:-.03em;margin:0 0 7px}.card p{margin:0;color:#667085;font-size:14.5px}.latest-card{display:grid;grid-template-columns:92px 1fr;gap:16px;align-items:start}.date-box{border-radius:16px;background:#111827;color:#fff;text-align:center;padding:13px 9px}.date-box strong{display:block;font-size:24px;line-height:1}.date-box span{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.72)}.latest-card h3{font-size:22px;margin:0 0 6px;letter-spacing:-.035em}.latest-card p{margin:0;color:#667085}.meta-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.meta{border:1px solid var(--line);border-radius:999px;padding:5px 8px;color:#667085;font-size:11px;font-weight:850;background:#fff}.open{display:inline-flex;margin-top:14px;color:var(--blue);font-weight:900}.reports{display:grid;gap:10px}.report-row{display:grid;grid-template-columns:112px 1fr auto;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px}.report-row strong{letter-spacing:-.02em}.report-row p{margin:4px 0 0;color:#667085;font-size:13.5px;line-height:1.45}.report-row .mono{white-space:nowrap;font-size:13px}.report-row .go{color:var(--blue);font-weight:900;white-space:nowrap}.searchbox{width:100%;border:1px solid var(--line);border-radius:999px;padding:11px 14px;margin-bottom:12px;font:inherit;background:#fff}.path{position:relative;background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px}.step{display:grid;grid-template-columns:38px 1fr;gap:14px;margin:0 0 16px}.step:last-child{margin-bottom:0}.step-num{width:34px;height:34px;border-radius:999px;background:#111;color:#fff;display:grid;place-items:center;font-weight:900}.step b{display:block;margin-bottom:4px}.step p{margin:0;color:#667085;font-size:14.5px}.audience{display:flex;flex-wrap:wrap;gap:8px}.audience span{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 12px;color:#475467;font-weight:850}.contact{background:#111827;color:#fff;border-radius:24px;padding:24px;box-shadow:var(--shadow)}.contact p{color:rgba(255,255,255,.72);margin:0 0 14px}.contact .button{background:#fff;color:#111;border-color:#fff}footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;color:#98a2b3;font-size:13px;background:#fff}
+    @media(max-width:1100px){.layout{grid-template-columns:1fr;max-width:880px}.sidebar,.toc{position:static;max-height:none}.sidebar{order:2}.toc{display:none}.nav{display:none}.search-pill{margin-left:auto}.grid{grid-template-columns:1fr 1fr}}@media(max-width:640px){.top-inner{padding:0 14px}.search-pill{display:none}.layout{padding:22px 14px}.grid{grid-template-columns:1fr}.report-row,.latest-card{grid-template-columns:1fr}h1{font-size:40px}}
   </style>
 </head>
 <body>
-  <header>
-    <nav class="wrap nav" aria-label="Main navigation">
-      <a class="brand" href="./">K-AI Daily <span>Intelligence</span></a>
-      <div class="intent-nav" aria-label="Reader intent navigation">
-        <a href="#today">Today</a>
-        <a href="#ask">Search Signals</a>
-        <a href="#risk">Risk Lens</a>
-        <a href="#archive">Archive</a>
-      </div>
-      <a class="about-link" href="https://kaihk.com">About</a>
-    </nav>
-  </header>
-
-  <main class="wrap">
-    <section class="hero" id="ask">
-      <div class="hero-grid">
-        <div>
-          <div class="kicker"><span class="pulse"></span>Daily AI & Business Briefing</div>
-          <h1>看見市場正在轉向哪裡。</h1>
-          <p class="lead">每日整理 AI、企業採用、資本、供應鏈與風險訊號。直接搜尋公司、技術或風險，也可以從今日 briefing 進入完整分析。</p>
-          <div class="hero-actions">
-            <a class="button" href="#today">Read today’s briefing →</a>
-            <a class="button secondary" href="#archive">Browse archive</a>
-          </div>
-        </div>
-
-        <section class="command-panel" aria-label="Search signals">
-          <div class="command-inner">
-            <div class="command-label"><span>Ask market signals</span><span class="kbd">Search archive</span></div>
-            <div class="command-box">
-              <div class="command-icon">⌘</div>
-              <input id="signalCommand" type="search" placeholder="試試：AI agent 風險、AWS、Shopify、香港、capex" aria-label="Search market signals">
-              <button id="commandGo" type="button">Go</button>
-            </div>
-            <div class="suggestions" aria-label="Suggested searches">
-              <button type="button" data-query="agent risk">Agent 風險</button>
-              <button type="button" data-query="AWS OpenAI">AWS / OpenAI</button>
-              <button type="button" data-query="Shopify commerce">Shopify commerce</button>
-              <button type="button" data-query="香港 Asia">香港 / Asia</button>
-            </div>
-            <div id="intentResult" class="intent-result">
-              <b>今日可以這樣讀</b>
-              <p>輸入公司、技術或風險關鍵字，即時收窄 Archive；也可以直接閱讀今日 briefing。</p>
-            </div>
-            <div id="miniFeed" class="mini-feed" aria-label="Latest briefings"></div>
-          </div>
-        </section>
-      </div>
-
-      <section class="metrics" aria-label="Publishing rhythm">
-        <div class="metric"><strong>09:00</strong><span>HKT daily</span></div>
-        <div class="metric"><strong>AI+</strong><span>business signals</span></div>
-        <div class="metric"><strong>Risks</strong><span>clearly marked</span></div>
-      </section>
-    </section>
-
-    <section class="section" id="today">
-      <article class="panel featured">
-        <div id="featured" class="panel-pad">
-          <div class="label">Latest briefing</div>
-          <h2>最新日報準備中</h2>
-          <p>第一份日報發布後，這裡會顯示今日重點與全文連結。</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="panel section" id="signal-map">
-      <div class="panel-head"><div><h2>Market Signal Atlas</h2><p>從技術、採用與風險角度切入，快速查看公開市場訊號如何互相牽動。</p></div></div>
-      <div class="atlas" aria-label="Market signal atlas">
-        <div class="signal-map" aria-label="Signal filters">
-          <button class="signal-card" type="button" data-signal="technology" data-query="AI infrastructure model cloud capex hardware AWS OpenAI Nvidia" aria-pressed="false"><span class="tag">Technology</span><h3>技術與供應</h3><p>模型能力、雲平台、晶片、資料中心與成本曲線。</p><div class="signal-meta"><span>Infra</span><span>Capex</span><span>Rising</span></div><i class="signal-arrow">↗</i></button>
-          <button class="signal-card" type="button" data-signal="market" data-query="enterprise adoption commerce Shopify revenue product funding" aria-pressed="false"><span class="tag">Market</span><h3>採用與商業化</h3><p>產品發布、企業採購、commerce、融資與收入訊號。</p><div class="signal-meta"><span>Adoption</span><span>Revenue</span><span>Active</span></div><i class="signal-arrow">↗</i></button>
-          <button class="signal-card" type="button" data-signal="risk" data-query="risk governance security compliance ROI dependency hype cybersecurity" aria-pressed="false"><span class="tag">Risk</span><h3>風險與驗證</h3><p>安全、合規、ROI、平台依賴與市場過熱風險。</p><div class="signal-meta"><span>Watch</span><span>Policy</span><span>Uncertain</span></div><i class="signal-arrow">↗</i></button>
-        </div>
-        <div id="signalPreview" class="signal-preview" aria-live="polite">
-          <div><b>選擇一層市場訊號</b><p>點擊分類，Archive 會即時收窄到相關日報。</p></div>
-          <button id="clearSignalFilter" class="signal-clear" type="button">Clear filter</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="panel section" id="risk">
-      <div class="panel-head"><div><h2>Risk Lens</h2><p>同一條趨勢不只看增長，也看採購阻力、成本、政策與安全邊界。</p></div></div>
-      <div class="panel-pad risk-lens">
-        <div class="risk-card hot"><b>值得追，不代表已確定</b><p>資本開支、模型能力和企業採用可能同時升溫；報告會把 fact、inference 和 watch points 分開呈現。</p></div>
-        <div class="risk-card safe"><b>先找風險，再看機會</b><p>安全、合規、平台依賴、成本 surprise 和估值傳聞會被獨立標記，避免把市場敘事直接當成結論。</p></div>
-      </div>
-    </section>
-
-    <section class="panel section" id="archive">
-      <div class="panel-head">
-        <div><h2>Archive</h2><p>搜尋公司、產品、地區或技術關鍵字，回看同一條市場敘事如何演變。</p></div>
-        <input id="reportSearch" class="searchbox" type="search" placeholder="搜尋：agent / Shopify / capex..." aria-label="Search briefings">
-      </div>
-      <ul id="reports" class="reports"></ul>
-      <div id="empty" class="empty">暫時未有符合條件的日報。</div>
-    </section>
-
-    <section class="panel section" id="coverage">
-      <div class="panel-head"><div><h2>Coverage</h2><p>以 AI 為核心，延伸追蹤商業化、消費場景與公司營運相關訊號。</p></div></div>
-      <div class="panel-pad coverage">
-        <div><strong>AI Agents</strong><span>Agent workflow、coding agent、MCP、企業自動化與治理。</span></div>
-        <div><strong>E-commerce</strong><span>Shopify、Amazon、AI 導購、客服與內容生成。</span></div>
-        <div><strong>Marketing</strong><span>社群 trend、短片內容、品牌案例與 AI marketing stack。</span></div>
-        <div><strong>Startup Signals</strong><span>融資、產品發布、商業模式與區域市場訊號。</span></div>
-      </div>
-    </section>
-  </main>
-
-  <footer><div class="wrap foot"><span>© K-AI Daily Intelligence</span><span><a href="https://kaihk.com">kaihk.com</a></span></div></footer>
-
+  <header class="topbar"><div class="top-inner"><a class="brand" href="./"><span>K-AI Daily</span><span class="mark">INTELLIGENCE</span></a><nav class="nav"><a href="#today">Today</a><a href="#archive">Archive</a><a href="#coverage">關注範圍</a></nav><div class="search-pill">Search briefings ⌘K</div></div></header>
+  <div class="layout">
+    <aside class="sidebar"><p class="side-title">Daily archive</p><div id="archiveNav"><details class="month" open><summary>Latest issues</summary><div class="dates"><span class="date-link">Loading archive…</span></div></details></div><div class="side-block"><p class="side-title">Signal lens</p><span class="side-chip">AI</span><span class="side-chip">Finance</span><span class="side-chip">Risk</span><span class="side-chip">Commerce</span><span class="side-chip">Enterprise</span></div></aside>
+    <main class="article">
+      <section class="hero" id="top"><div class="eyebrow">AI × Business Intelligence</div><h1>把 AI 市場噪音，<br><span class="nowrap">整理成可判斷的訊號。</span></h1><p class="dek">每日追蹤 AI、企業採用、資本市場與風險治理；把 facts、inference、risk 和 editorial judgment 分開呈現。</p><div class="hero-actions"><a id="heroToday" class="button" href="#today">閱讀今日日報 →</a><a class="button secondary" href="#archive">瀏覽歷史日報</a></div><div class="notice"><b>編輯承諾</b><p>聚焦值得追、需要觀察、仍待證據的市場訊號。</p></div></section>
+      <section class="section" id="today"><h2>最新日報</h2><article id="featured" class="card latest-card"><div class="date-box"><strong>--</strong><span>Loading</span></div><div><h3>最新日報載入中</h3><p>正在讀取最新 briefing。</p></div></article></section>
+      <section class="section" id="archive"><h2>近期日報</h2><input id="reportSearch" class="searchbox" type="search" placeholder="搜尋：agent / Shopify / capex / security…" aria-label="Search briefings"><div id="reports" class="reports"></div></section>
+      <section class="section" id="coverage"><h2>關注範圍</h2><div class="grid"><article class="card"><h3>Frontier AI & infrastructure</h3><p>模型、GPU、cloud、data center、inference cost 與供應鏈。</p></article><article class="card"><h3>Enterprise adoption</h3><p>agent workflow、security、legal、developer tools 與 B2B deployment。</p></article><article class="card"><h3>Commerce and media</h3><p>Shopify、AI search、content discovery、ad funnel 與 conversational commerce。</p></article><article class="card"><h3>Risk and governance</h3><p>合規、安全、關聯交易、估值過熱、ROI 和平台依賴。</p></article></div></section>
+    </main>
+    <aside class="toc"><p class="toc-title">On this page</p><nav><a href="#top">Overview</a><a href="#today">最新日報</a><a href="#archive">近期日報</a><a href="#coverage">關注範圍</a></nav></aside>
+  </div>
+  <footer>K-AI Daily Intelligence · Objective AI and business signals · Facts, inference and risks clearly separated.</footer>
   <script>
-    let allReports = [];
-    const byId = (id) => document.getElementById(id);
-
-    function reportHaystack(r){
-      return `${r.date || ''} ${r.title || ''} ${r.summary || ''}`.toLowerCase();
-    }
-
-    function renderReports(reports){
-      const list = byId('reports');
-      const empty = byId('empty');
-      list.innerHTML = '';
-      if(!Array.isArray(reports) || reports.length === 0){
-        empty.style.display = 'block';
-        return;
-      }
-      empty.style.display = 'none';
-      for(const r of reports){
-        const li = document.createElement('li');
-        li.innerHTML = `<span class="date">${r.date || ''}</span><span><a class="report-title" href="${r.html}">${r.title || 'Daily Briefing'}</a><span class="summary">${r.summary || ''}</span></span><a class="open" href="${r.html}">Read →</a>`;
-        list.appendChild(li);
-      }
-    }
-
-    function renderMiniFeed(reports){
-      const mini = byId('miniFeed');
-      mini.innerHTML = '';
-      reports.slice(0,2).forEach((r) => {
-        const a = document.createElement('a');
-        a.href = r.html;
-        const compactTitle = (r.title || 'Daily Briefing').replace(/^\d{4}-\d{2}-\d{2}\s+/, '');
-        a.innerHTML = `<span><strong>${r.date || ''}</strong> ${compactTitle}</span><i>Open</i>`;
-        mini.appendChild(a);
-      });
-    }
-
-    function applySearch(raw, shouldScroll = false){
-      const q = raw.trim().toLowerCase();
-      byId('reportSearch').value = raw.trim();
-      if(!q){
-        renderReports(allReports);
-        byId('intentResult').innerHTML = `<b>今日可以這樣讀</b><p>輸入公司、技術或風險關鍵字，即時收窄 Archive；也可以直接閱讀今日 briefing。</p>`;
-        return;
-      }
-      const terms = q.split(/\s+|\/|,|，/).filter(Boolean);
-      const filtered = allReports.filter((r) => terms.some((term) => reportHaystack(r).includes(term)));
-      renderReports(filtered);
-      byId('intentResult').innerHTML = `<b>${filtered.length ? `找到 ${filtered.length} 份相關日報` : '暫時未找到完全匹配'}</b><p>${filtered.length ? '可以從 Archive 直接打開全文；搜尋會同時比對日期、標題和摘要。' : '可以換一個公司、技術或更上層的主題，例如 agent、security、capex、commerce。'}</p>`;
-      if(shouldScroll) byId('archive').scrollIntoView({behavior:'smooth', block:'start'});
-    }
-
-    const signalCopy = {
-      technology: ['技術與供應', '已聚焦模型能力、雲平台、硬件、資料中心與成本曲線相關訊號。'],
-      market: ['採用與商業化', '已聚焦產品發布、企業採購、commerce、融資與收入訊號。'],
-      risk: ['風險與驗證', '已聚焦安全、合規、ROI、平台依賴與市場過熱風險。']
-    };
-
-    function setActiveSignal(activeCard){
-      document.querySelectorAll('.signal-card').forEach((card) => {
-        const isActive = card === activeCard;
-        card.classList.toggle('active', isActive);
-        card.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-      });
-    }
-
-    document.querySelectorAll('.signal-card').forEach((card) => {
-      card.addEventListener('click', () => {
-        setActiveSignal(card);
-        const key = card.dataset.signal;
-        const copy = signalCopy[key] || ['市場訊號', 'Archive 已按所選訊號收窄。'];
-        byId('signalCommand').value = card.dataset.query || '';
-        byId('signalPreview').innerHTML = `<div><b>${copy[0]}</b><p>${copy[1]}</p></div><button id="clearSignalFilter" class="signal-clear" type="button">Clear filter</button>`;
-        bindClearSignalFilter();
-        applySearch(card.dataset.query || '', true);
-      });
-    });
-
-    function bindClearSignalFilter(){
-      const clear = byId('clearSignalFilter');
-      if(!clear) return;
-      clear.addEventListener('click', () => {
-        setActiveSignal(null);
-        byId('signalCommand').value = '';
-        byId('signalPreview').innerHTML = `<div><b>選擇一層市場訊號</b><p>點擊分類，Archive 會即時收窄到相關日報。</p></div><button id="clearSignalFilter" class="signal-clear" type="button">Clear filter</button>`;
-        bindClearSignalFilter();
-        applySearch('', false);
-      });
-    }
-    bindClearSignalFilter();
-
-    async function loadReports(){
-      try{
-        const res = await fetch('./reports/index.json', {cache:'no-store'});
-        if(!res.ok) throw new Error('missing index');
-        allReports = await res.json();
-        if(!Array.isArray(allReports) || allReports.length === 0) return;
-        const first = allReports[0];
-        byId('featured').innerHTML = `<div class="label">${first.date || 'Latest briefing'}</div><h2>${first.title || 'Daily Briefing'}</h2><p>${first.summary || ''}</p><div class="hero-actions"><a class="button" href="${first.html}">閱讀完整日報 →</a><a class="button secondary" href="#archive">瀏覽歷史日報</a></div>`;
-        renderReports(allReports);
-        renderMiniFeed(allReports);
-      }catch(e){ }
-    }
-
-    byId('reportSearch').addEventListener('input', (event) => applySearch(event.target.value));
-    byId('signalCommand').addEventListener('input', (event) => applySearch(event.target.value));
-    byId('commandGo').addEventListener('click', () => applySearch(byId('signalCommand').value, true));
-    byId('signalCommand').addEventListener('keydown', (event) => {
-      if(event.key === 'Enter') applySearch(event.currentTarget.value, true);
-    });
-    document.querySelectorAll('.suggestions button').forEach((button) => {
-      button.addEventListener('click', () => {
-        byId('signalCommand').value = button.dataset.query || '';
-        applySearch(byId('signalCommand').value, true);
-      });
-    });
-
-    const navLinks = [...document.querySelectorAll('.intent-nav a')];
-    const sections = navLinks.map((a) => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-    const observer = new IntersectionObserver((entries) => {
-      const visible = entries.filter((e) => e.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if(!visible) return;
-      navLinks.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === `#${visible.target.id}`));
-    }, {rootMargin:'-20% 0px -55% 0px', threshold:[0.1,0.4,0.7]});
-    sections.forEach((section) => observer.observe(section));
-
-    loadReports();
+    let allReports=[];const $=(id)=>document.getElementById(id);function esc(s){return String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}function haystack(r){return `${r.date||''} ${r.title||''} ${r.summary||''}`.toLowerCase();}function dateBits(date){const parts=String(date||'').split('-');return {day:parts[2]||'--',month:parts[1]?parts[0]+'-'+parts[1]:'Latest'};}
+    function renderArchiveNav(reports){const groups={};reports.forEach(r=>{const m=(r.date||'').slice(0,7)||'Archive';(groups[m]=groups[m]||[]).push(r);});$('archiveNav').innerHTML=Object.entries(groups).map(([m,items],i)=>`<details class="month" ${i<2?'open':''}><summary>${esc(m)}</summary><div class="dates">${items.map((r,j)=>`<a class="date-link ${i===0&&j===0?'active':''}" href="${esc(r.html)}">${esc((r.date||'').slice(5)||r.date)} Briefing</a>`).join('')}</div></details>`).join('');}
+    function renderReports(reports){const list=reports.slice(0,4);$('reports').innerHTML=list.map(r=>`<a class="report-row" href="${esc(r.html)}"><span class="mono">${esc(r.date||'')}</span><span><strong>${esc(r.title||'Daily Briefing')}</strong><p>${esc(r.summary||'')}</p></span><span class="go">Read →</span></a>`).join('')||'<div class="card"><p>暫時未有符合條件的日報。</p></div>';}
+    function renderFeatured(r){if(!r)return;const bits=dateBits(r.date);$('heroToday').href=r.html;$('featured').innerHTML=`<div class="date-box"><strong>${esc(bits.day)}</strong><span>${esc(bits.month)}</span></div><div><h3>${esc(r.title||'Daily Briefing')}</h3><p>${esc(r.summary||'')}</p><div class="meta-row"><span class="meta">Evidence-first</span><span class="meta">Risk marked</span><span class="meta">Public briefing</span></div><a class="open" href="${esc(r.html)}">閱讀完整日報 →</a></div>`;}
+    function applySearch(raw){const q=raw.trim().toLowerCase();if(!q){renderReports(allReports);return;}const terms=q.split(/\s+|\/|,|，/).filter(Boolean);renderReports(allReports.filter(r=>terms.some(t=>haystack(r).includes(t))));}
+    async function loadReports(){try{const res=await fetch('./reports/index.json',{cache:'no-store'});allReports=await res.json();if(!Array.isArray(allReports))allReports=[];renderArchiveNav(allReports);renderFeatured(allReports[0]);renderReports(allReports);}catch(e){renderReports([]);}}
+    $('reportSearch').addEventListener('input',e=>applySearch(e.target.value));const tocLinks=[...document.querySelectorAll('.toc a')];const sections=tocLinks.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);const setActive=()=>{let current=sections[0];for(const section of sections){if(section.getBoundingClientRect().top<140)current=section;}tocLinks.forEach(a=>a.classList.toggle('active',current&&a.getAttribute('href')==='#'+current.id));};setActive();document.addEventListener('scroll',setActive,{passive:true});loadReports();
   </script>
 </body>
 </html>
