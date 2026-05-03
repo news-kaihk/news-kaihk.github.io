@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-05-03",
+    "title": "2026-05-03 Trend Insight 日報",
+    "summary": "Pentagon classified AI deals、Claude Security、legal AI 投資、OpenAI revenue / IPO 壓力、Google I/O 前 AI 入口戰等訊號，顯示高信任 AI 場景與分發入口競爭升溫。",
+    "html": "reports/2026-05-03-ai-trend-report.html",
+    "md": "reports/2026-05-03-ai-trend-report.md"
+  },
+  {
     "date": "2026-05-02",
     "title": "2026-05-02 Trend Insight 日報",
     "summary": "AI 基建 capex、政府 classified-network AI、AWS managed agents、AI security、多模態 agent、AI coding monetization、硬件需求與 frontier AI 估值同時升溫。",
