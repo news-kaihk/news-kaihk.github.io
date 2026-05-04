@@ -1,0 +1,87 @@
+/* K-AI Daily Intelligence — site-wide editorial shell */
+:root{
+  --kai-ink:#171b22;
+  --kai-muted:#667085;
+  --kai-soft:#8793a5;
+  --kai-line:rgba(31,41,55,.12);
+  --kai-line-strong:rgba(17,24,39,.18);
+  --kai-paper:rgba(255,253,248,.86);
+  --kai-paper-solid:#fffdf8;
+  --kai-card:rgba(255,255,255,.78);
+  --kai-blue:#2358d6;
+  --kai-blue-soft:#e6eefc;
+  --kai-green:#178b57;
+  --kai-green-soft:#e7f4ec;
+  --kai-amber:#b7791f;
+  --kai-amber-soft:#fff4d7;
+  --kai-red:#b42318;
+  --kai-shadow:0 24px 70px rgba(33,43,62,.10);
+  --kai-radius:28px;
+  --kai-radius-sm:18px;
+  --kai-topbar-h:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{
+  margin:0!important;
+  min-height:100vh;
+  color:var(--kai-ink)!important;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Noto Sans HK","PingFang TC",Arial,sans-serif!important;
+  line-height:1.68;
+  background:
+    radial-gradient(circle at 9% -6%, rgba(210,228,247,.95), transparent 31rem),
+    radial-gradient(circle at 86% 4%, rgba(220,239,226,.86), transparent 34rem),
+    radial-gradient(circle at 55% 20%, rgba(255,241,206,.45), transparent 30rem),
+    linear-gradient(180deg,#f7faf7 0%,#fbfaf3 42%,#fffdf8 100%)!important;
+  background-attachment:fixed;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:none}
+body > header:not(.kai-topbar),
+body > .topbar:not(.kai-topbar){display:none!important}
+body > .side-nav:not(.kai-archive-panel),
+body > .page-nav:not(.kai-page-panel),
+body > .sidebar:not(.kai-archive-panel),
+body > .toc:not(.kai-page-panel){display:none!important}
+body.kai-enhanced{padding-top:0!important}
+.kai-topbar{
+  position:sticky;top:0;z-index:1000;height:var(--kai-topbar-h);
+  background:rgba(255,255,255,.82);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--kai-line);
+}
+.kai-top-inner{height:var(--kai-topbar-h);display:flex;align-items:center;gap:18px;max-width:1460px;margin:0 auto;padding:0 24px}
+.kai-brand{display:flex;align-items:center;gap:10px;min-width:max-content;font-weight:950;letter-spacing:-.045em;color:var(--kai-ink)}
+.kai-logo{width:28px;height:28px;border-radius:9px;box-shadow:0 8px 22px rgba(24,31,43,.12)}
+.kai-brand-name{font-size:15px;line-height:1}.kai-brand-badge{display:inline-flex;align-items:center;background:#111;color:#fff;border-radius:999px;padding:5px 8px;font-size:10.5px;font-weight:950;letter-spacing:.08em;line-height:1}
+.kai-site-nav{margin-left:auto;display:flex;gap:4px;padding:5px;border:1px solid var(--kai-line);border-radius:999px;background:rgba(255,255,255,.64);box-shadow:0 10px 30px rgba(20,30,48,.05);overflow:auto;scrollbar-width:none}.kai-site-nav::-webkit-scrollbar{display:none}
+.kai-site-nav a{white-space:nowrap;color:var(--kai-muted);font-size:12px;font-weight:850;padding:8px 11px;border-radius:999px;transition:background .22s ease,color .22s ease,transform .22s ease}
+.kai-site-nav a:hover,.kai-site-nav a.active{background:#111;color:#fff;transform:translateY(-1px)}
+.kai-command{display:flex;align-items:center;gap:7px;color:#718096;font-size:12px;font-weight:850;border:1px solid var(--kai-line);background:rgba(255,255,255,.58);border-radius:999px;padding:8px 11px;min-width:max-content}
+.kai-layout{width:min(1440px,calc(100% - 48px));margin:0 auto;display:grid;grid-template-columns:258px minmax(0,860px) 248px;gap:34px;padding:28px 0 74px;align-items:start}
+.kai-layout > main,.kai-layout .kai-main{width:auto!important;max-width:none!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;display:block!important}
+.kai-archive-panel,.kai-page-panel{position:sticky;top:88px;align-self:start;max-height:calc(100vh - 112px);overflow:auto;padding-right:4px;scrollbar-width:thin}
+.kai-panel-title{margin:0 0 12px;color:#7d8aa0;font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:950}.kai-panel-title.zh{text-transform:none;letter-spacing:.08em}
+.kai-archive-panel details{margin-bottom:10px}.kai-archive-panel summary{cursor:pointer;list-style:none;color:#263244;font-size:13px;font-weight:900;padding:8px 6px;border-radius:12px}.kai-archive-panel summary::-webkit-details-marker{display:none}.kai-archive-panel summary:hover{background:rgba(255,255,255,.72)}
+.kai-date-list{display:grid;gap:5px;margin-left:6px}.kai-date-link{display:block;border-radius:14px;padding:8px 10px;color:var(--kai-muted);font-size:13px;font-weight:800;transition:background .2s ease,color .2s ease,transform .2s ease}.kai-date-link:hover,.kai-date-link.active{background:#111;color:#fff;transform:translateX(2px)}
+.kai-side-block{margin-top:18px;padding:14px;border:1px solid var(--kai-line);border-radius:22px;background:rgba(255,255,255,.58);box-shadow:0 14px 42px rgba(33,43,62,.06)}
+.kai-side-chip{display:inline-flex;margin:4px 4px 0 0;border:1px solid var(--kai-line);border-radius:999px;padding:5px 8px;color:#4b5563;font-size:12px;font-weight:850;background:rgba(255,255,255,.58)}
+.kai-page-panel nav{display:grid;gap:4px;border-left:1px solid var(--kai-line);padding-left:14px}.kai-page-panel a{position:relative;display:block;color:var(--kai-muted);font-size:13px;line-height:1.35;padding:7px 0;border-radius:10px;transition:color .2s ease,transform .2s ease,font-weight .2s ease}.kai-page-panel a:hover,.kai-page-panel a.active{color:var(--kai-blue);font-weight:900;transform:translateX(2px)}.kai-page-panel a.active:before{content:"";position:absolute;left:-15px;top:10px;width:3px;height:15px;border-radius:999px;background:var(--kai-blue)}
+.kai-article-shell,.kai-home-shell,main.article,main > article,article.paper,main.wrap,main > .article{background:transparent!important;color:var(--kai-ink)}
+.kai-layout main section,.kai-layout main article.card,.kai-layout main .card,.kai-layout main .summary-card,.kai-layout main .evidence-card,.kai-layout main .trend-card,.kai-layout main .brief-card,.kai-layout main .paper-card,.kai-layout main .actions,.kai-layout main .notice,.kai-layout main .latest-card,.kai-layout main .report-row{
+  border-color:var(--kai-line)!important;
+}
+.kai-layout main .hero,
+.kai-home-hero{
+  position:relative;overflow:hidden;border:1px solid var(--kai-line)!important;border-radius:34px!important;background:linear-gradient(135deg,rgba(255,253,248,.93),rgba(255,255,255,.72))!important;box-shadow:var(--kai-shadow)!important;padding:34px!important;margin:0 0 22px!important;
+}
+.kai-layout main .hero:before,.kai-home-hero:before{content:"";position:absolute;inset:-40% -25% auto auto;width:420px;height:420px;background:radial-gradient(circle,rgba(35,88,214,.12),transparent 64%);pointer-events:none}
+.kai-layout h1,.kai-home-hero h1{font-size:clamp(42px,6vw,78px)!important;letter-spacing:-.072em!important;line-height:.94!important;margin:10px 0 16px!important;color:var(--kai-ink)!important}.kai-layout h2{font-size:clamp(26px,3.3vw,42px)!important;letter-spacing:-.045em!important;line-height:1.05!important;margin:0 0 14px!important}.kai-layout h3{letter-spacing:-.025em!important;line-height:1.2!important;color:var(--kai-ink)!important}.kai-layout p{color:inherit}.kai-layout .dek,.kai-layout .lead,.kai-home-hero .dek{color:#4b5563!important;font-size:clamp(17px,2.2vw,21px)!important;line-height:1.62!important;max-width:760px!important}.kai-layout .eyebrow,.kai-layout .kicker,.kai-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--kai-blue)!important;font-size:12px!important;font-weight:950!important;letter-spacing:.12em!important;text-transform:uppercase!important;margin-bottom:12px}.kai-layout .tag,.kai-layout .pill,.kai-layout .chip,.kai-pill{display:inline-flex;align-items:center;border:1px solid var(--kai-line)!important;background:rgba(255,255,255,.64)!important;color:#4b5563!important;border-radius:999px!important;padding:6px 10px!important;font-size:12px!important;font-weight:850!important}
+.kai-layout .hero-actions,.kai-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.kai-layout .cta,.kai-layout .button,.kai-layout .open,.kai-layout .btn,.kai-actions a,.kai-button{display:inline-flex;align-items:center;gap:7px;border:1px solid #111!important;background:#111!important;color:#fff!important;border-radius:999px!important;padding:10px 14px!important;font-size:13px!important;font-weight:900!important;box-shadow:0 10px 28px rgba(17,24,39,.12)!important;transition:transform .22s ease,box-shadow .22s ease,background .22s ease,color .22s ease!important}.kai-layout .cta:hover,.kai-layout .button:hover,.kai-layout .open:hover,.kai-layout .btn:hover,.kai-actions a:hover,.kai-button:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(17,24,39,.16)!important}.kai-layout .secondary,.kai-button.secondary{background:rgba(255,255,255,.66)!important;color:#111!important;border-color:var(--kai-line-strong)!important}
+.kai-layout main section:not(.hero),.kai-section{margin:22px 0!important;padding:26px!important;border:1px solid var(--kai-line)!important;border-radius:30px!important;background:rgba(255,253,248,.72)!important;box-shadow:0 18px 52px rgba(33,43,62,.07)!important}.kai-layout main section[id="sources"],.kai-layout main .sources,.kai-layout main .source-ledger{background:rgba(255,255,255,.68)!important}.kai-layout main section ul,.kai-layout main section ol{padding-left:22px}.kai-layout main li{margin:7px 0}.kai-layout main .brief-grid,.kai-layout main .cards,.kai-layout main .mini-grid,.kai-layout main .grid,.kai-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.kai-layout main .brief-card,.kai-layout main .trend-card,.kai-layout main .card,.kai-layout main .summary-card,.kai-layout main .evidence-card,.kai-card{border:1px solid var(--kai-line)!important;border-radius:24px!important;background:rgba(255,255,255,.72)!important;padding:18px!important;box-shadow:0 14px 42px rgba(33,43,62,.06)!important;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}.kai-layout main .brief-card:hover,.kai-layout main .trend-card:hover,.kai-layout main .card:hover,.kai-layout main .evidence-card:hover,.kai-card:hover{transform:translateY(-2px);border-color:rgba(35,88,214,.22)!important;box-shadow:0 22px 58px rgba(33,43,62,.10)!important}.kai-layout main .chain,.kai-layout main .analysis-hub{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.kai-layout main .verdict,.kai-verdict{display:inline-flex;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:950}.kai-layout main .track,.kai-verdict.track{background:var(--kai-green-soft);color:var(--kai-green)}.kai-layout main .watch,.kai-verdict.watch{background:var(--kai-amber-soft);color:var(--kai-amber)}.kai-layout main .risk,.kai-verdict.risk{background:#fee4e2;color:var(--kai-red)}
+.kai-layout main details{border:1px solid var(--kai-line)!important;border-radius:18px!important;background:rgba(255,255,255,.58)!important;padding:10px 12px!important;margin-top:12px}.kai-layout main summary{cursor:pointer;font-weight:900;color:#334155}.kai-layout main table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--kai-line);border-radius:18px;overflow:hidden;background:rgba(255,255,255,.68)}.kai-layout main th,.kai-layout main td{padding:11px 12px;border-bottom:1px solid var(--kai-line);vertical-align:top}.kai-layout main th{background:rgba(248,250,252,.8);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#64748b}.kai-layout main blockquote{margin:18px 0;padding:16px 18px;border-left:4px solid var(--kai-blue);border-radius:16px;background:rgba(230,238,252,.58);color:#334155}.kai-layout main code{background:rgba(15,23,42,.06);border-radius:7px;padding:2px 5px}.kai-layout main img{max-width:100%;border-radius:18px}body > footer:not(.kai-footer){width:min(1440px,calc(100% - 48px))!important;margin:0 auto 40px!important;color:#7d8aa0!important;font-size:13px!important;background:transparent!important;border:0!important}.kai-layout footer,.kai-footer{width:min(1440px,calc(100% - 48px));margin:0 auto 40px;color:#7d8aa0;font-size:13px}.kai-layout .pager{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0}.kai-layout .pager a{border:1px solid var(--kai-line);background:rgba(255,255,255,.62);border-radius:999px;padding:9px 12px;font-weight:850;color:#334155}.kai-home-latest{display:grid;grid-template-columns:86px 1fr;gap:18px;align-items:start}.kai-date-box{width:74px;height:82px;border-radius:24px;background:#111;color:#fff;display:grid;place-items:center;box-shadow:0 16px 42px rgba(17,24,39,.18)}.kai-date-box strong{font-size:30px;letter-spacing:-.06em;line-height:1}.kai-date-box span{font-size:11px;color:#cbd5e1;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.kai-report-row{display:grid;grid-template-columns:92px 1fr auto;gap:15px;align-items:start;border:1px solid var(--kai-line);border-radius:22px;background:rgba(255,255,255,.62);padding:16px;margin-bottom:10px;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}.kai-report-row:hover{transform:translateY(-2px);border-color:rgba(35,88,214,.22);box-shadow:0 18px 48px rgba(33,43,62,.08)}.kai-report-row p{margin:4px 0 0;color:#5f6b7a;font-size:14px}.kai-report-row .go{font-weight:950;color:var(--kai-blue)}.kai-home-search{display:flex;align-items:center;gap:10px;border:1px solid var(--kai-line);background:rgba(255,255,255,.65);border-radius:999px;padding:10px 12px;margin:16px 0}.kai-home-search input{width:100%;border:0;outline:0;background:transparent;font:inherit;color:var(--kai-ink)}
+@media(max-width:1180px){.kai-layout{grid-template-columns:minmax(0,1fr);width:min(920px,calc(100% - 32px));padding-top:24px}.kai-archive-panel{position:static;max-height:none;order:2}.kai-page-panel{display:none}.kai-date-list{grid-template-columns:repeat(2,minmax(0,1fr));margin-left:0}.kai-command{display:none}.kai-layout main .brief-grid,.kai-layout main .cards,.kai-layout main .mini-grid,.kai-layout main .grid,.kai-card-grid{grid-template-columns:1fr 1fr}.kai-layout main .chain,.kai-layout main .analysis-hub{grid-template-columns:1fr}}
+@media(max-width:760px){:root{--kai-topbar-h:auto}.kai-topbar{height:auto}.kai-top-inner{height:auto;min-height:62px;padding:10px 14px;align-items:flex-start;flex-direction:column;gap:10px}.kai-site-nav{width:100%;margin-left:0}.kai-layout{width:min(100% - 28px,920px);padding:18px 0 52px}.kai-layout main .hero,.kai-home-hero{padding:24px!important;border-radius:26px!important}.kai-layout h1,.kai-home-hero h1{font-size:42px!important}.kai-layout main section:not(.hero),.kai-section{padding:20px!important;border-radius:24px!important}.kai-layout main .brief-grid,.kai-layout main .cards,.kai-layout main .mini-grid,.kai-layout main .grid,.kai-card-grid,.kai-home-latest,.kai-report-row{grid-template-columns:1fr}.kai-date-list{grid-template-columns:1fr}.kai-date-box{width:70px;height:76px}.kai-footer{width:min(100% - 28px,920px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.kai-site-nav a,.kai-date-link,.kai-page-panel a,.kai-layout main .cta,.kai-layout main .button,.kai-layout main .open,.kai-layout main .btn,.kai-layout main .brief-card,.kai-layout main .trend-card,.kai-card,.kai-report-row{transition:none!important}.kai-site-nav a:hover,.kai-date-link:hover,.kai-page-panel a:hover,.kai-layout main .cta:hover,.kai-layout main .button:hover,.kai-layout main .open:hover,.kai-layout main .btn:hover,.kai-layout main .brief-card:hover,.kai-layout main .trend-card:hover,.kai-card:hover,.kai-report-row:hover{transform:none!important}}
