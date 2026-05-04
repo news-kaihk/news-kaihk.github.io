@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-05-04",
+    "title": "2026-05-04 Trend Insight 日報",
+    "summary": "AI 市場過去 72 小時的主線不是單一模型更新，而是「高責任場景落地」：醫療、國防、法律/開發者工作流開始要求可審計、可控成本與合規部署。；內容生成市場出現供應過剩與權利邊界重劃；平台、獎項機構與創作者正在把「是否 AI 生成」轉化為分發、資格與授權問題。",
+    "html": "reports/2026-05-04-ai-trend-report.html",
+    "md": "reports/2026-05-04-ai-trend-report.md"
+  },
+  {
     "date": "2026-05-03",
     "title": "2026-05-03 Trend Insight 日報",
     "summary": "Pentagon classified AI deals、Claude Security、legal AI 投資、OpenAI revenue / IPO 壓力、Google I/O 前 AI 入口戰等訊號，顯示高信任 AI 場景與分發入口競爭升溫。",
