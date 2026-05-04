@@ -17,7 +17,8 @@
 <style>
 :root{
   color-scheme:light;
-  --bg:#f4efe5;
+  --bg:#f7f8fb;
+  --site-bg:#f7f8fb;
   --paper:#fffdf8;
   --paper-2:#faf6ed;
   --ink:#111111;
@@ -42,23 +43,31 @@ body{
   margin:0;
   color:var(--ink);
   background:
-    radial-gradient(circle at 8% -10%,rgba(35,88,216,.12),transparent 34%),
-    radial-gradient(circle at 92% 0%,rgba(20,122,74,.12),transparent 28%),
-    linear-gradient(180deg,#fff9eb 0,var(--bg) 460px,#fffdf8 100%);
+    radial-gradient(circle at 8% -8%,rgba(37,99,235,.10),transparent 34%),
+    radial-gradient(circle at 88% 0%,rgba(18,128,92,.10),transparent 30%),
+    linear-gradient(180deg,#f7f8fb 0,#f8f5ee 420px,#fffdf8 100%);
   font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC",Arial,sans-serif;
   line-height:1.62;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
-a{color:inherit;text-decoration-thickness:.08em;text-underline-offset:.18em}
-.wrap{width:min(1160px,calc(100% - 40px));margin:0 auto}
-.topbar{position:sticky;top:0;z-index:30;background:rgba(255,253,248,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+a{color:inherit;text-decoration:none;text-underline-offset:.18em}a:hover{text-decoration:none}a:focus-visible{outline:3px solid rgba(35,88,216,.25);outline-offset:4px;border-radius:10px}
+.wrap{width:min(1440px,calc(100% - 40px));margin:0 auto}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
 .nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:18px}
 .brand{font-weight:920;letter-spacing:-.055em;text-decoration:none;white-space:nowrap}
 .navlinks{display:flex;gap:4px;overflow:auto;padding:5px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.66);scrollbar-width:none}
 .navlinks::-webkit-scrollbar{display:none}
-.navlinks a{white-space:nowrap;text-decoration:none;font-size:12px;font-weight:850;color:var(--muted);padding:8px 10px;border-radius:999px;transition:background .18s ease,color .18s ease}
-.navlinks a:hover,.navlinks a.active{background:#111;color:#fff}
+.navlinks a{white-space:nowrap;text-decoration:none;font-size:12px;font-weight:850;color:var(--muted);padding:8px 10px;border-radius:999px;transition:background .22s ease,color .22s ease,transform .22s ease}
+.navlinks a:hover,.navlinks a.active{background:#111;color:#fff;transform:translateY(-1px)}
+.report-layout{width:min(1480px,calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:248px minmax(0,1fr) 224px;gap:28px;padding:30px 0 72px}
+.article{min-width:0}
+.side-nav,.page-nav{position:sticky;top:88px;align-self:start;max-height:calc(100vh - 110px);overflow:auto;padding-right:4px;scrollbar-width:thin}
+.side-title,.page-title{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);font-weight:950;margin:0 0 12px}
+.month{margin-bottom:10px}.month summary{cursor:pointer;font-weight:900;color:var(--ink-soft);padding:8px 6px;border-radius:11px;transition:background .2s ease,color .2s ease}.month summary:hover{background:rgba(255,255,255,.66)}
+.dates{display:grid;gap:4px;margin:4px 0 8px 8px}.date-link{display:block;border-radius:12px;padding:9px 11px;color:var(--muted);font-size:14px;font-weight:820;transition:background .2s ease,color .2s ease,transform .2s ease}.date-link:hover{background:rgba(255,255,255,.74);color:#111;transform:translateX(2px)}.date-link.active{background:#111;color:#fff;box-shadow:0 10px 24px rgba(17,17,17,.10)}
+.side-note{margin-top:20px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.68);padding:14px;color:var(--muted);font-size:13px;box-shadow:0 10px 28px rgba(56,42,22,.035)}.side-note b{display:block;color:#111;margin-bottom:5px}
+.page-nav nav{display:grid;gap:4px;border-left:1px solid var(--line);padding-left:14px}.page-nav a{position:relative;display:block;color:var(--muted);font-size:13.5px;line-height:1.35;padding:7px 0;border-radius:10px;transition:color .2s ease,transform .2s ease,font-weight .2s ease}.page-nav a:hover,.page-nav a.active{color:var(--blue);font-weight:900;transform:translateX(2px)}.page-nav a.active:before{content:"";position:absolute;left:-15px;top:10px;width:3px;height:15px;border-radius:999px;background:var(--blue);box-shadow:0 0 0 4px rgba(35,88,216,.10)}
 .hero{padding:44px 0 28px;scroll-margin-top:86px}
 .back{display:inline-flex;margin-bottom:20px;text-decoration:none;color:var(--muted);font-size:13px;font-weight:850}
 .hero-shell{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(340px,.72fr);gap:24px;align-items:stretch}
@@ -70,7 +79,7 @@ h1{font-size:clamp(42px,6.2vw,76px);line-height:.96;letter-spacing:-.076em;margi
 .meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
 .pill,.chip{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:rgba(255,255,255,.76);border-radius:999px;padding:7px 10px;font-size:12px;font-weight:850;color:var(--muted)}
 .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
-.cta{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 15px;border-radius:999px;border:1px solid #111;background:#111;color:#fff;text-decoration:none;font-weight:900;font-size:13px;box-shadow:0 10px 24px rgba(17,17,17,.12)}
+.cta{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 15px;border-radius:999px;border:1px solid #111;background:#111;color:#fff;text-decoration:none;font-weight:900;font-size:13px;box-shadow:0 10px 24px rgba(17,17,17,.12);transition:transform .22s ease,box-shadow .22s ease,background .22s ease,color .22s ease}.cta:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(17,17,17,.16)}
 .cta.secondary{background:rgba(255,255,255,.72);color:#111;box-shadow:none}
 .briefing-rail{position:relative;border:1px solid var(--line);border-radius:var(--radius-xl);background:linear-gradient(180deg,rgba(255,253,248,.98),rgba(249,245,236,.92));box-shadow:var(--shadow);overflow:hidden;padding:22px;min-height:430px;display:flex;flex-direction:column;gap:18px}
 .briefing-rail:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 0 31px,rgba(17,17,17,.045) 31px 32px,transparent 32px),linear-gradient(180deg,transparent 0 31px,rgba(17,17,17,.035) 31px 32px,transparent 32px);background-size:32px 32px;mask-image:linear-gradient(180deg,rgba(0,0,0,.55),transparent 72%);pointer-events:none}
@@ -92,7 +101,7 @@ h1{font-size:clamp(42px,6.2vw,76px);line-height:.96;letter-spacing:-.076em;margi
 .section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:18px}
 .section-head h2{font-size:clamp(28px,4vw,48px);line-height:1.02;letter-spacing:-.058em;margin:8px 0 0}.section-head p{max-width:460px;color:var(--muted);margin:0}
 .brief-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.brief-card{border:1px solid var(--line);border-radius:var(--radius-lg);background:rgba(255,255,255,.74);padding:20px;min-height:190px;box-shadow:0 8px 30px rgba(56,42,22,.04)}
+.brief-card{border:1px solid var(--line);border-radius:var(--radius-lg);background:rgba(255,255,255,.74);padding:20px;min-height:190px;box-shadow:0 8px 30px rgba(56,42,22,.04);transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease}.brief-card:hover{transform:translateY(-3px);box-shadow:0 18px 44px rgba(56,42,22,.08);border-color:rgba(17,17,17,.18)}
 .brief-card .k{font:850 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--faint);letter-spacing:.09em;text-transform:uppercase}.brief-card h3{font-size:22px;line-height:1.12;letter-spacing:-.035em;margin:18px 0 10px}.brief-card p{margin:0;color:var(--muted)}
 .structure{border:1px solid rgba(17,17,17,.13);border-radius:30px;background:#111;color:#fff;overflow:hidden;box-shadow:var(--shadow)}
 .structure-top{display:flex;justify-content:space-between;gap:20px;padding:24px;border-bottom:1px solid rgba(255,255,255,.12)}
@@ -101,13 +110,14 @@ h1{font-size:clamp(42px,6.2vw,76px);line-height:.96;letter-spacing:-.076em;margi
 .flowline:before{content:"";position:absolute;left:11%;right:11%;top:58px;height:1px;background:linear-gradient(90deg,var(--blue),var(--green),var(--amber),var(--red));opacity:.8}
 .flow-node{position:relative;padding:34px 22px 24px;min-height:210px;border-right:1px solid rgba(255,255,255,.10)}
 .flow-node:last-child{border-right:0}.dot{width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 0 0 7px rgba(255,255,255,.10);margin-bottom:24px}.flow-node h3{font-size:22px;line-height:1.05;letter-spacing:-.04em;margin:0 0 10px}.flow-node p{color:rgba(255,255,255,.62);margin:0;font-size:14px}.flow-node small{display:block;color:rgba(255,255,255,.38);font:800 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;margin-bottom:10px;text-transform:uppercase;letter-spacing:.09em}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.trend-card{position:relative;border:1px solid var(--line);border-radius:28px;background:rgba(255,255,255,.78);padding:20px;min-height:310px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 12px 36px rgba(56,42,22,.045)}.trend-card:before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--accent,#111)}.trend-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:26px}.rank{font:850 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--faint);text-transform:uppercase;letter-spacing:.08em}.verdict{font-size:12px;font-weight:920;border-radius:999px;padding:6px 9px;white-space:nowrap}.verdict.track{background:rgba(20,122,74,.12);color:var(--green)}.verdict.watch{background:rgba(181,107,19,.13);color:var(--amber)}.verdict.verify{background:rgba(180,35,24,.10);color:var(--red)}.trend-card h3{font-size:26px;line-height:1.08;letter-spacing:-.045em;margin:0 0 10px}.one-line{color:var(--muted);margin:0 0 18px}.chip-row{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}.lens-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto}.lens{border:1px solid rgba(17,17,17,.10);border-radius:17px;padding:12px;background:rgba(250,246,237,.72)}.lens b{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint)}.lens p{font-size:13px;color:var(--muted);margin:6px 0 0;line-height:1.48}.open-detail{margin-top:16px;text-decoration:none;font-size:13px;font-weight:900;color:#111}.theme-infra{--accent:var(--blue)}.theme-agent{--accent:var(--green)}.theme-security{--accent:var(--red)}.theme-multimodal{--accent:var(--violet)}.theme-coding{--accent:#111}.theme-eval{--accent:#0f766e}.theme-hardware{--accent:var(--amber)}.theme-valuation{--accent:#7c2d12}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.trend-card{position:relative;border:1px solid var(--line);border-radius:28px;background:rgba(255,255,255,.78);padding:20px;min-height:310px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 12px 36px rgba(56,42,22,.045);transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease}.trend-card:hover{transform:translateY(-3px);box-shadow:0 22px 54px rgba(56,42,22,.085);border-color:rgba(17,17,17,.18)}.trend-card:before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--accent,#111)}.trend-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:26px}.rank{font:850 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--faint);text-transform:uppercase;letter-spacing:.08em}.verdict{font-size:12px;font-weight:920;border-radius:999px;padding:6px 9px;white-space:nowrap}.verdict.track{background:rgba(20,122,74,.12);color:var(--green)}.verdict.watch{background:rgba(181,107,19,.13);color:var(--amber)}.verdict.verify{background:rgba(180,35,24,.10);color:var(--red)}.trend-card h3{font-size:26px;line-height:1.08;letter-spacing:-.045em;margin:0 0 10px}.one-line{color:var(--muted);margin:0 0 18px}.chip-row{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}.lens-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto}.lens{border:1px solid rgba(17,17,17,.10);border-radius:17px;padding:12px;background:rgba(250,246,237,.72)}.lens b{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint)}.lens p{font-size:13px;color:var(--muted);margin:6px 0 0;line-height:1.48}.open-detail{margin-top:16px;text-decoration:none;font-size:13px;font-weight:900;color:#111}.theme-infra{--accent:var(--blue)}.theme-agent{--accent:var(--green)}.theme-security{--accent:var(--red)}.theme-multimodal{--accent:var(--violet)}.theme-coding{--accent:#111}.theme-eval{--accent:#0f766e}.theme-hardware{--accent:var(--amber)}.theme-valuation{--accent:#7c2d12}
 .chain{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.chain-col{border:1px solid var(--line);border-radius:26px;padding:20px;background:var(--paper)}.chain-col h3{font-size:28px;letter-spacing:-.05em;margin:0 0 14px}.chain-col ul{margin:0;padding:0;list-style:none}.chain-col li{padding:11px 0;border-top:1px solid var(--line);color:var(--muted)}
 .analysis-hub{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}.thread{display:block;border:1px solid var(--line);border-radius:24px;background:#111;color:#fff;padding:20px;text-decoration:none;min-height:175px}.thread:nth-child(even){background:#fff;color:#111}.thread small{font:850 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--faint);letter-spacing:.09em;text-transform:uppercase}.thread h3{font-size:25px;line-height:1.08;letter-spacing:-.04em;margin:18px 0 10px}.thread p{margin:0;color:rgba(255,255,255,.66)}.thread:nth-child(even) p{color:var(--muted)}
 .details{display:grid;gap:10px}.detail{border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.72);padding:0;overflow:hidden}.detail summary{cursor:pointer;list-style:none;padding:18px 20px;font-weight:900;font-size:18px;letter-spacing:-.025em}.detail summary::-webkit-details-marker{display:none}.detail[open] summary{border-bottom:1px solid var(--line)}.detail-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}.detail-box{padding:16px;border-right:1px solid var(--line)}.detail-box:last-child{border-right:0}.detail-box b{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--faint)}.detail-box p{margin:8px 0 0;color:var(--muted);font-size:14px;line-height:1.55}.note{color:var(--muted);max-width:820px}.sources{columns:2;column-gap:32px;padding-left:18px}.sources li{break-inside:avoid;margin:0 0 10px;color:var(--muted)}.sources a{color:#111;font-weight:700}.footer{padding:28px 0 54px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
-@media (max-width:900px){.wrap{width:min(100% - 28px,1160px)}.nav{align-items:flex-start;flex-direction:column;padding:12px 0}.navlinks{width:100%}.hero{padding-top:26px}.hero-shell{grid-template-columns:1fr}.briefing-rail{min-height:0}.section-head{display:block}.section-head p{margin-top:10px}.brief-grid,.cards,.chain,.analysis-hub{grid-template-columns:1fr}.flowline{grid-template-columns:1fr}.flowline:before{left:29px;right:auto;top:44px;bottom:44px;width:1px;height:auto;background:linear-gradient(180deg,var(--blue),var(--green),var(--amber),var(--red))}.flow-node{display:grid;grid-template-columns:28px 1fr;gap:10px;min-height:0;border-right:0;border-bottom:1px solid rgba(255,255,255,.10);padding:22px}.flow-node:last-child{border-bottom:0}.dot{margin:5px 0 0;width:13px;height:13px}.detail-grid{grid-template-columns:1fr}.detail-box{border-right:0;border-bottom:1px solid var(--line)}.detail-box:last-child{border-bottom:0}.sources{columns:1}.lens-grid{grid-template-columns:1fr}h1{letter-spacing:-.065em}.pressure-item{grid-template-columns:28px 1fr}.pressure-item span:last-child{grid-column:2;justify-self:start}}
+@media (max-width:1180px){.report-layout{grid-template-columns:1fr;width:min(900px,calc(100% - 32px));padding-top:24px}.article{order:1}.side-nav{order:2;position:static;max-height:none}.page-nav{display:none}.side-nav .dates{grid-template-columns:repeat(2,minmax(0,1fr));margin-left:0}.side-note{display:none}}
+@media (max-width:900px){.wrap{width:min(100% - 28px,1440px)}.nav{align-items:flex-start;flex-direction:column;padding:12px 0}.navlinks{width:100%}.hero{padding-top:26px}.hero-shell{grid-template-columns:1fr}.briefing-rail{min-height:0}.section-head{display:block}.section-head p{margin-top:10px}.brief-grid,.cards,.chain,.analysis-hub{grid-template-columns:1fr}.flowline{grid-template-columns:1fr}.flowline:before{left:29px;right:auto;top:44px;bottom:44px;width:1px;height:auto;background:linear-gradient(180deg,var(--blue),var(--green),var(--amber),var(--red))}.flow-node{display:grid;grid-template-columns:28px 1fr;gap:10px;min-height:0;border-right:0;border-bottom:1px solid rgba(255,255,255,.10);padding:22px}.flow-node:last-child{border-bottom:0}.dot{margin:5px 0 0;width:13px;height:13px}.detail-grid{grid-template-columns:1fr}.detail-box{border-right:0;border-bottom:1px solid var(--line)}.detail-box:last-child{border-bottom:0}.sources{columns:1}.lens-grid{grid-template-columns:1fr}h1{letter-spacing:-.065em}.pressure-item{grid-template-columns:28px 1fr}.pressure-item span:last-child{grid-column:2;justify-self:start}}
 @media (max-width:520px){.wrap{width:min(100% - 24px,1160px)}h1{font-size:42px}.dek{font-size:16px}.hero-actions .cta{width:100%}.briefing-rail{border-radius:26px;padding:18px}.rail-main h2{font-size:31px}.trend-card{border-radius:23px;padding:17px}.trend-card h3{font-size:23px}.section{padding:30px 0}.section-head h2{font-size:32px}.structure{border-radius:24px}.structure-top{display:block}.flow-node{padding:20px}.sources{font-size:14px}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.navlinks a{transition:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.navlinks a,.date-link,.page-nav a,.cta,.brief-card,.trend-card{transition:none!important}.cta:hover,.brief-card:hover,.trend-card:hover{transform:none!important}}
 
 .detail-copy{padding:18px 20px;color:var(--muted)}
 .detail-copy ul{margin:10px 0 0 18px;padding:0}.detail-copy li{margin:8px 0}
@@ -128,18 +138,24 @@ h1{font-size:clamp(42px,6.2vw,76px);line-height:.96;letter-spacing:-.076em;margi
   <meta property="og:url" content="https://news-kaihk.github.io/reports/2026-05-04-ai-trend-report.html" />
   <meta property="og:image" content="https://news-kaihk.github.io/icon-512.png" />
   <meta property="article:published_time" content="2026-05-04T07:00:00+08:00" />
-  <meta property="article:modified_time" content="2026-05-04T11:40:05+08:00" />
+  <meta property="article:modified_time" content="2026-05-04T13:02:52+08:00" />
   <meta property="article:section" content="AI Market Intelligence" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="2026-05-04 Trend Insight 早報｜AI 高責任部署與市場訊號" />
   <meta name="twitter:description" content="2026-05-04 K-AI Daily Intelligence：醫療、國防、AI coding、內容權利、physical AI 與 Big Tech capex 同時顯示，AI 市場焦點正由模型熱度轉向高責任部署、成本可見化與合規採用。" />
   <meta name="twitter:image" content="https://news-kaihk.github.io/icon-512.png" />
-  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"NewsArticle","headline":"AI 市場正在從模型熱度，轉向高責任場景的部署能力。","alternativeHeadline":"2026-05-04 Trend Insight 早報｜AI 高責任部署與市場訊號","description":"2026-05-04 K-AI Daily Intelligence：醫療、國防、AI coding、內容權利、physical AI 與 Big Tech capex 同時顯示，AI 市場焦點正由模型熱度轉向高責任部署、成本可見化與合規採用。","url":"https://news-kaihk.github.io/reports/2026-05-04-ai-trend-report.html","mainEntityOfPage":"https://news-kaihk.github.io/reports/2026-05-04-ai-trend-report.html","datePublished":"2026-05-04T07:00:00+08:00","dateModified":"2026-05-04T11:40:05+08:00","inLanguage":"zh-Hant-HK","isAccessibleForFree":true,"author":{"@type":"Organization","name":"K-AI Daily Intelligence"},"publisher":{"@type":"Organization","name":"K-AI Daily Intelligence","logo":{"@type":"ImageObject","url":"https://news-kaihk.github.io/icon-512.png","width":512,"height":512}},"image":["https://news-kaihk.github.io/icon-512.png"],"keywords":["AI market intelligence","enterprise AI adoption","medical AI","defense AI","AI coding economics","content provenance","physical AI","Big Tech capex","Hong Kong"],"about":[{"@type":"Thing","name":"AI 高責任部署"},{"@type":"Thing","name":"醫療 AI"},{"@type":"Thing","name":"國防 AI"},{"@type":"Thing","name":"AI coding 成本"},{"@type":"Thing","name":"內容來源與授權"},{"@type":"Thing","name":"Physical AI"},{"@type":"Thing","name":"AI infrastructure capex"}],"citation":["https://techcrunch.com/2026/05/03/in-harvard-study-ai-offered-more-accurate-diagnoses-than-emergency-room-doctors/","https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/","https://www.theverge.com/ai-artificial-intelligence/922113/pentagon-ai-classified-openai-google-nvidia","https://www.artificialintelligence-news.com/news/per-token-ai-charging-comes-to-github-copilot/","https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/","https://www.artificialintelligence-news.com/news/big-tech-ai-infrastructure-spending-q1-2026-results/"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"K-AI Daily Intelligence","item":"https://news-kaihk.github.io/"},{"@type":"ListItem","position":2,"name":"2026-05-04 Trend Insight 早報","item":"https://news-kaihk.github.io/reports/2026-05-04-ai-trend-report.html"}]}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"NewsArticle","headline":"AI 市場正在從模型熱度，轉向高責任場景的部署能力。","alternativeHeadline":"2026-05-04 Trend Insight 早報｜AI 高責任部署與市場訊號","description":"2026-05-04 K-AI Daily Intelligence：醫療、國防、AI coding、內容權利、physical AI 與 Big Tech capex 同時顯示，AI 市場焦點正由模型熱度轉向高責任部署、成本可見化與合規採用。","url":"https://news-kaihk.github.io/reports/2026-05-04-ai-trend-report.html","mainEntityOfPage":"https://news-kaihk.github.io/reports/2026-05-04-ai-trend-report.html","datePublished":"2026-05-04T07:00:00+08:00","dateModified":"2026-05-04T13:02:52+08:00","inLanguage":"zh-Hant-HK","isAccessibleForFree":true,"author":{"@type":"Organization","name":"K-AI Daily Intelligence"},"publisher":{"@type":"Organization","name":"K-AI Daily Intelligence","logo":{"@type":"ImageObject","url":"https://news-kaihk.github.io/icon-512.png","width":512,"height":512}},"image":["https://news-kaihk.github.io/icon-512.png"],"keywords":["AI market intelligence","enterprise AI adoption","medical AI","defense AI","AI coding economics","content provenance","physical AI","Big Tech capex","Hong Kong"],"about":[{"@type":"Thing","name":"AI 高責任部署"},{"@type":"Thing","name":"醫療 AI"},{"@type":"Thing","name":"國防 AI"},{"@type":"Thing","name":"AI coding 成本"},{"@type":"Thing","name":"內容來源與授權"},{"@type":"Thing","name":"Physical AI"},{"@type":"Thing","name":"AI infrastructure capex"}],"citation":["https://techcrunch.com/2026/05/03/in-harvard-study-ai-offered-more-accurate-diagnoses-than-emergency-room-doctors/","https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/","https://www.theverge.com/ai-artificial-intelligence/922113/pentagon-ai-classified-openai-google-nvidia","https://www.artificialintelligence-news.com/news/per-token-ai-charging-comes-to-github-copilot/","https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/","https://www.artificialintelligence-news.com/news/big-tech-ai-infrastructure-spending-q1-2026-results/"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"K-AI Daily Intelligence","item":"https://news-kaihk.github.io/"},{"@type":"ListItem","position":2,"name":"2026-05-04 Trend Insight 早報","item":"https://news-kaihk.github.io/reports/2026-05-04-ai-trend-report.html"}]}]</script>
   <!-- /K-AI SEO/GEO -->
 </head>
 <body>
-<header class="topbar"><nav class="wrap nav"><a class="brand" href="../">K-AI Daily Intelligence</a><div class="navlinks" aria-label="Report sections"><a href="#brief">快讀</a><a href="#thesis">主線</a><a href="#cards">訊號</a><a href="#chain">商業鏈條</a><a href="#analysis">深度</a><a href="#sources">來源</a></div></nav></header>
-<main class="wrap">
+<header class="topbar"><nav class="wrap nav"><a class="brand" href="../">K-AI Daily Intelligence</a><div class="navlinks site-nav" aria-label="Site navigation"><a href="../">Today</a><a href="../#archive">Archive</a><a href="../#coverage">關注範圍</a><a href="#sources">來源</a></div></nav></header>
+<div class="report-layout">
+<aside class="side-nav" aria-label="日報檔案">
+  <p class="side-title">日報檔案</p>
+  <div id="reportArchiveNav"><details class="month" open><summary>2026-05</summary><div class="dates"><a class="date-link active" href="2026-05-04-ai-trend-report.html">05-04 Briefing</a><a class="date-link" href="2026-05-03-ai-trend-report.html">05-03 Briefing</a><a class="date-link" href="2026-05-02-ai-trend-report.html">05-02 Briefing</a></div></details></div>
+  <div class="side-note"><b>閱讀路徑</b><span>由今日快讀進入主線，再按市場訊號查看深度分析與公開來源。</span></div>
+</aside>
+<main class="article">
   <section class="hero" id="top">
     <a class="back" href="../">← 歷史報告</a>
     <div class="hero-shell">
@@ -229,12 +245,47 @@ h1{font-size:clamp(42px,6.2vw,76px);line-height:.96;letter-spacing:-.076em;margi
 <li><a href="https://www.artificialintelligence-news.com/news/big-tech-ai-infrastructure-spending-q1-2026-results/" target="_blank" rel="noopener">AI News：Big Tech&#x27;s AI infrastructure spending paid off — and accelerated</a></li></ol>
   </section>
 </main>
+<aside class="page-nav" aria-label="本文導覽"><p class="page-title">本文導覽</p><nav><a href="#top">總覽</a><a href="#brief">今日快讀</a><a href="#thesis">市場主線</a><a href="#cards">市場訊號</a><a href="#chain">商業鏈條</a><a href="#analysis">深度分析</a><a href="#watch">觀察清單</a><a href="#sources">公開來源</a></nav></aside>
+</div>
 <footer class="footer"><div class="wrap">K-AI Daily Intelligence · AI 市場公開來源簡報。</div></footer>
 <script>
-const navLinks=[...document.querySelectorAll('.navlinks a')];
-const sections=navLinks.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
-const onScroll=()=>{let current=sections[0];for(const s of sections){if(s.getBoundingClientRect().top<120)current=s;}navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current.id));};
-document.addEventListener('scroll',onScroll,{passive:true});onScroll();
+const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const esc=(s)=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const sectionNavLinks=[...document.querySelectorAll('.page-nav a[href^="#"], .site-nav a[href^="#"], .hero-actions a[href^="#"], .open-detail[href^="#"]')];
+sectionNavLinks.forEach(link=>{
+  const href=link.getAttribute('href');
+  const target=document.querySelector(href);
+  if(!target)return;
+  link.addEventListener('click',event=>{
+    event.preventDefault();
+    target.scrollIntoView({behavior:reduceMotion?'auto':'smooth',block:'start'});
+    history.replaceState(null,'',href);
+  });
+});
+const tocLinks=[...document.querySelectorAll('.page-nav a[href^="#"]')];
+const sections=tocLinks.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const setActive=()=>{
+  let current=sections[0];
+  for(const section of sections){if(section.getBoundingClientRect().top<132)current=section;}
+  tocLinks.forEach(a=>a.classList.toggle('active',current&&a.getAttribute('href')==='#'+current.id));
+  document.querySelectorAll('.site-nav a[href^="#"]').forEach(a=>a.classList.toggle('active',current&&a.getAttribute('href')==='#'+current.id));
+};
+async function renderArchive(){
+  const box=document.getElementById('reportArchiveNav');
+  if(!box)return;
+  try{
+    const res=await fetch('index.json',{cache:'no-store'});
+    const reports=await res.json();
+    if(!Array.isArray(reports)||!reports.length)return;
+    const current=location.pathname.split('/').pop();
+    const groups={};
+    reports.slice(0,12).forEach(r=>{const month=String(r.date||'').slice(0,7)||'Archive';(groups[month]=groups[month]||[]).push(r);});
+    box.innerHTML=Object.entries(groups).map(([month,items],idx)=>`<details class="month" ${idx<2?'open':''}><summary>${esc(month)}</summary><div class="dates">${items.map(r=>{const href=String(r.html||'').split('/').pop();const active=href===current;const label=(String(r.date||'').slice(5)||'Daily')+' Briefing';return `<a class="date-link ${active?'active':''}" href="${esc(href)}">${esc(label)}</a>`;}).join('')}</div></details>`).join('');
+  }catch(error){
+    console.warn('Archive navigation fallback kept',error);
+  }
+}
+setActive();document.addEventListener('scroll',setActive,{passive:true});renderArchive();
 </script>
 </body>
 </html>
