@@ -3,8 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>K-AI Daily Intelligence | AI & Business Briefing</title>
-  <meta name="description" content="K-AI Daily Intelligence — objective AI, business, finance and technology briefings with evidence-backed insight." />
+
+  <!-- K-AI icon/meta -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#111827" />
+  <meta name="color-scheme" content="light" />
+  <!-- /K-AI icon/meta -->
+<title>K-AI Daily Intelligence｜AI 市場與商業訊號日報</title>
+  <meta name="description" content="K-AI Daily Intelligence 每日整理 AI、企業採用、資本市場與風險治理訊號；以公開來源、事實、推論、風險與編輯判斷拆解市場變化。" />
   <style>
     :root{--bg:#f7f8fb;--paper:#fff;--ink:#101828;--muted:#667085;--soft:#98a2b3;--line:#e6eaf0;--blue:#2563eb;--green:#12805c;--amber:#b76b00;--red:#b42318;--shadow:0 18px 48px rgba(16,24,40,.07);--radius:20px}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 8% -8%,rgba(37,99,235,.10),transparent 34%),radial-gradient(circle at 88% 0%,rgba(18,128,92,.10),transparent 30%),var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC",Arial,sans-serif;line-height:1.68;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}a:hover{text-decoration:none}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
@@ -14,6 +23,26 @@
     .section{scroll-margin-top:92px;margin:18px 0}.section h2{font-size:30px;line-height:1.15;letter-spacing:-.045em;margin:0 0 16px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 8px 24px rgba(16,24,40,.04)}.coverage-grid .card:nth-child(1){background:linear-gradient(135deg,#eef5ff,#fff);border-color:#dbeafe}.coverage-grid .card:nth-child(2){background:linear-gradient(135deg,#ecfdf5,#fff);border-color:#bbf7d0}.coverage-grid .card:nth-child(3){background:linear-gradient(135deg,#fff7ed,#fff);border-color:#fed7aa}.coverage-grid .card:nth-child(4){background:linear-gradient(135deg,#fff1f2,#fff);border-color:#fecdd3}.card .icon{width:34px;height:34px;border-radius:12px;display:grid;place-items:center;background:#eef5ff;margin-bottom:12px}.card h3{font-size:18px;letter-spacing:-.03em;margin:0 0 7px}.card p{margin:0;color:#667085;font-size:14.5px}.latest-card{display:grid;grid-template-columns:92px 1fr;gap:16px;align-items:start}.date-box{border-radius:16px;background:#111827;color:#fff;text-align:center;padding:13px 9px}.date-box strong{display:block;font-size:24px;line-height:1}.date-box span{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.72)}.latest-card h3{font-size:22px;margin:0 0 6px;letter-spacing:-.035em}.latest-card p{margin:0;color:#667085}.meta-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.meta{border:1px solid var(--line);border-radius:999px;padding:5px 8px;color:#667085;font-size:11px;font-weight:850;background:#fff}.open{display:inline-flex;margin-top:14px;color:var(--blue);font-weight:900}.reports{display:grid;gap:10px}.report-row{display:grid;grid-template-columns:112px 1fr auto;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px}.report-row strong{letter-spacing:-.02em}.report-row p{margin:4px 0 0;color:#667085;font-size:13.5px;line-height:1.45}.report-row .mono{white-space:nowrap;font-size:13px}.report-row .go{color:var(--blue);font-weight:900;white-space:nowrap}.searchbox{width:100%;border:1px solid var(--line);border-radius:999px;padding:11px 14px;margin-bottom:12px;font:inherit;background:#fff}.path{position:relative;background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px}.step{display:grid;grid-template-columns:38px 1fr;gap:14px;margin:0 0 16px}.step:last-child{margin-bottom:0}.step-num{width:34px;height:34px;border-radius:999px;background:#111;color:#fff;display:grid;place-items:center;font-weight:900}.step b{display:block;margin-bottom:4px}.step p{margin:0;color:#667085;font-size:14.5px}.audience{display:flex;flex-wrap:wrap;gap:8px}.audience span{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 12px;color:#475467;font-weight:850}.contact{background:#111827;color:#fff;border-radius:24px;padding:24px;box-shadow:var(--shadow)}.contact p{color:rgba(255,255,255,.72);margin:0 0 14px}.contact .button{background:#fff;color:#111;border-color:#fff}footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;color:#98a2b3;font-size:13px;background:#fff}
     @media(max-width:1100px){.layout{grid-template-columns:1fr;max-width:880px}.sidebar,.toc{position:static;max-height:none}.sidebar{order:2}.toc{display:none}.nav{display:none}.search-pill{margin-left:auto}.grid{grid-template-columns:1fr 1fr}}@media(max-width:640px){.top-inner{padding:0 14px}.search-pill{display:none}.layout{padding:22px 14px}.grid{grid-template-columns:1fr}.report-row,.latest-card{grid-template-columns:1fr}h1{font-size:40px}}
   </style>
+  <!-- K-AI SEO/GEO -->
+  <link rel="canonical" href="https://news-kaihk.github.io/" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta http-equiv="content-language" content="zh-Hant-HK" />
+  <meta name="keywords" content="AI market intelligence, AI 日報, 人工智能趨勢, enterprise AI, AI infrastructure, AI governance, Hong Kong" />
+  <meta name="geo.region" content="HK" />
+  <meta name="geo.placename" content="Hong Kong" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_HK" />
+  <meta property="og:site_name" content="K-AI Daily Intelligence" />
+  <meta property="og:title" content="K-AI Daily Intelligence｜AI 市場與商業訊號日報" />
+  <meta property="og:description" content="K-AI Daily Intelligence 每日整理 AI、企業採用、資本市場與風險治理訊號；以公開來源、事實、推論、風險與編輯判斷拆解市場變化。" />
+  <meta property="og:url" content="https://news-kaihk.github.io/" />
+  <meta property="og:image" content="https://news-kaihk.github.io/icon-512.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="K-AI Daily Intelligence｜AI 市場與商業訊號日報" />
+  <meta name="twitter:description" content="K-AI Daily Intelligence 每日整理 AI、企業採用、資本市場與風險治理訊號；以公開來源、事實、推論、風險與編輯判斷拆解市場變化。" />
+  <meta name="twitter:image" content="https://news-kaihk.github.io/icon-512.png" />
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"K-AI Daily Intelligence","url":"https://news-kaihk.github.io/","logo":"https://news-kaihk.github.io/icon-512.png","sameAs":["https://github.com/news-kaihk/news-kaihk.github.io"]},{"@context":"https://schema.org","@type":"WebSite","name":"K-AI Daily Intelligence","url":"https://news-kaihk.github.io/","inLanguage":"zh-Hant-HK","description":"K-AI Daily Intelligence 每日整理 AI、企業採用、資本市場與風險治理訊號；以公開來源、事實、推論、風險與編輯判斷拆解市場變化。","publisher":{"@type":"Organization","name":"K-AI Daily Intelligence","logo":{"@type":"ImageObject","url":"https://news-kaihk.github.io/icon-512.png"}}},{"@context":"https://schema.org","@type":"CollectionPage","name":"K-AI Daily Intelligence｜AI 市場與商業訊號日報","url":"https://news-kaihk.github.io/","description":"K-AI Daily Intelligence 每日整理 AI、企業採用、資本市場與風險治理訊號；以公開來源、事實、推論、風險與編輯判斷拆解市場變化。","inLanguage":"zh-Hant-HK","about":["AI market intelligence","enterprise AI adoption","AI infrastructure","business risk","technology finance"]}]</script>
+  <!-- /K-AI SEO/GEO -->
 </head>
 <body>
   <header class="topbar"><div class="top-inner"><a class="brand" href="./"><span>K-AI Daily</span><span class="mark">INTELLIGENCE</span></a><nav class="nav"><a href="#today">Today</a><a href="#archive">Archive</a><a href="#coverage">關注範圍</a></nav><div class="search-pill">Search briefings ⌘K</div></div></header>

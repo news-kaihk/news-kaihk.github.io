@@ -112,9 +112,9 @@
   - [TechCrunch - More Gemini features are coming to Google TV](https://techcrunch.com/2026/04/29/more-gemini-features-are-coming-to-google-tv/)
 - **正在流行的原因：** 用戶未必想打開另一個 AI app；AI 最自然的分發，是進入原本已使用的 channel：群聊、相簿、電視、購物頁、客服 inbox。
 - **核心 insight：** 下一輪 AI 產品未必靠「新目的地」，而靠「在舊場景內加一個懂上下文的 AI 角色」。
-- **目標人群：** 社群營運者、品牌、電商、客服 team、Telegram / Discord / WhatsApp 群主。
+- **目標人群：** 社群營運者、品牌、電商、客服團隊與群聊社群管理者。
 - **代表案例：** Shapes 把 AI characters 放入人類群聊；Google Photos 用 AI 由相簿建立衣櫥式體驗；Google TV 增加 Gemini features。
-- **客觀 insight / 可觀察機會：** AI 不應只存在於網站 widget；更高頻的入口可能是 Telegram / WhatsApp / Discord 等日常溝通場景。可觀察用途包括群組 FAQ、內部知識庫查詢、每日報告、客服初篩、訂單狀態查詢。
+- **客觀 insight / 可觀察機會：** AI 不應只存在於網站 widget；更高頻的入口可能是即時通訊與群聊等日常溝通場景。可觀察用途包括群組 FAQ、內部知識庫查詢、每日報告、客服初篩、訂單狀態查詢。
 - **風險 / 是否曇花一現：** Consumer novelty 很易退潮；B2B 版本要以權限、資料範圍、審批和明確任務設計來避免失控。
 - **編輯判斷：** 值得追
 

@@ -1,0 +1,26 @@
+# K-AI Daily Intelligence
+
+> Objective AI market and business intelligence briefings for readers tracking AI infrastructure, enterprise adoption, finance, commerce, and risk governance.
+
+## Canonical site
+- Home: https://news-kaihk.github.io/
+- Report index JSON: https://news-kaihk.github.io/reports/index.json
+- Sitemap: https://news-kaihk.github.io/sitemap.xml
+
+## Editorial scope
+- AI market dynamics, enterprise adoption, infrastructure/capex, AI coding economics, content rights, physical AI, risk and governance.
+- Public-source based analysis; facts, inference, risk and editorial judgment are separated in each report.
+- Primary language: Traditional Chinese for Hong Kong and global Chinese readers; sources may be English or Chinese.
+
+## Key reports
+- 2026-05-04: https://news-kaihk.github.io/reports/2026-05-04-ai-trend-report.html — AI 市場過去 72 小時的主線不是單一模型更新，而是「高責任場景落地」：醫療、國防、法律/開發者工作流開始要求可審計、可控成本與合規部署。；內容生成市場出現供應過剩與權利邊界重劃；平台、獎項機構與創作者正在把「是否 AI 生成」轉化為分發、資格與授權問題。
+- 2026-05-03: https://news-kaihk.github.io/reports/2026-05-03-ai-trend-report.html — Pentagon classified AI deals、Claude Security、legal AI 投資、OpenAI revenue / IPO 壓力、Google I/O 前 AI 入口戰等訊號，顯示高信任 AI 場景與分發入口競爭升溫。
+- 2026-05-02: https://news-kaihk.github.io/reports/2026-05-02-ai-trend-report.html — AI 基建 capex、政府 classified-network AI、AWS managed agents、AI security、多模態 agent、AI coding monetization、硬件需求與 frontier AI 估值同時升溫。
+- 2026-05-01: https://news-kaihk.github.io/reports/2026-05-01-ai-trend-report.html — 企業 AI Agent、AWS AgentCore、Shopify conversational commerce、AI Search、AI coding governance、AI cybersecurity 與香港企業 adoption 同時升溫。
+- 2026-04-30: https://news-kaihk.github.io/reports/2026-04-30-ai-trend-report.html — AI 基建、企業 Agent、辦公文件生成、安全治理與多模態 workflow 同時升溫；本期整理 8 個 AI / 商業趨勢、風險與可執行觀察。
+- 2026-04-29: https://news-kaihk.github.io/reports/2026-04-29-ai-trend-report.html — AI 從聊天工具轉向企業 Agent Workflow；本期整理 7 個 AI / 商業趨勢、風險與可執行觀察。
+
+## Citation guidance
+- Prefer canonical HTML report URLs over cache-busted URLs.
+- When citing a claim, keep the source context and risk caveats from the report.
+- Do not treat market interpretations as financial advice.

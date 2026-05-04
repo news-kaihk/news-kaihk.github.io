@@ -4,7 +4,7 @@
 
 - AI 正在由聊天產品轉向可部署、可監控、可審批的企業 workflow。
 - Agent orchestration 會成為企業 AI 落地的核心，而不是單一模型能力。
-- Chat platform 是 AI assistant 的自然入口，尤其適合香港公司的 WhatsApp / Telegram 工作習慣。
+- Chat platform 是 AI assistant 的自然入口，尤其適合高度依賴即時通訊和群聊協作的團隊。
 - 安全、權限與日誌會成為 AI Agent 服務商的重要賣點。
 - 電商與多模態文件處理是最容易做出 ROI 的落地場景。
 
@@ -58,15 +58,15 @@
 ### 4. AI 進入群聊，成為團隊成員
 
 - **編輯判斷：** 值得追
-- **一句 insight：** AI 不只在 app 裡一對一對話，而是進入 Telegram、Discord、Slack、WhatsApp 等日常協作場景。
+- **一句 insight：** AI 不只在 app 裡一對一對話，而是進入群聊與即時通訊等日常協作場景。
 - **熱度來源：**
   - [Meet Shapes, the app bringing humans and AI into the same group chats](https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/)
   - [Salesforce rolls out new Slackbot AI agent](https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and)
 - **正在流行的原因：** 用戶不想再下載新 app，AI 最自然的入口是現有聊天群組與工作溝通渠道。
 - **核心 insight：** AI assistant 的最大分發渠道可能不是獨立產品，而是 chat platform 裡的「群組成員」。
-- **目標人群：** 公司 team、社群營運者、Telegram / Discord 群主、客服團隊。
-- **代表案例：** AI characters in group chats、Slackbot AI agent、Telegram AI assistant。
-- **客觀 insight / 可觀察機會：** 強化「Telegram / WhatsApp AI 員工」服務：FAQ、內部助理、每日報告、客戶初步處理、社群管理，尤其適合高度依賴即時通訊的團隊。
+- **目標人群：** 公司 team、社群營運者、群聊社群營運者、客服團隊。
+- **代表案例：** AI characters in group chats、Slackbot AI agent、team chat AI assistant。
+- **客觀 insight / 可觀察機會：** 強化「即時通訊 AI 員工」服務：FAQ、內部助理、每日報告、客戶初步處理、社群管理，尤其適合高度依賴即時通訊的團隊。
 - **風險 / 是否曇花一現：** 私隱與錯誤回覆風險高，必須有權限、審批、黑名單與日誌。
 
 ### 5. AI Cybersecurity 與安全部署成為採購關鍵
@@ -114,7 +114,7 @@
 
 ## 今日可以即刻做的 3 件事
 
-1. 整理一頁「AI 員工熱門場景」觀察：Marketing、Shopify、客服、DevOps、Telegram/WhatsApp，標明適用條件與風險。
+1. 整理一頁「AI 員工熱門場景」觀察：Marketing、Shopify、客服、DevOps、即時通訊渠道，標明適用條件與風險。
 2. 寫一篇讀者向文章：「2026 香港中小企點樣請第一個 AI 員工？」用案例而不是技術術語教育市場。
 3. 把「AI 員工」概念拆成 30 日試點假設：明確任務、資料範圍、人工審批、成功指標與退出條件。
 
