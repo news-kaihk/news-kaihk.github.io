@@ -115,7 +115,8 @@
   function renderArchive(reports){
     const panel = $('.kai-archive-panel');
     if (!panel) return;
-    const current = normalizePath(location.href).split('/').pop();
+    const herePath = normalizePath(location.href);
+    const current = herePath.split('/').pop();
     const groups = {};
     reports.forEach(r => {
       const month = String(r.date || '').slice(0, 7) || '日報檔案';
@@ -124,7 +125,8 @@
     const html = Object.entries(groups).map(([month, items], idx) => `<details ${idx < 2 ? 'open' : ''}><summary>${esc(month)}</summary><div class="kai-date-list">${items.map(r => {
       const href = absoluteReportHref(r);
       const file = href.split('/').pop();
-      return `<a class="kai-date-link ${file === current ? 'active' : ''}" href="${esc(href)}">${esc(dateLabel(r.date))}</a>`;
+      const isRelatedDeepDive = r.date && herePath.includes(`/reports/deep-dives/${r.date}-`);
+      return `<a class="kai-date-link ${file === current || isRelatedDeepDive ? 'active' : ''}" href="${esc(href)}">${esc(dateLabel(r.date))}</a>`;
     }).join('')}</div></details>`).join('');
     const sideBlock = $('.kai-side-block', panel)?.outerHTML || '';
     panel.innerHTML = `<p class="kai-panel-title zh">日報檔案</p>${html}${sideBlock}`;
