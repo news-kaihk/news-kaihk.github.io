@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-05-05",
+    "title": "2026-05-05 Trend Insight 日報",
+    "summary": "Enterprise AI joint ventures、Sierra 融資、AI datacenter 信貸壓力、影像生成 app 增長與 coding agent orchestration。",
+    "html": "reports/2026-05-05-ai-trend-report.html",
+    "md": "reports/2026-05-05-ai-trend-report.md"
+  },
+  {
     "date": "2026-05-04",
     "title": "2026-05-04 Trend Insight 日報",
     "summary": "AI 市場過去 72 小時的主線不是單一模型更新，而是「高責任場景落地」：醫療、國防、法律/開發者工作流開始要求可審計、可控成本與合規部署。；內容生成市場出現供應過剩與權利邊界重劃；平台、獎項機構與創作者正在把「是否 AI 生成」轉化為分發、資格與授權問題。",
