@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{DATE}} Trend Insight 早報｜K-AI Daily Intelligence</title>
+  <link rel="canonical" href="https://news-kaihk.github.io/reports/{{DATE}}-ai-trend-report.html" />
+  <meta name="description" content="{{META_DESCRIPTION}}" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="K-AI Daily Intelligence" />
+  <meta property="og:locale" content="zh_HK" />
+  <meta property="og:title" content="{{DATE}} Trend Insight 早報" />
+  <meta property="og:description" content="{{META_DESCRIPTION}}" />
+  <meta property="og:url" content="https://news-kaihk.github.io/reports/{{DATE}}-ai-trend-report.html" />
+  <meta property="og:image" content="https://news-kaihk.github.io/icon-512.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{DATE}} Trend Insight 早報" />
+  <meta name="twitter:description" content="{{META_DESCRIPTION}}" />
+  <meta name="twitter:image" content="https://news-kaihk.github.io/icon-512.png" />
+  <meta name="geo.region" content="HK" />
+  <meta name="geo.placename" content="Hong Kong" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <script type="application/ld+json">{{NEWSARTICLE_JSONLD}}</script>
+  <script type="application/ld+json">{{BREADCRUMB_JSONLD}}</script>
+  <link rel="stylesheet" href="/assets/kai-theme.css" />
+</head>
+<body>
+  <!-- Scaffold rule: do not hard-code topbar, left archive rail, or right TOC here.
+       /assets/kai-site.js injects the canonical K-AI shell from reports/index.json and page sections. -->
+  <main class="article kai-report" data-report-date="{{DATE}}">
+    <section id="top" class="hero">
+      <div class="eyebrow">Market signals · {{DATE}}</div>
+      <h1>{{MARKET_MAIN_SIGNAL}}</h1>
+      <p class="dek">{{PUBLIC_DEK}}</p>
+      <div class="meta">
+        <span class="pill">{{N_SIGNALS}} signals</span>
+        <span class="pill">Facts / inference separated</span>
+        <span class="pill">2–8 week watchlist</span>
+      </div>
+    </section>
+
+    <section id="summary">
+      <h2>重點摘要</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>今日主訊號</h3>
+          <p>{{MAIN_SIGNAL_SUMMARY}}</p>
+        </article>
+        <article class="card">
+          <h3>背後結構性變化</h3>
+          <ul>
+            <li>{{STRUCTURAL_CHANGE_1}}</li>
+            <li>{{STRUCTURAL_CHANGE_2}}</li>
+            <li>{{STRUCTURAL_CHANGE_3}}</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="matrix">
+      <h2>證據矩陣</h2>
+      <div class="grid">
+        {{EVIDENCE_CARDS}}
+      </div>
+    </section>
+
+    <section id="records">
+      <h2>市場訊號</h2>
+      <div class="cards">
+        {{TREND_RECORD_CARDS}}
+      </div>
+    </section>
+
+    <section id="watchlist">
+      <h2>觀察清單</h2>
+      <ul>
+        {{WATCHLIST_ITEMS}}
+      </ul>
+    </section>
+
+    <section id="sources">
+      <h2>公開來源</h2>
+      <ol>
+        {{SOURCE_LINKS}}
+      </ol>
+    </section>
+  </main>
+  <script src="/assets/kai-site.js" defer></script>
+</body>
+</html>
