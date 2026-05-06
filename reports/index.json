@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-05-06",
+    "title": "2026-05-06 Trend Insight 日報",
+    "summary": "OpenAI default model、iOS model routing、ChatGPT commerce、AI companion / copyright liability 與 Gemini Webhooks 顯示，AI 競爭重心轉向分發入口、責任成本與工作流工程。",
+    "html": "reports/2026-05-06-ai-trend-report.html",
+    "md": "reports/2026-05-06-ai-trend-report.md"
+  },
+  {
     "date": "2026-05-05",
     "title": "2026-05-05 Trend Insight 日報",
     "summary": "Enterprise AI joint ventures、Sierra 融資、AI datacenter 信貸壓力、影像生成 app 增長與 coding agent orchestration。",
