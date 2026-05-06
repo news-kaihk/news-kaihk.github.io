@@ -1,6 +1,8 @@
 (() => {
   const SITE = 'https://news-kaihk.github.io';
   const FALLBACK_REPORTS = [
+    {date:'2026-05-06', title:'2026-05-06 Trend Insight 日報', html:'/reports/2026-05-06-ai-trend-report.html'},
+    {date:'2026-05-05', title:'2026-05-05 Trend Insight 日報', html:'/reports/2026-05-05-ai-trend-report.html'},
     {date:'2026-05-04', title:'2026-05-04 Trend Insight 日報', html:'/reports/2026-05-04-ai-trend-report.html'},
     {date:'2026-05-03', title:'2026-05-03 Trend Insight 日報', html:'/reports/2026-05-03-ai-trend-report.html'},
     {date:'2026-05-02', title:'2026-05-02 Trend Insight 日報', html:'/reports/2026-05-02-ai-trend-report.html'},
@@ -33,7 +35,7 @@
       : [{href:'/',label:'最新日報'}, {href:'/#archive',label:'歷史日報'}, {href:'/#coverage',label:'關注範圍'}];
     if (!isHome && $('#analysis')) localLinks.push({href:'#analysis',label:'深度分析'});
     if (!isHome && $('#sources')) localLinks.push({href:'#sources',label:'公開來源'});
-    if (isHome) localLinks.push({href:'/reports/2026-05-04-ai-trend-report.html',label:'今日完整報告'});
+    if (isHome) localLinks.push({href:'/#today',label:'今日完整報告'});
     const header = document.createElement('header');
     header.className = 'kai-topbar';
     header.innerHTML = `<div class="kai-top-inner"><a class="kai-brand" href="/" aria-label="K-AI Daily Intelligence"><img class="kai-logo" src="/favicon.svg" alt="" width="28" height="28"><span class="kai-brand-name">K-AI Daily</span><span class="kai-brand-badge">INTELLIGENCE</span></a><nav class="kai-site-nav" aria-label="Site navigation">${localLinks.map(link => `<a href="${esc(link.href)}">${esc(link.label)}</a>`).join('')}</nav><div class="kai-command" aria-hidden="true">搜尋日報 <span>⌘K</span></div></div>`;
