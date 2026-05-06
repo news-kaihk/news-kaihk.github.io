@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-05-07",
+    "title": "2026-05-07 Trend Insight 日報",
+    "summary": "金融 AI agents、垂直企業服務、AI 安全測試、內容授權訴訟、agent commerce 與基建網絡更新同時升溫，顯示 AI 市場由模型敘事轉向受監管、可整合、可付費的工作流。",
+    "html": "reports/2026-05-07-ai-trend-report.html",
+    "md": "reports/2026-05-07-ai-trend-report.md"
+  },
+  {
     "date": "2026-05-06",
     "title": "2026-05-06 Trend Insight 日報",
     "summary": "OpenAI default model、iOS model routing、ChatGPT commerce、AI companion / copyright liability 與 Gemini Webhooks 顯示，AI 競爭重心轉向分發入口、責任成本與工作流工程。",
