@@ -172,12 +172,21 @@
     });
   }
   function activeStates(){
-    const localLinks = $$('.kai-page-panel a[href^="#"], .kai-site-nav a[href^="#"]');
-    const sections = localLinks.map(a => $(a.getAttribute('href'))).filter(Boolean);
-    const update = () => {
-      let current = sections[0];
+    const pageLinks = $$('.kai-page-panel a[href^="#"]');
+    const siteHashLinks = $$('.kai-site-nav a[href^="#"]');
+    const pageSections = pageLinks.map(a => $(a.getAttribute('href'))).filter(Boolean);
+    const siteSections = siteHashLinks.map(a => $(a.getAttribute('href'))).filter(Boolean);
+    const pickCurrent = (sections, defaultToFirst=true) => {
+      if (!sections.length) return null;
+      let current = defaultToFirst ? sections[0] : null;
       for (const section of sections) if (section.getBoundingClientRect().top < 240) current = section;
-      localLinks.forEach(a => a.classList.toggle('active', !!current && a.getAttribute('href') === `#${current.id}`));
+      return current;
+    };
+    const update = () => {
+      const pageCurrent = pickCurrent(pageSections, true);
+      const siteCurrent = pickCurrent(siteSections, false);
+      pageLinks.forEach(a => a.classList.toggle('active', !!pageCurrent && a.getAttribute('href') === `#${pageCurrent.id}`));
+      siteHashLinks.forEach(a => a.classList.toggle('active', !!siteCurrent && a.getAttribute('href') === `#${siteCurrent.id}`));
       $$('.kai-site-nav a[href^="/"]').forEach(a => {
         const target = normalizePath(a.href);
         const here = normalizePath(location.href);
