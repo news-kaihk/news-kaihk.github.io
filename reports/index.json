@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-05-09",
+    "title": "2026-05-09 Trend Insight 日報",
+    "summary": "AI 市場主線由模型展示轉向「可控代理與可計價效率」：coding agent 安全沙箱、企業裁員與客服自動化、AI 廣告入口、基建供電，以及開發者合規責任同步升溫。",
+    "html": "reports/2026-05-09-ai-trend-report.html",
+    "md": "reports/2026-05-09-ai-trend-report.md"
+  },
+  {
     "date": "2026-05-08",
     "title": "2026-05-08 Trend Insight 日報",
     "summary": "即時語音 API、桌面代理、AI 安全測試、代理記憶、算力網絡與歐盟規則延後同時升溫，顯示 AI 競爭由模型能力轉向可交付、可監管、可承擔成本的工作流。",
