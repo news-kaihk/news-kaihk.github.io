@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-05-12",
+    "title": "2026-05-12 Trend Insight 早報",
+    "summary": "AI 市場由模型能力轉入工作流、成本、安全與資本約束的四重重估；今日用 5 條訊號拆清誰收現金、誰埋單、誰有定價權。",
+    "html": "reports/2026-05-12-ai-trend-report.html",
+    "md": "reports/2026-05-12-ai-trend-report.md",
+    "description": "AI 市場今日主線是從模型發布轉向工作流護城河、模型成本重估、安全責任與資本瓶頸；同時用 stablecoin 監管與支付分發訓練跨領域市場感。",
+    "signals": 5,
+    "tags": [
+      "AI",
+      "市場感",
+      "企業 AI",
+      "模型成本",
+      "AI 安全",
+      "Stablecoin"
+    ]
+  },
+  {
     "date": "2026-05-11",
     "title": "2026-05-11 Trend Insight 早報",
     "summary": "AI 市場進入成本、責任、分發與基建約束同時收緊的階段；今日用 3 條主線、3 條快讀與 5 問框架，練習先看價值流向，再看 headline。",
