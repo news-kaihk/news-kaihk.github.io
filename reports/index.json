@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-05-13",
+    "title": "2026-05-13 Trend Insight 早報",
+    "summary": "AI 市場正在由模型更強，轉向誰為基建、電力、安全與支付軌道埋單的現金流重估。",
+    "html": "reports/2026-05-13-ai-trend-report.html",
+    "md": "reports/2026-05-13-ai-trend-report.md",
+    "description": "AI 基建融資、數據中心電力成本、AI 安全自動化與 stablecoin 企業支付同時升溫；今日用市場感 5 問拆解誰收錢、誰承擔 capex 與風險、定價權在哪。",
+    "signals": 5,
+    "tags": [
+      "AI",
+      "市場感",
+      "AI 基建",
+      "電力",
+      "AI 安全",
+      "Stablecoin"
+    ]
+  },
+  {
     "date": "2026-05-12",
     "title": "2026-05-12 Trend Insight 早報",
     "summary": "AI 市場由模型能力轉入工作流、成本、安全與資本約束的四重重估；今日用 5 條訊號拆清誰收現金、誰埋單、誰有定價權。",
