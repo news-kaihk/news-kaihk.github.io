@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-05-14",
+    "title": "2026-05-14 Trend Insight 早報",
+    "summary": "AI 需求仍強，但市場正在由追逐模型 headline，轉向追問算力、電力、安全、資料權利與分發入口的現金流責任。",
+    "html": "reports/2026-05-14-ai-trend-report.html",
+    "md": "reports/2026-05-14-ai-trend-report.md",
+    "description": "AI capex、AI cloud、AI 安全供應鏈、資料授權、能源成本與串流廣告同時指向同一件事：市場正在重估誰先收現金、誰承擔 capex 與監管風險、誰真正有定價權。",
+    "signals": 6,
+    "tags": [
+      "AI",
+      "市場感",
+      "AI 基建",
+      "AI 安全",
+      "資料授權",
+      "能源",
+      "廣告"
+    ]
+  },
+  {
     "date": "2026-05-13",
     "title": "2026-05-13 Trend Insight 早報",
     "summary": "AI 市場正在由模型更強，轉向誰為基建、電力、安全與支付軌道埋單的現金流重估。",
