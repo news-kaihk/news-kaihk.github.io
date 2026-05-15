@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-05-15",
+    "title": "2026-05-15 Trend Insight 早報",
+    "summary": "AI 競爭由模型能力轉向企業採用、分發入口與基建回本：市場開始追問誰真正收現金、誰先承擔成本。",
+    "html": "reports/2026-05-15-ai-trend-report.html",
+    "md": "reports/2026-05-15-ai-trend-report.md",
+    "description": "企業 AI 採用、agentic infrastructure、Google Gemini 入口、AI 監管、Netflix 廣告閉環與中國平台 AI ROI，共同指向 AI 投入必須回到現金流、成本承擔與定價權驗證。",
+    "signals": 6,
+    "tags": [
+      "AI",
+      "市場感",
+      "企業 AI",
+      "AI 基建",
+      "Gemini",
+      "AI 監管",
+      "廣告"
+    ]
+  },
+  {
     "date": "2026-05-14",
     "title": "2026-05-14 Trend Insight 早報",
     "summary": "AI 需求仍強，但市場正在由追逐模型 headline，轉向追問算力、電力、安全、資料權利與分發入口的現金流責任。",
