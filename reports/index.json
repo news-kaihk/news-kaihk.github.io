@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-05-16",
+    "title": "2026-05-16 Trend Insight 早報",
+    "summary": "今日主線不是單一模型突破，而是 AI 進一步插入金融、開發、內容分發與基建成本中心。市場要看的不是 headline 熱度，而是哪些層能收現金、哪些層先承擔合規、折舊、能源與信任成本。",
+    "html": "reports/2026-05-16-ai-trend-report.html",
+    "md": "reports/2026-05-16-ai-trend-report.md",
+    "description": "AI 個人金融、coding agent 安全工作流、AI 內容治理、電力成本、推理效率與資產代幣化共同顯示，市場正在重估誰收現金、誰承擔成本與誰有定價權。",
+    "signals": 6,
+    "tags": [
+      "AI",
+      "市場感",
+      "個人金融",
+      "Coding Agent",
+      "AI 內容治理",
+      "AI 基建",
+      "推理效率",
+      "代幣化"
+    ]
+  },
+  {
     "date": "2026-05-15",
     "title": "2026-05-15 Trend Insight 早報",
     "summary": "AI 競爭由模型能力轉向企業採用、分發入口與基建回本：市場開始追問誰真正收現金、誰先承擔成本。",
