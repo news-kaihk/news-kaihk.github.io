@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-05-17",
+    "title": "2026-05-17 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "AI 與數碼平台正由功能競賽轉向高信任入口、企業控制層、資本耐性與責任承擔。",
+    "html": "reports/2026-05-17-ai-trend-report.html",
+    "md": "reports/2026-05-17-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "Daily Briefing"
+    ],
+    "signals": 5,
+    "sources": 32
+  },
+  {
     "date": "2026-05-16",
     "title": "2026-05-16 Trend Insight 早報",
     "summary": "今日主線不是單一模型突破，而是 AI 進一步插入金融、開發、內容分發與基建成本中心。市場要看的不是 headline 熱度，而是哪些層能收現金、哪些層先承擔合規、折舊、能源與信任成本。",
