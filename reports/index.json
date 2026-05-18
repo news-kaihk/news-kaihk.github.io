@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-05-18",
+    "title": "2026-05-18 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "AI 由功能示範轉向成本、控制權與公共入口的耐力賽",
+    "html": "reports/2026-05-18-ai-trend-report.html",
+    "md": "reports/2026-05-18-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "市場感",
+      "企業 AI",
+      "AI 基建",
+      "Stablecoin",
+      "Robotaxi"
+    ],
+    "signals": 6,
+    "sources": 14
+  },
+  {
     "date": "2026-05-17",
     "title": "2026-05-17 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "AI 與數碼平台正由功能競賽轉向高信任入口、企業控制層、資本耐性與責任承擔。",
