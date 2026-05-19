@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-05-19",
+    "title": "2026-05-19 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "OpenAI × Dell 顯示 coding agent 的競爭焦點由模型能力轉向企業資料治理、hybrid / on-prem 部署與基建分配權。",
+    "html": "reports/2026-05-19-ai-trend-report.html",
+    "md": "reports/2026-05-19-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Coding Agent",
+      "Enterprise AI",
+      "Hybrid Infrastructure",
+      "Dell",
+      "OpenAI"
+    ],
+    "signals": 1,
+    "sources": 6
+  },
+  {
     "date": "2026-05-18",
     "title": "2026-05-18 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "AI 由功能示範轉向成本、控制權與公共入口的耐力賽",
