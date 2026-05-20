@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-05-20",
+    "title": "2026-05-20 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "Google I/O、Anthropic sandbox、OpenAI 內容來源、Cloudflare security agent、Mistral physical AI 與 GitHub remote Copilot 同日升溫，顯示 AI 競爭由模型展示轉向可執行、可治理、可追溯的工作流控制權。",
+    "html": "reports/2026-05-20-ai-trend-report.html",
+    "md": "reports/2026-05-20-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Agentic AI",
+      "Enterprise AI",
+      "Security",
+      "Provenance",
+      "Physical AI"
+    ],
+    "signals": 6,
+    "sources": 10
+  },
+  {
     "date": "2026-05-19",
     "title": "2026-05-19 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "OpenAI × Dell 顯示 coding agent 的競爭焦點由模型能力轉向企業資料治理、hybrid / on-prem 部署與基建分配權。",
