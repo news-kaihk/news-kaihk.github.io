@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-05-22",
+    "title": "2026-05-22 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "Spotify / UMG、Google agentic browsing audit、Cohere 開源模型、Cyber Command AI 部署、SAP × Mistral 與 GitHub 安全事件共同顯示，AI 採用正由 demo 轉入授權、審計、部署責任與平台入口再分配。",
+    "html": "reports/2026-05-22-ai-trend-report.html",
+    "md": "reports/2026-05-22-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "Agentic AI",
+      "Content Licensing",
+      "Enterprise AI",
+      "Security",
+      "Developer Platforms"
+    ],
+    "signals": 6,
+    "sources": 14
+  },
+  {
     "date": "2026-05-21",
     "title": "2026-05-21 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "NVIDIA 財報、xAI 資本與能源壓力、Google agentic stack、DeepSeek Code、LinkedIn 內容治理與 GitHub 安全事件共同顯示，AI 競爭正由功能發布轉向誰能承擔算力、能源、資料、審計與平台信任成本。",
