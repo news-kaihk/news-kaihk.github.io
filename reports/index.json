@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-05-23",
+    "title": "2026-05-23 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "NVIDIA 財報、Google agent 入口、Cohere 開源、AI agent 身份安全、Spotify / UMG 授權與 AI data center 能源規劃共同顯示，AI 市場正在由模型展示轉向算力供應、入口分配、治理責任與權利分帳的現金流重排。",
+    "html": "reports/2026-05-23-ai-trend-report.html",
+    "md": "reports/2026-05-23-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise Security",
+      "Content Licensing",
+      "Energy"
+    ],
+    "signals": 6,
+    "sources": 14
+  },
+  {
     "date": "2026-05-22",
     "title": "2026-05-22 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "Spotify / UMG、Google agentic browsing audit、Cohere 開源模型、Cyber Command AI 部署、SAP × Mistral 與 GitHub 安全事件共同顯示，AI 採用正由 demo 轉入授權、審計、部署責任與平台入口再分配。",
