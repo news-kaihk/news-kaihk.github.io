@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-05-25",
+    "title": "2026-05-25 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "Google、Cloudflare、Anthropic、NVIDIA 與 Google Cloud 的訊號共同顯示，AI 市場正在由單點模型能力展示，轉向誰能掌握搜尋入口、agent runtime、API 連接、開發者工作流與高算力訂閱的現金流。",
+    "html": "reports/2026-05-25-ai-trend-report.html",
+    "md": "reports/2026-05-25-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "Agentic AI",
+      "AI Search",
+      "Developer Platforms",
+      "Cloud Infrastructure",
+      "AI Subscriptions"
+    ],
+    "signals": 6,
+    "sources": 12
+  },
+  {
     "date": "2026-05-24",
     "title": "2026-05-24 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "NVIDIA、Goldman Sachs、agent 安全工具、Workday、Zscaler、Spotify / UMG 與 JPMorgan 等訊號共同顯示，AI 市場正在由模型功能展示，轉向誰能承擔算力、電力、權限、合規、內容授權與組織改造成本。",
