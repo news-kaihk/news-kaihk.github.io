@@ -146,7 +146,55 @@ body.kai-enhanced{padding-top:0!important}
   box-shadow:0 12px 34px rgba(16,24,40,.055)!important;
 }
 .kai-layout main.kai-report .summary-card li{margin:9px 0!important}
-.kai-layout main.kai-report .cards-grid{gap:14px!important}
+.kai-layout main.kai-report .cards-grid{
+  gap:16px!important;
+  align-items:stretch!important;
+}
+.kai-layout main.kai-report .cards-grid .evidence-card{
+  height:100%!important;
+  display:flex!important;
+  flex-direction:column!important;
+  padding:20px!important;
+  border:1px solid rgba(31,41,55,.09)!important;
+  border-radius:24px!important;
+  background:linear-gradient(180deg,#fff,rgba(248,250,252,.82))!important;
+  box-shadow:0 14px 38px rgba(16,24,40,.06)!important;
+}
+.kai-layout main.kai-report .evidence-card .e-top{
+  min-height:62px!important;
+  padding-bottom:14px!important;
+  margin-bottom:14px!important;
+  border-bottom:1px solid rgba(31,41,55,.08)!important;
+}
+.kai-layout main.kai-report .evidence-card dl{
+  flex:1!important;
+  display:grid!important;
+  grid-template-rows:auto 1fr auto auto!important;
+  gap:10px!important;
+}
+.kai-layout main.kai-report .evidence-card dl>div{
+  padding:11px 12px!important;
+  border-radius:16px!important;
+  background:rgba(248,250,252,.78)!important;
+}
+.kai-layout main.kai-report .evidence-card dt{
+  margin-bottom:5px!important;
+  color:#64748b!important;
+  font-size:11px!important;
+  font-weight:950!important;
+  letter-spacing:.08em!important;
+}
+.kai-layout main.kai-report .evidence-card dd{
+  margin:0!important;
+  color:#334155!important;
+  font-size:13px!important;
+  line-height:1.58!important;
+}
+.kai-layout main.kai-report .evidence-card dt,
+.kai-layout main.kai-report .evidence-card dd,
+.kai-layout main.kai-report .evidence-card strong{
+  display:block!important;
+}
 .kai-layout main.kai-report .evidence-card,
 .kai-layout main.kai-report .trend-card{
   background:#fff!important;
