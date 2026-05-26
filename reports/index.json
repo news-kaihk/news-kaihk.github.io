@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-05-26",
+    "title": "2026-05-26 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "SoftBank、Anthropic / Microsoft、Sonar、ClickUp、DeepSeek、Schneider Electric 與 HSBC 的訊號共同顯示，AI 市場正在由模型展示轉向可驗證工作流、區域算力供應、推理價格壓力與組織成本重排。",
+    "html": "reports/2026-05-26-ai-trend-report.html",
+    "md": "reports/2026-05-26-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Developer Platforms",
+      "Cloud Infrastructure",
+      "Enterprise AI"
+    ],
+    "signals": 6,
+    "sources": 15
+  },
+  {
     "date": "2026-05-25",
     "title": "2026-05-25 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "Google、Cloudflare、Anthropic、NVIDIA 與 Google Cloud 的訊號共同顯示，AI 市場正在由單點模型能力展示，轉向誰能掌握搜尋入口、agent runtime、API 連接、開發者工作流與高算力訂閱的現金流。",
