@@ -1,5 +1,77 @@
 [
   {
+    "date": "2026-05-31",
+    "title": "2026-05-31 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "週末訊號顯示，AI demand 正同時壓向電力、記憶體、企業雲收入、模型 API 價格與 agent 安全治理；下一輪市場判斷要看誰掌握可用能源、供應鏈瓶頸、低成本推理與責任邊界。",
+    "html": "reports/2026-05-31-ai-trend-report.html",
+    "md": "reports/2026-05-31-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Energy"
+    ],
+    "signals": 6,
+    "sources": 11
+  },
+  {
+    "date": "2026-05-30",
+    "title": "2026-05-30 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "SoftBank 法國 AI data center、NVIDIA / Microsoft Windows PC、韓國 physical AI 供應鏈、AI 人才管制與企業 SaaS 壓力共同顯示，AI 市場正由單一模型競爭轉向地區算力、端側入口、供應鏈控制與政策風險。",
+    "html": "reports/2026-05-30-ai-trend-report.html",
+    "md": "reports/2026-05-30-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Energy"
+    ],
+    "signals": 6,
+    "sources": 11
+  },
+  {
+    "date": "2026-05-29",
+    "title": "2026-05-29 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "Dell、Snowflake、Microsoft、NVIDIA optics 與 BCG 的企業／主權 AI 訊號共同顯示，AI 競爭正在由模型功能發布轉向基建供應、雲端長約、agent 架構治理與跨產業落地責任。",
+    "html": "reports/2026-05-29-ai-trend-report.html",
+    "md": "reports/2026-05-29-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Energy"
+    ],
+    "signals": 6,
+    "sources": 10
+  },
+  {
+    "date": "2026-05-28",
+    "title": "2026-05-28 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "NVIDIA、Dell、Salesforce、Snowflake 與半導體／PC／醫療訊號共同顯示，AI 市場正由模型能力展示，轉向可交付算力、企業 agent 現金流、資料治理控制面與供應鏈瓶頸重排。",
+    "html": "reports/2026-05-28-ai-trend-report.html",
+    "md": "reports/2026-05-28-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Energy"
+    ],
+    "signals": 6,
+    "sources": 11
+  },
+  {
     "date": "2026-05-27",
     "title": "2026-05-27 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "NVIDIA、Google Cloud、AWS、Google Chrome Enterprise、GitLab、OpenAI / Anthropic、Databricks 與資料中心電力訊號共同顯示，AI 競爭正由單一模型能力，轉向系統容量、企業治理、推理效率與能源成本承擔。",

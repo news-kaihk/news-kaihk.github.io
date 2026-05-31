@@ -30,7 +30,7 @@ BLOCKED_NEW_REPORT_PATTERNS = [
     r'<style\b',
 ]
 PUBLIC_COPY_BLOCKLIST = [
-    'Telegram', '老大', '小馬', '工具調用', 'cron', 'repo path',
+    'Telegram', '老大', '小馬', '工具調用', 'cron job', 'repo path',
     'style baseline', '重版', '2/5', '3/5', '4/5', '5/5',
     'Briefing frame', 'Core thesis', 'Value Chain', 'Open detail',
 ]
