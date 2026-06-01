@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-06-01",
+    "title": "2026-06-01 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "AI 市場今日主線不是單一模型突破，而是企業 agent 收入、AI server 入帳、能源自備、HBM/封裝、agent 安全閘道與硬體資本重估同時把定價權推向可交付容量與控制層。",
+    "html": "reports/2026-06-01-ai-trend-report.html",
+    "md": "reports/2026-06-01-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Energy"
+    ],
+    "signals": 6,
+    "sources": 12
+  },
+  {
     "date": "2026-05-31",
     "title": "2026-05-31 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "週末訊號顯示，AI demand 正同時壓向電力、記憶體、企業雲收入、模型 API 價格與 agent 安全治理；下一輪市場判斷要看誰掌握可用能源、供應鏈瓶頸、低成本推理與責任邊界。",
