@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-06-02",
+    "title": "2026-06-02 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日訊號顯示，AI 競爭正在由單一模型能力，轉向多雲分銷、企業 agent runtime、可信資料管線、記憶體與電力等可交付基建，以及監管合規控制層。",
+    "html": "reports/2026-06-02-ai-trend-report.html",
+    "md": "reports/2026-06-02-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Regulation"
+    ],
+    "signals": 6,
+    "sources": 12
+  },
+  {
     "date": "2026-06-01",
     "title": "2026-06-01 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "AI 市場今日主線不是單一模型突破，而是企業 agent 收入、AI server 入帳、能源自備、HBM/封裝、agent 安全閘道與硬體資本重估同時把定價權推向可交付容量與控制層。",
