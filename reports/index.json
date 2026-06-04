@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-06-04",
+    "title": "2026-06-04 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日訊號顯示，AI 競爭不再只看模型分數，而是看誰能把模型放進企業採購、開發者工作流、代理執行環境，以及電力與晶片可交付容量之中。",
+    "html": "reports/2026-06-04-ai-trend-report.html",
+    "md": "reports/2026-06-04-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Semiconductor"
+    ],
+    "signals": 6,
+    "sources": 12
+  },
+  {
+    "date": "2026-06-03",
+    "title": "2026-06-03 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日訊號顯示，AI 競爭重心正由單一模型表現，轉向模型分銷渠道、區域算力供給、記憶體與封裝瓶頸、agent 成本治理，以及高風險自動化流程的責任邊界。",
+    "html": "reports/2026-06-03-ai-trend-report.html",
+    "md": "reports/2026-06-03-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Semiconductor"
+    ],
+    "signals": 6,
+    "sources": 12
+  },
+  {
     "date": "2026-06-02",
     "title": "2026-06-02 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "今日訊號顯示，AI 競爭正在由單一模型能力，轉向多雲分銷、企業 agent runtime、可信資料管線、記憶體與電力等可交付基建，以及監管合規控制層。",
