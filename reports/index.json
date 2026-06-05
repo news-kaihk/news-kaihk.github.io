@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-06-05",
+    "title": "2026-06-05 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日主線是 AI 市場由「模型能力比較」再推前一格：真正稀缺開始落在企業 agent 控制面、可審計分銷渠道、AI data center 電力與水資源、以及能把算力包裝成合規採購的服務層。",
+    "html": "reports/2026-06-05-ai-trend-report.html",
+    "md": "reports/2026-06-05-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Semiconductor"
+    ],
+    "signals": 6,
+    "sources": 12
+  },
+  {
     "date": "2026-06-04",
     "title": "2026-06-04 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "今日訊號顯示，AI 競爭不再只看模型分數，而是看誰能把模型放進企業採購、開發者工作流、代理執行環境，以及電力與晶片可交付容量之中。",
