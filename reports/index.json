@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-06-07",
+    "title": "2026-06-07 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日主線是：AI 市場的稀缺正在由模型能力，進一步轉向可交付基建、電網穩定、企業 agent 治理、工作流入口與跨境合規成本。收入入口更集中在雲端、平台與顧問交付層；風險則落在電網、公用事業、企業採購者與受平台重分配影響的內容／商務渠道。",
+    "html": "reports/2026-06-07-ai-trend-report.html",
+    "md": "reports/2026-06-07-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Semiconductor"
+    ],
+    "signals": 6,
+    "sources": 12
+  },
+  {
     "date": "2026-06-06",
     "title": "2026-06-06 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "今日市場主線是：AI 競爭正在由「誰的模型更強」轉向「誰控制工作流入口、企業治理、主權合規、能源／晶片容量與客戶對話分銷」。收入入口更接近平台與基建，成本與風險則更多落在企業、雲商、電網與內容供應方。",
