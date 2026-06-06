@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-06-06",
+    "title": "2026-06-06 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日市場主線是：AI 競爭正在由「誰的模型更強」轉向「誰控制工作流入口、企業治理、主權合規、能源／晶片容量與客戶對話分銷」。收入入口更接近平台與基建，成本與風險則更多落在企業、雲商、電網與內容供應方。",
+    "html": "reports/2026-06-06-ai-trend-report.html",
+    "md": "reports/2026-06-06-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Semiconductor"
+    ],
+    "signals": 6,
+    "sources": 12
+  },
+  {
     "date": "2026-06-05",
     "title": "2026-06-05 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "今日主線是 AI 市場由「模型能力比較」再推前一格：真正稀缺開始落在企業 agent 控制面、可審計分銷渠道、AI data center 電力與水資源、以及能把算力包裝成合規採購的服務層。",
