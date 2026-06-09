@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-06-09",
+    "title": "2026-06-09 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日訊號顯示，AI 競爭正在由模型展示，轉入更難替代的三層：可併網與可交付的基建、可治理的 agent runtime，以及能控制企業工作流與用量定價的軟件入口。",
+    "html": "reports/2026-06-09-ai-trend-report.html",
+    "md": "reports/2026-06-09-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Data Centers"
+    ],
+    "signals": 6,
+    "sources": 13
+  },
+  {
     "date": "2026-06-08",
     "title": "2026-06-08 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "今日訊號顯示，AI 競爭正在由單一模型能力，轉向三個更具定價權的層面：可交付的主權／私有雲基建、企業 agent 的身份與 runtime 控制，以及把模型嵌入日常工作流的分銷入口。",
