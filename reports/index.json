@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-06-08",
+    "title": "2026-06-08 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日訊號顯示，AI 競爭正在由單一模型能力，轉向三個更具定價權的層面：可交付的主權／私有雲基建、企業 agent 的身份與 runtime 控制，以及把模型嵌入日常工作流的分銷入口。",
+    "html": "reports/2026-06-08-ai-trend-report.html",
+    "md": "reports/2026-06-08-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Sovereign AI"
+    ],
+    "signals": 6,
+    "sources": 14
+  },
+  {
     "date": "2026-06-07",
     "title": "2026-06-07 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "今日主線是：AI 市場的稀缺正在由模型能力，進一步轉向可交付基建、電網穩定、企業 agent 治理、工作流入口與跨境合規成本。收入入口更集中在雲端、平台與顧問交付層；風險則落在電網、公用事業、企業採購者與受平台重分配影響的內容／商務渠道。",
