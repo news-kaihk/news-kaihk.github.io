@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-06-10",
+    "title": "2026-06-10 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日訊號顯示，AI 市場正在由單點模型競爭，轉向更重資產、更受監管、更貼近企業現金流的供應鏈競爭：容量、網路、能源、出口合規、雲端安全與人力替代開始同時定價。",
+    "html": "reports/2026-06-10-ai-trend-report.html",
+    "md": "reports/2026-06-10-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Cloud Infrastructure",
+      "Semiconductor",
+      "Enterprise AI",
+      "Energy"
+    ],
+    "signals": 6,
+    "sources": 12
+  },
+  {
     "date": "2026-06-09",
     "title": "2026-06-09 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "今日訊號顯示，AI 競爭正在由模型展示，轉入更難替代的三層：可併網與可交付的基建、可治理的 agent runtime，以及能控制企業工作流與用量定價的軟件入口。",
