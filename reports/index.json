@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-06-11",
+    "title": "2026-06-11 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日訊號顯示，AI 市場正在由模型與算力競賽，推進到「可融資、可治理、可分銷」的基建與工作流競爭：資料中心長約、國家級資本、企業交付、agent 監控、平台開放與金融監管開始同時改寫定價權。",
+    "html": "reports/2026-06-11-ai-trend-report.html",
+    "md": "reports/2026-06-11-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Regulation"
+    ],
+    "signals": 6,
+    "sources": 12
+  },
+  {
     "date": "2026-06-10",
     "title": "2026-06-10 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "今日訊號顯示，AI 市場正在由單點模型競爭，轉向更重資產、更受監管、更貼近企業現金流的供應鏈競爭：容量、網路、能源、出口合規、雲端安全與人力替代開始同時定價。",
