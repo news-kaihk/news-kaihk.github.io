@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-06-12",
+    "title": "2026-06-12 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日訊號顯示，AI 市場正在由單點模型競賽，轉入「可融資容量、可交付雲收入、可控網絡與可審計 agent」的基建化階段；真正的定價權更集中在能把電力、雲端、網絡、企業流程與合規證據包成長約產品的一方。",
+    "html": "reports/2026-06-12-ai-trend-report.html",
+    "md": "reports/2026-06-12-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Cloud Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Regulation"
+    ],
+    "signals": 6,
+    "sources": 13
+  },
+  {
     "date": "2026-06-11",
     "title": "2026-06-11 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "今日訊號顯示，AI 市場正在由模型與算力競賽，推進到「可融資、可治理、可分銷」的基建與工作流競爭：資料中心長約、國家級資本、企業交付、agent 監控、平台開放與金融監管開始同時改寫定價權。",
