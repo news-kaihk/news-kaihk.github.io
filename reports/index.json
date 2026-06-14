@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-06-14",
+    "title": "2026-06-14 AI Trend Insight 早報",
+    "html": "reports/2026-06-14-ai-trend-report.html",
+    "md": "reports/2026-06-14-ai-trend-report.md",
+    "summary": "主線：AI 市場由模型發布競賽轉向存取權、算力租賃、代理風險、硬體分工與實體產能約束。"
+  },
+  {
     "date": "2026-06-12",
     "title": "2026-06-12 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "今日訊號顯示，AI 市場正在由單點模型競賽，轉入「可融資容量、可交付雲收入、可控網絡與可審計 agent」的基建化階段；真正的定價權更集中在能把電力、雲端、網絡、企業流程與合規證據包成長約產品的一方。",
