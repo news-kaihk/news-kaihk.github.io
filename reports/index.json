@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-06-15",
+    "title": "2026-06-15 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "AI 市場今日主線不是單一模型升級，而是「可持續取得模型、可量度 agent 成本、可審計企業交付」成為新定價權。",
+    "html": "reports/2026-06-15-ai-trend-report.html",
+    "md": "reports/2026-06-15-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Semiconductor"
+    ],
+    "signals": 6,
+    "sources": 13
+  },
+  {
     "date": "2026-06-14",
     "title": "2026-06-14 AI Trend Insight 早報",
     "html": "reports/2026-06-14-ai-trend-report.html",
