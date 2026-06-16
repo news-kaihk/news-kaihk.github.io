@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-06-16",
+    "title": "2026-06-16 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日重點不是單一產品更新，而是 AI 供應鏈開始以可融資容量、可取得電力、可治理 agent、可審計雲收入與區域化基建重新分配定價權。",
+    "html": "reports/2026-06-16-ai-trend-report.html",
+    "md": "reports/2026-06-16-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Cloud Infrastructure",
+      "Data Centers",
+      "Enterprise AI"
+    ],
+    "signals": 6,
+    "sources": 12
+  },
+  {
     "date": "2026-06-15",
     "title": "2026-06-15 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "AI 市場今日主線不是單一模型升級，而是「可持續取得模型、可量度 agent 成本、可審計企業交付」成為新定價權。",
