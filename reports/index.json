@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-06-18",
+    "title": "2026-06-18 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日主線不是單一模型發布，而是 AI 市場把競爭重心推向可控資料層、可治理 agent、可取得能源與冷卻、可替代晶片供應，以及可降低推理成本的工程能力。",
+    "html": "reports/2026-06-18-ai-trend-report.html",
+    "md": "reports/2026-06-18-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Semiconductor",
+      "Energy"
+    ],
+    "signals": 6,
+    "sources": 15
+  },
+  {
+    "date": "2026-06-17",
+    "title": "2026-06-17 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日重點不是哪個模型更強，而是 AI 供應鏈開始更清楚地按「誰能供貨、誰能調度 capacity、誰能治理 agent、誰能取得電力與區域客戶」重新分配議價能力。",
+    "html": "reports/2026-06-17-ai-trend-report.html",
+    "md": "reports/2026-06-17-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Cloud Infrastructure",
+      "Semiconductor",
+      "Energy"
+    ],
+    "signals": 6,
+    "sources": 13
+  },
+  {
     "date": "2026-06-16",
     "title": "2026-06-16 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "今日重點不是單一產品更新，而是 AI 供應鏈開始以可融資容量、可取得電力、可治理 agent、可審計雲收入與區域化基建重新分配定價權。",
