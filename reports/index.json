@@ -1,5 +1,123 @@
 [
   {
+    "date": "2026-06-26",
+    "title": "2026-06-26 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日主線是 AI 市場的定價權再由模型展示，移到中國模型價格戰、physical AI 感測器、跨 GPU 推理效率、agent 按結果收費、資料中心電力合約與受監管行業安全六個可收費控制點。",
+    "html": "reports/2026-06-26-ai-trend-report.html",
+    "md": "reports/2026-06-26-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Semiconductor",
+      "Data Centers",
+      "AI Security"
+    ],
+    "signals": 6,
+    "sources": 18
+  },
+  {
+    "date": "2026-06-25",
+    "title": "2026-06-25 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日主線是 AI 市場的定價權繼續由模型展示，移到推理晶片、agent 安全、資料中心電力成本、HBM 記憶體、企業文件工作流與 shadow AI 治理六個可收費控制點。",
+    "html": "reports/2026-06-25-ai-trend-report.html",
+    "md": "reports/2026-06-25-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Semiconductor",
+      "Data Centers",
+      "AI Security"
+    ],
+    "signals": 6,
+    "sources": 16
+  },
+  {
+    "date": "2026-06-24",
+    "title": "2026-06-24 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "AI 市場主線正在由單一模型能力，轉向「企業記憶、agent 治理、推理基建、AI device、電力社會許可與行業合規」六個可收費控制點。",
+    "html": "reports/2026-06-24-ai-trend-report.html",
+    "md": "reports/2026-06-24-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Semiconductor",
+      "Data Centers",
+      "AI Devices",
+      "Financial Services"
+    ],
+    "signals": 6,
+    "sources": 15
+  },
+  {
+    "date": "2026-06-23",
+    "title": "2026-06-23 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "AI 市場主線正在由模型能力，轉向「安全、計量、主權 capacity、記憶體、電力與責任」六個可收費控制點。",
+    "html": "reports/2026-06-23-ai-trend-report.html",
+    "md": "reports/2026-06-23-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Cybersecurity",
+      "Cloud Infrastructure",
+      "Semiconductor",
+      "Energy",
+      "Robotics"
+    ],
+    "signals": 6,
+    "sources": 16
+  },
+  {
+    "date": "2026-06-22",
+    "title": "2026-06-22 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日主線是 AI 市場由單點模型能力，進一步轉向「可治理 agent、可取得電力、可替代算力、可嵌入企業流程、可承擔行業責任」的定價權競爭。",
+    "html": "reports/2026-06-22-ai-trend-report.html",
+    "md": "reports/2026-06-22-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Semiconductor",
+      "Healthcare AI"
+    ],
+    "signals": 6,
+    "sources": 10
+  },
+  {
+    "date": "2026-06-20",
+    "title": "2026-06-20 Trend Insight 早報｜K-AI Daily Intelligence",
+    "summary": "今日主線是 AI 市場由「模型能力」再往外移：企業開始把預算與風險判斷放在 agent 身份權限、自研晶片與推理成本、資料中心社會許可，以及把 AI 嵌入 Jira、HR、醫療等可收費工作流。",
+    "html": "reports/2026-06-20-ai-trend-report.html",
+    "md": "reports/2026-06-20-ai-trend-report.md",
+    "tags": [
+      "AI",
+      "Market Signals",
+      "AI Infrastructure",
+      "Agentic AI",
+      "Enterprise AI",
+      "Cloud Infrastructure",
+      "Semiconductor",
+      "Workflow AI"
+    ],
+    "signals": 6,
+    "sources": 16
+  },
+  {
     "date": "2026-06-18",
     "title": "2026-06-18 Trend Insight 早報｜K-AI Daily Intelligence",
     "summary": "今日主線不是單一模型發布，而是 AI 市場把競爭重心推向可控資料層、可治理 agent、可取得能源與冷卻、可替代晶片供應，以及可降低推理成本的工程能力。",

@@ -1,0 +1,115 @@
+# 2026-06-25 Trend Insight 早報
+
+## Executive Summary
+- 今日主線是 AI 市場的定價權繼續由模型展示，移到推理晶片、agent 安全、資料中心電力成本、HBM 記憶體、企業文件工作流與 shadow AI 治理六個可收費控制點。
+- 結構性變化一：模型平台正用自研推理晶片與供應鏈合作，把推理毛利從通用硬件依賴中拉回來。
+- 結構性變化二：AI agent 的採購門檻正在變成身份、上下文、代碼風險與行為記錄，而不只是生成能力。
+- 結構性變化三：資料中心電力、記憶體短缺與企業文件流程，把 AI 成本與收入入口推向可計量、可審核、可簽約的控制點。
+
+## 今日市場感訓練
+先找 cashflow：推理晶片、HBM、電力、AI coding 安全、文件工作流與 shadow AI 治理分別向誰收費；再找 risk bearer：誰承擔晶片回本、電網成本、安全事故、文件錯誤與合規責任。
+
+## Trend Records
+### 1. OpenAI 自研推理晶片，把模型競爭推入 cost-to-serve 戰場
+- 熱度來源：Reuters、OpenAI 官方訊號與 The New York Times 對 OpenAI／Broadcom 推理晶片的報道。
+- 正在流行的原因：模型公司若長期依賴外部 GPU 與雲端價格，推理毛利會被硬件供應與雲端平台分走；自研或共同設計推理晶片，是把單位查詢成本、供應穩定性與產品定價重新拉回自己手上。
+- 已驗證事實：6 月 24 日，Reuters 報道 OpenAI 公布與 Broadcom 設計的 LLM-optimized inference chip；同日 OpenAI 官方與 The New York Times 亦有相關訊號。
+- 結構性推論：AI 的下一輪差異化不只是模型分數，而是誰能把高頻推理變成可預測、可壓低、可排程的成本曲線。若推理晶片進入自用或合作部署，受益的不只晶片設計方，也包括封裝、記憶體、網絡與供應鏈管理；受壓的是只靠通用 GPU 溢價或雲端轉售差價的環節。
+- 發生什麼？6 月 24 日，Reuters 報道 OpenAI 公布與 Broadcom 設計的 LLM-optimized inference chip；同日 OpenAI 官方與 The New York Times 亦有相關訊號。
+- 誰收錢？ASIC 設計、先進封裝、HBM、資料中心網絡、雲端合約、推理優化軟件與有大量用量的模型平台。
+- 誰埋單／承擔風險？自研晶片需要軟件堆疊、良率、供應與 workload 穩定；若模型架構快速轉變或外部 GPU 價格下降，專用晶片的回本週期會受壓。
+- 真正定價權在哪？定價權在能同時控制模型架構、推理 workload、硬件設計、供應鏈配額與雲端部署的一方。
+- 接下來看什麼？看 2–8 週內是否披露量產時間、Broadcom 收入指引語言、雲端合作方、推理 API 價格、latency／cost benchmark 與供應鏈訂單。
+- 風險／是否曇花一現：自研晶片需要軟件堆疊、良率、供應與 workload 穩定；若模型架構快速轉變或外部 GPU 價格下降，專用晶片的回本週期會受壓。 若未見正式訂單、用量、續約、價格或監管確認，短期熱度可能高於實際 adoption。
+- 編輯判斷：值得追
+
+### 2. agentic development security 成為 AI coding 的採購門檻
+- 熱度來源：Snyk 發布 Evo Agentic Development Security、SiliconANGLE 報道，以及 SecurityWeek 對 agentic AI security 的風險分析。
+- 正在流行的原因：AI coding agent 會讀取 codebase、調用依賴、修改流程與觸發部署；安全問題由掃描結果延伸到 agent 的上下文、身份、權限與決策速度。
+- 已驗證事實：Snyk 於 6 月 23 日發布 Evo Agentic Development Security；SiliconANGLE 指向其 policing AI coding agents 的定位；SecurityWeek 於 6 月 24 日提醒錯誤上下文會令 agent 以機器速度做錯決策。
+- 結構性推論：企業不會只買「產碼快」的工具，會要求開發平台提供 agent 行為記錄、依賴風險、秘密資料保護、human approval、rollback 與政策約束。安全層若能嵌入 IDE／CI/CD，而不是事後掃描，會取得更高留存與議價權。
+- 發生什麼？Snyk 於 6 月 23 日發布 Evo Agentic Development Security；SiliconANGLE 指向其 policing AI coding agents 的定位；SecurityWeek 於 6 月 24 日提醒錯誤上下文會令 agent 以機器速度做錯決策。
+- 誰收錢？DevSecOps、CI/CD、code review、自動測試、身份權限、secret management、SBOM、開發平台與安全數據平台。
+- 誰埋單／承擔風險？若安全控制拖慢開發速度，工程團隊會繞過；若攻擊案例仍停留在研究示範，短期預算可能先觀望。
+- 真正定價權在哪？定價權在把 agent 權限、代碼風險與部署責任串成單一治理層的平台。
+- 接下來看什麼？看企業採購是否要求 agent policy logs、codebase permission、dependency guardrail、credential scanning、approval gate、測試覆蓋證據與 incident workflow。
+- 風險／是否曇花一現：若安全控制拖慢開發速度，工程團隊會繞過；若攻擊案例仍停留在研究示範，短期預算可能先觀望。 若未見正式訂單、用量、續約、價格或監管確認，短期熱度可能高於實際 adoption。
+- 編輯判斷：值得追
+
+### 3. AI data center 的外部成本開始由社區與電網，反推到科技公司帳單
+- 熱度來源：CNBC 對國會法案的報道、U.S. House Energy and Commerce Democrats 聲明，以及 The Wall Street Journal 對 Amazon／Google 電力領先優勢的報道。
+- 正在流行的原因：AI 資料中心用電與併網需求快速增加，地方電網、居民、州政府與監管者開始要求大型負載承擔更多成本；電力不再只是營運費，而是擴張速度與社會許可。
+- 已驗證事實：6 月 24 日，CNBC 報道國會推進法案，可能要求科技公司支付 AI data center energy costs；同日美國能源與商務委員會民主黨成員呼籲 AI data center moratorium；WSJ 報道 Amazon 與 Google 在追逐電力上具領先位置。
+- 結構性推論：若政策把電網升級、尖峰負載或社區影響成本轉回科技公司，雲端與模型公司的 true cost-to-serve 會上升；有既有電力合約、地點組合與公用事業關係的平台會取得 capacity premium。
+- 發生什麼？6 月 24 日，CNBC 報道國會推進法案，可能要求科技公司支付 AI data center energy costs；同日美國能源與商務委員會民主黨成員呼籲 AI data center moratorium；WSJ 報道 Amazon 與 Google 在追逐電力上具領先位置。
+- 誰收錢？公用事業、輸配電設備、天然氣與儲能、冷卻工程、資料中心 REIT、具長約客戶的開發商與雲端平台。
+- 誰埋單／承擔風險？政策仍可能變動；若用電成本過快上升，資料中心項目回報、地方反對與雲端價格壓力會同步增加。
+- 真正定價權在哪？定價權在掌握電力、土地、冷卻、併網、政策協調與長期客戶承諾的一方。
+- 接下來看什麼？看法案條文、州級 moratorium、PPA 價格、併網排隊、雲端 capex 指引、資料中心租約與電費附加費是否出現。
+- 風險／是否曇花一現：政策仍可能變動；若用電成本過快上升，資料中心項目回報、地方反對與雲端價格壓力會同步增加。 若未見正式訂單、用量、續約、價格或監管確認，短期熱度可能高於實際 adoption。
+- 編輯判斷：值得追
+
+### 4. Micron 記憶體業績訊號顯示 AI bottleneck 正由 GPU 延伸到 HBM／DRAM 價格
+- 熱度來源：CNBC、Investopedia 與 Chosunbiz 對 Micron AI memory demand、收入增長與股價反應的報道。
+- 正在流行的原因：推理與訓練需求需要高頻寬記憶體、先進 DRAM 與資料中心儲存；當記憶體供應緊張，AI capex 的受益者由 GPU 供應商擴展到 HBM 與記憶體價格鏈。
+- 已驗證事實：6 月 24 日，CNBC 報道 Micron 因 memory crunch 導致 revenue quadrupling 並帶動股價上升；Investopedia 指其結果超出市場預期並受 AI demand 推動；Chosunbiz 報道 Micron 受 AI memory demand 帶動錄得 record profits。
+- 結構性推論：AI 算力的真實瓶頸是一整條供應鏈：HBM 配額、封裝、DRAM 價格、雲端採購與客戶長約。記憶體公司若能把短缺轉成長約與高 ASP，將分走 AI 基建利潤；但週期性供給擴張亦會帶來下一輪價格波動。
+- 發生什麼？6 月 24 日，CNBC 報道 Micron 因 memory crunch 導致 revenue quadrupling 並帶動股價上升；Investopedia 指其結果超出市場預期並受 AI demand 推動；Chosunbiz 報道 Micron 受 AI memory demand 帶動錄得 record profits。
+- 誰收錢？HBM、DRAM、先進封裝、測試設備、雲端採購、資料中心伺服器與記憶體控制器生態。
+- 誰埋單／承擔風險？記憶體是強週期行業；若產能追上需求或 AI capex 放慢，ASP 與毛利可能快速回落。
+- 真正定價權在哪？定價權在能掌握 HBM 產能、品質認證、大客戶長約與封裝配套的一方。
+- 接下來看什麼？看 Micron／SK hynix／Samsung 的 HBM capex、長約語言、ASP、庫存天數、雲端採購節奏與 GPU 供應搭配。
+- 風險／是否曇花一現：記憶體是強週期行業；若產能追上需求或 AI capex 放慢，ASP 與毛利可能快速回落。 若未見正式訂單、用量、續約、價格或監管確認，短期熱度可能高於實際 adoption。
+- 編輯判斷：值得追
+
+### 5. 企業 AI 由聊天入口轉向文件、合約與可審核工作流
+- 熱度來源：VentureBeat 對 Mistral OCR 4 的報道、PR Newswire 對 Docusign／Perplexity 合作的公告與相關企業工作流訊號。
+- 正在流行的原因：企業大量價值藏在 PDF、合約、表格、法務流程與審批紀錄；能把非結構化文件變成可抽取、可搜尋、可追蹤、可簽署的工作流，比單純聊天更接近付費場景。
+- 已驗證事實：6 月 24 日，VentureBeat 報道 Mistral OCR 4 把 document extraction 推向 enterprise AI；同日 Docusign 與 Perplexity 公布協助法律團隊自動化 enterprise-wide contract workflows。
+- 結構性推論：企業 AI 的收入入口會從一般知識問答，移向「有文件、有責任、有審批、有合約金額」的流程。受益者是掌握既有系統入口、文件格式、合規語言與審計紀錄的平台；只提供通用模型 API 的供應商會被壓成底層成本。
+- 發生什麼？6 月 24 日，VentureBeat 報道 Mistral OCR 4 把 document extraction 推向 enterprise AI；同日 Docusign 與 Perplexity 公布協助法律團隊自動化 enterprise-wide contract workflows。
+- 誰收錢？OCR、document AI、contract lifecycle management、法務科技、企業搜尋、RAG、工作流 SaaS、資料治理與審計工具。
+- 誰埋單／承擔風險？文件抽取容易遇到準確率、版面、權限與合規問題；若錯誤責任不能界定，企業會限制自動化深度。
+- 真正定價權在哪？定價權在掌握企業文件入口、身份權限、審批流程、合約上下文與可追溯紀錄的一方。
+- 接下來看什麼？看 OCR benchmark、合約 workflow 的正式客戶、錯誤責任條款、整合深度、每席或每流程定價與續約率。
+- 風險／是否曇花一現：文件抽取容易遇到準確率、版面、權限與合規問題；若錯誤責任不能界定，企業會限制自動化深度。 若未見正式訂單、用量、續約、價格或監管確認，短期熱度可能高於實際 adoption。
+- 編輯判斷：值得追
+
+### 6. shadow AI 治理由合規話題，變成網絡與應用交付平台的新收費層
+- 熱度來源：F5 收購 SurePath AI 並推出 AI security platform、HPE 對 private cloud／networking for agentic AI 的更新，以及企業主權／私有雲訊號。
+- 正在流行的原因：員工與部門使用外部 AI 工具會帶來資料外流、權限失控與不可見成本；大型企業需要在網絡、應用交付、身份與私有雲層面看到並限制 AI 使用。
+- 已驗證事實：6 月 24 日，F5 宣布收購 SurePath AI 並推出處理 shadow AI risks 的平台；同日 HPE 發布面向 agentic AI era 的 hardware、private cloud 與 networking 更新。
+- 結構性推論：AI 安全不只在模型層，而會下沉到流量治理、API 控制、私有雲部署、身份與合規報告。傳統網絡、安全與基建公司若能把 AI usage visibility 變成控制面，將在模型供應商之外取得預算。
+- 發生什麼？6 月 24 日，F5 宣布收購 SurePath AI 並推出處理 shadow AI risks 的平台；同日 HPE 發布面向 agentic AI era 的 hardware、private cloud 與 networking 更新。
+- 誰收錢？application delivery、API security、CASB／SASE、identity、private cloud、networking、AI gateway、資料外洩防護與合規報告。
+- 誰埋單／承擔風險？shadow AI 可見性若只停留在監控而不能改善生產力，企業可能視為成本中心；私有雲方案亦可能因部署複雜而拉長銷售週期。
+- 真正定價權在哪？定價權在能同時看見 AI 流量、控制資料出入、連接身份權限並滿足合規審計的平台。
+- 接下來看什麼？看 AI gateway／private cloud 是否出現在大型企業 RFP、是否披露使用量、封鎖／允許政策、合規報告與跨雲部署案例。
+- 風險／是否曇花一現：shadow AI 可見性若只停留在監控而不能改善生產力，企業可能視為成本中心；私有雲方案亦可能因部署複雜而拉長銷售週期。 若未見正式訂單、用量、續約、價格或監管確認，短期熱度可能高於實際 adoption。
+- 編輯判斷：觀察
+
+## 觀察清單
+- OpenAI／Broadcom 是否披露推理晶片量產時間、部署方、成本 benchmark、API 價格或供應鏈訂單。
+- AI coding 平台是否把 agent 權限、依賴風險、憑證保護、測試證據與 rollback 寫進企業採購要求。
+- 美國國會、州政府與地方電網是否把資料中心用電成本、併網責任或 moratorium 轉化為明確條款。
+- Micron、SK hynix、Samsung 的 HBM 長約、ASP、庫存天數與 capex 指引是否確認記憶體短缺仍在延續。
+- document AI 與 contract workflow 是否由 demo 轉為正式客戶、續約與可量化節省時間。
+- F5、HPE、雲端與安全平台是否把 AI gateway、private cloud、usage visibility 與 compliance report 變成新價格層。
+
+## Source Links
+- [Reuters｜OpenAI unveils custom chip it designed with Broadcom to boost its AI infrastructure（2026-06-24）](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQdThteGtwZVZweXpUZTNQR0djS0ViNGhlZjNacUlpaG5KZ2M2SGdLckxXcEV5T3Z5UDhhRjJ5OUh5LTAxQThQVjNGUG1xWGIwM1VLeUNxNjY2N0RfbnFySTY1d0txYjdlNUVWY1lFbFZhRHcyTV9XRWFkRWZjdzM1Mk1QUWVhTmRRYi1IVklHdlJJeThoMUloTlNFTm4yQ29YTUFXRDUtZjZOeVh2cThIazdhUWd1bjdKcXJsamNqN01VR3RMZUtvLXI3SXpvNGV6?oc=5)
+- [OpenAI｜OpenAI and Broadcom unveil LLM-optimized inference chip（2026-06-24）](https://news.google.com/rss/articles/CBMic0FVX3lxTE5IcjFBSWc3NkotMVUzaDNHaWJBcWVtQXZHbnhpUVZrekpPWENRNEZrQ2hOdTFnejg2WTdvWFNQeFI3RGJnRE9qTFI3czJQX28tQUd3OC1ncFlEMnJtQmdONE8ya1NOa1BVOHhVTGNjdUkxbDg?oc=5)
+- [The New York Times｜OpenAI and Broadcom Unveil Custom A.I. Chip Design（2026-06-24）](https://news.google.com/rss/articles/CBMihwFBVV95cUxQeERob2VfOXFNZFNqbnZRM3AyTWgtdFlfWjl0amlQYWNlNmVnX0VOcHpYb3RNV2ZJNGttNW1TRkNGUmh5ODJ2VVNoTkxGbWRaS3IxVzZ0blRVdUQwSmp4bGRqNjl1VXRlWmFLeUxSRDFGcmZzOEJYdlRzTXlnUzdTbnlMbjI5VkE?oc=5)
+- [Snyk｜Snyk Launches Evo Agentic Development Security（2026-06-23）](https://news.google.com/rss/articles/CBMid0FVX3lxTE03RTZyVGxhUjdwQXpkeHRuaV8zMjFrbnVBNC03SmZJZ0k1U2dmcGM1WEt2SmdwZkkxVm8tV2VQSE5MRmdiWXkyUkNXcGUyTlZFN08xdDA0UjZ6NHFSb2dSVG8yOGtnTnlJVVVFbWwxUlRLcE5KRVFv?oc=5)
+- [SiliconANGLE｜Snyk launches Evo Agentic Development Security to police AI coding agents（2026-06-23）](https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR0JLcVpoemRnSkZyN2JmQTc0MnhyZHhYVUNnWHhvaldST2tIbWZKZ05aVkRjM25STVZNZ1VBYlFIV1BsVFhYbjRQUXJkaU9BZUc4ZmdFNW5FQk9fcGM0aXJ0RDdZc21KdmFIYktkU2FxcWlZS0M2SVEtXzJHRHBOdU83SHJTWV9LdlZhYzgtNzBxZmVzOThYX24xYzVCbGhLemRHZkxSZEhDWGc?oc=5)
+- [SecurityWeek｜Agentic AI Security: Wrong Context, Wrong Decisions at Machine Speed（2026-06-24）](https://news.google.com/rss/articles/CBMinAFBVV95cUxOTDJZSFRTX1FmaXVrazZIeFJYUkVhT1J5c2VWVmVlUEVySlI4ZlFFVm04Qk9ZNlN2VVFrNVRuWks2Z0VDZGtZQnEzYlZGbkdEbmhqYjJBTlVBRnlLOWxtbk54TEZGMGcwQVZrUk9mY0ZyOUZtOFpFSEI5NWpXdDN3UWxPeVRHVVBpclNEeXp0OG1BV054SkZGU2Q5b0LSAaIBQVVfeXFMTWpsc0tEYzdud1JRbWoyRjExYzNMeU9RdU1HeEsxOFRjdW5wY3ZOZnpXd29nSWNwVkptRVBNUjAybU9UZDZYY3lEVDBpUWkzTUJUQ0FxSlNWMjNuS0xOMjFKTm1yTDVHRWhxSFdCM2FYOFJpM2Vpd3NvRVg0eUZnbVRZOUxBbVJNZ0kzd2dHYjBnZ2ljN01HNFcwR2V0V0ctcWtn?oc=5)
+- [CNBC｜Tech companies would have to pay AI data center energy costs under bill moving in Congress（2026-06-24）](https://news.google.com/rss/articles/CBMikwFBVV95cUxQVzMyRTJVbTVlQ3E3ZkdUNFdTQkw5TENuLXExUjhIZDlhWWpCVlFxUWpQZktUWk1HaTljbF8xYUVxTjR1SWRrUllpV1hVb09qUm9oUkdsUmZmNWdaU3RuQ090ZkhHTHRJTWRnaHI5Zm10bjZfSVZVblVJR2s3WElZQTJieDNVd2hZZ2RKTlRWcXV3YknSAZgBQVVfeXFMT1habnBpSTUxVGVKWTB3UEt4SEhNVk1yaTd0M3ZrSDVpWWdfZ1VyV2ZTZTlFMnVqNWZEaTBPY0FVY0NyOHJJQktmSjFNS3VtZmkzWVpJWGw0RUtFYU5Lc2dMVVZkZUVCbG5jRUJtUy1jV2U3djVwY1Y0NDdZc0U3cWlUeGNNUlFEbFo4T2tlaDZHWmZEa3FMUmo?oc=5)
+- [U.S. House Energy and Commerce Democrats｜Pallone Calls for National AI Data Center Moratorium（2026-06-24）](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSzBuN0NLVGc5Q0dUWFRHUzRhU2Ewa2VnVk9QVzN4WTY4V0dieTVUOHVlZW5jM2tzRFZ3blkyWFM0YTVDUzJ2NHNyV3NMeVpuTjB6UlNiNUJOZEN5UVViS291Y3BLRUZYVVlFbUNPcFI3N1c3cHJkVHpDdnRrTHVnQ1BhNTdVWGx4MWstdFdZOUVCWUhIWk1GYjFZMm9MVUF5bllBNURJaHNCdjM5QmIzRDBRaFhJVFAxVkhWcjg0V2M4N3VUeHcxU3U3X25fRHZfUGgzNGZ3?oc=5)
+- [The Wall Street Journal｜As AI Companies Race for Power, Amazon and Google Have the Lead（2026-06-24）](https://news.google.com/rss/articles/CBMisAFBVV95cUxQUG1YZXNiU1ZSWHB4dG56c1RvNXgtX29QVTIxWnNrLTZnTXlsLUpYcHlici1ScHh4NlZUelU5SmM5c3RzdW01SXRyNUtsdGM0NUhubGc0bnhZeFdKV0FOM2xOb0tTUl9HSTJwRGRFNkRyek1jQ2VIUkViSkR1ZllwU1VmQW1xT3hPVnRVM1ZnRjhxUllHLWJ0bVladTNEUGxUMFR1QmVCZ1gxSUpfS3JGNA?oc=5)
+- [CNBC｜Micron stock jumps as soaring prices from memory crunch lead to quadrupling of revenue（2026-06-24）](https://news.google.com/rss/articles/CBMiekFVX3lxTE9GVlh2eUZTODFpczdKeFpDLWlMY2k1LUtFV1RPU0FMaW5YSmwzOS1mUUdOOHdlTGloY3NjeGtFNzV1VEFZSHBoSzdCMHlRandyQWRRMTd1STR1VVlkTUE3QzBVcnUyODlRRjZZZF9Jc0hHZ05yNVFDRHZ30gF_QVVfeXFMT1NSQlRZZnJaMVVDZld2Wk1FUTJLU3ZCYlp6LXlzdjZhTDRfWXkwU2VsdDBEbjZFZU5JYW1LdUllY3JGdzFYcDlQc0I1d0JzaEJUaWtra1R5ek9qb2pmX0lKeV9rZ3JLNUpnQ2hNbnZEeEtMYWF4RFBHZU8wckw0WQ?oc=5)
+- [Investopedia｜Micron Stock Soars as Results Blow Past Wall Street Expectations Amid Booming AI Demand（2026-06-24）](https://news.google.com/rss/articles/CBMilwFBVV95cUxOY0lZWXNYaXliVFlld3NMLWE0QkJIeFRoallhY0xXbU1uWWN1TzdjdTlMdjlxV19LZ0NhWFg3d3JkMVh6M3JnaldlV1FiNFE1UTh4QWZVYm10ZlYtU1Bud2ZIZXBjWkZlZTdoYUNtdUVRMm5nNjFOUkhRcWREU2gxd1dZTFg5VVNMZUtFc1Bma1ZwV1FVNkNj?oc=5)
+- [Chosunbiz｜Micron posts record profits as AI memory demand surges（2026-06-24）](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWGRxSHNJSG90TE5yeUtPR3NJSVVXbk91UHhGLXJ3Qm1OV044b2hnNGNma0dLVUZ5ak1PN21OZmU5WG1vTmwtbEtSeUlCM0tncGdWN3JTR3h0b3FNejgwN0c4MHYxZnhXVE9CQzh3QXdGY054SVJlNFZOSGxINDNBOVZnaXk3VS1M0gGcAUFVX3lxTFBvSjU1aHc3OHI4b09zZDJBRUl1OHFYSU9WbHNXckVhQW9ScUd0dERDSkw4aDdqb1hDWVRlSENMbmFaYS12MnFzQVh2aTlNek9ZOGhzS25sS2hrNEJUNjBFYUhYT1YxNk1qRnA4MGR4ZnhpV0NKdlZOOHc1bnpJeWlZcjhFWFB6OTVrNDRRQ2xrRjNncGhPRHFrdTlYcg?oc=5)
+- [VentureBeat｜Mistral launches OCR 4, turning document extraction into a full enterprise AI play（2026-06-24）](https://news.google.com/rss/articles/CBMirwFBVV95cUxNcVFhN0R2RkcyZWJiZlYwLUdUMGpleDdSd1NORXFOSFlRb25Hd25SVnZBeklZSU8wQi1FTE5KaDhLelZRYzZCRkdaUjBfRHkwVjhkcHhjQjU0Y2RLNzhUZGY1MjZhMmNQUVpETjBkTXFpb1REYnR0SWFhV2cydzEzbXMyWFVKX3hRNmRuZ3ZCTUE5WDFlc2x4U05mVXpqc3BwZnJ4OUltRFZaenZPZTdj?oc=5)
+- [PR Newswire｜Docusign & Perplexity Help Legal Teams Automate Enterprise-wide Contract Workflows（2026-06-24）](https://news.google.com/rss/articles/CBMi0wFBVV95cUxQYk1TaG5Lc0QwVlJxT3BJeFhVUW9rQS1Kd3pINFVDYlRLR0lTZExYUS1Wdl9FRFRhbmppZWNPRkktcG5RbmQ5QzJIcnlUWmFXQ0p3Xzg3U3paQ2R0R0RDZE5VRjc0cVNiOE9kM0p4YVp6Z3otMVd1WkNZNXl1UXI0WmRwN01fN0JyNGF5R2RELTBJTC1rZWhBNzFGa0dEM242Tk5CSzlvb0xhRDNWVlNrMGx3eDg1RjRuRnZxRW01d3FDSHdkWmotZE10MGF2SzZJYW5J?oc=5)
+- [F5｜F5 acquires SurePath AI, launches platform to tackle shadow AI risks（2026-06-24）](https://news.google.com/rss/articles/CBMitwFBVV95cUxPUDA2MjQwcDVhdFVZSS1lZ0VGcnRBaXFUa0lMalhzWGdjN2czb2JmVE1iVVJPUV82eTJsODgzUWU4Ny1MUWxfT25BQUcxWVVVLUFocVcwdUFKU2F4QS1BVEcyT1RadWJ2VG5COWxDc2FYTDlXWEs1TVNTSTBObUxrc18tRENHVDgwZno0amlxaEVpX1VjM1d6cmhnV0djVm1tQlpxTlFpdGEweUtnZ29DRDZoM2Zfbk3SAbcBQVVfeXFMT1AwNjI0MHA1YXRVWUktZWdFRnJ0QWlxVGtJTGpYc1hnYzdnM29iZlRNYlVST1FfNnkybDg4M1FlODctTFFsX09uQUFHMVlVVS1BaHFXMHVBSlNheEEtQVRHMk9UWnVidlRuQjlsQ3NhWEw5V1hLNU1TU0kwTm1Ma3NfLURDR1Q4MGZ6NGppcWhFaV9VYzNXenJoZ1dHY1ZtbUJacU5RaXRhMHlLZ2dvQ0Q2aDNmX25N?oc=5)
+- [HPE｜HPE Updates Hardware, Private Cloud And Networking For Agentic AI Era（2026-06-24）](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSUZscDJzdXo5VlN2N29RNlYwaFBjYjgyS0dkeG5EMHp0YlVjTEpDTmFHRFl0cTVza1lfQlA1aW55OUZqeDF0d1p1cmxUM1pCTlBBU1hPUFdFZFJJTFo1MFNEOGp0R25NYmxYaVZSYkluUm42c3hzbnU0MHNVQ3dOM3I1bXV2Qm9aRloxTkxpNkVBN19JYTFKbURSSE1vZVpxcmdfN1ZXRlZNbGZNU2tYdHVqMUVkQUlOZVpGanYzalM?oc=5)
